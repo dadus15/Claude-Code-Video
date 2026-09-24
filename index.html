@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0b">
+  <title>Graphite &amp; Bronze</title>
+  <meta name="description" content="A cinematic slideshow of a graphite Ferrari on bronze forged wheels.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="player" class="player">
+    <header class="topbar chrome">
+      <h1 class="brand">Graphite <span class="brand-dot" aria-hidden="true">·</span> Bronze Forged</h1>
+      <p class="counter" aria-label="Photo position">
+        <span id="count-current">01</span><span class="counter-sep" aria-hidden="true"> / </span><span class="visually-hidden"> of </span><span id="count-total">08</span>
+      </p>
+    </header>
+
+    <div class="stage-wrap">
+      <section id="stage" class="stage" aria-roledescription="carousel" aria-label="Ferrari photo slideshow">
+        <div id="loader" class="stage-status" role="status">
+          <span class="status-line" aria-hidden="true"></span>
+          <span id="loader-text">Loading photographs</span>
+        </div>
+        <div id="empty" class="stage-status stage-empty" hidden>
+          <p class="empty-title">Photographs not found</p>
+          <p class="empty-text">Place <code>90241.jpg</code>–<code>90248.jpg</code> in the <code>photos</code> folder, or import them from your computer. Prefixed names such as <code>01-90248.jpg</code> are matched too.</p>
+          <button type="button" class="text-button" data-import>Import photos</button>
+        </div>
+        <span class="stage-wait" aria-hidden="true"></span>
+      </section>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span id="progress-fill" class="progress-fill"></span></div>
+
+    <div class="bar chrome">
+      <div id="caption" class="caption" aria-live="polite" aria-atomic="true">
+        <h2 id="caption-title" class="caption-title">&nbsp;</h2>
+        <p id="caption-sub" class="caption-sub">&nbsp;</p>
+      </div>
+
+      <div class="controls" role="group" aria-label="Slideshow controls">
+        <button type="button" id="btn-prev" class="icon-button" aria-label="Previous photo" title="Previous (←)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+        </button>
+        <button type="button" id="btn-play" class="icon-button icon-button--primary" aria-label="Play slideshow" title="Play / pause (Space)">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6.5v11l8.5-5.5z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6.5v11M15 6.5v11"/></svg>
+        </button>
+        <button type="button" id="btn-next" class="icon-button" aria-label="Next photo" title="Next (→)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg>
+        </button>
+
+        <span class="controls-rule" aria-hidden="true"></span>
+
+        <button type="button" id="btn-full" class="mode-button" aria-pressed="false" aria-label="Full photo" title="Show the entire photo without movement">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6.5" width="17" height="11" rx="0.5"/><path d="M7 9.5v5M17 9.5v5"/></svg>
+          <span class="mode-label" aria-hidden="true">Full photo</span>
+        </button>
+        <button type="button" id="btn-thumbs" class="mode-button" aria-expanded="false" aria-label="Thumbnails" aria-controls="thumbs" title="Show thumbnails">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="8" width="5" height="8"/><rect x="9.5" y="8" width="5" height="8"/><rect x="15.5" y="8" width="5" height="8"/></svg>
+          <span class="mode-label" aria-hidden="true">Thumbnails</span>
+        </button>
+        <button type="button" id="btn-fullscreen" class="mode-button" aria-pressed="false" aria-label="Full screen" title="Full screen" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 9V4.5H9M15 4.5h4.5V9M19.5 15v4.5H15M9 19.5H4.5V15"/></svg>
+          <span class="mode-label" aria-hidden="true">Full screen</span>
+        </button>
+      </div>
+    </div>
+
+    <p id="notice" class="notice" role="status" hidden>
+      <span id="notice-text"></span>
+      <button type="button" class="text-button" data-import>Import photos</button>
+    </p>
+
+    <nav id="thumbs" class="thumbs" aria-label="All photos" hidden>
+      <ol id="thumb-list" class="thumb-list"></ol>
+    </nav>
+
+    <input id="import-input" type="file" accept=".jpg,.jpeg,image/jpeg" multiple hidden>
+  </main>
+</body>
+</html>
