@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "DM Sans"; font-weight: 400; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "DM Sans"; font-weight: 500; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "DM Sans"; font-weight: 700; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+      :root {
+        --cyan: #0af0f0;
+        --blue: #0005ee;
+        --magenta: #cd00ee;
+        --amber: #ffb904;
+        --white: #ffffff;
+        --in: 0.4;   /* enter, soft ease-out */
+        --out: 0.35; /* exit */
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1920px; height: 1080px; font-family: "DM Sans", sans-serif; color: var(--white); }
+      .clip { position: absolute; inset: 0; }
+      #base { width: 1920px; height: 1080px; object-fit: cover; }
+
+      /* Frosted glass, dark treatment (bright wet road / tunnel wall behind it) */
+      .glass {
+        background: rgba(12, 14, 22, 0.42);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(22px) saturate(1.2);
+        -webkit-backdrop-filter: blur(22px) saturate(1.2);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      /* A — tachometer sweep (tunnel run) */
+      #tach-card { position: absolute; right: 96px; bottom: 88px; width: 400px; height: 400px; border-radius: 36px; opacity: 0; }
+      #tach-card svg { position: absolute; inset: 0; }
+      #rpm { position: absolute; left: 0; right: 0; top: 232px; text-align: center; font-weight: 700; font-size: 64px;
+             letter-spacing: -0.01em; -webkit-text-stroke: 1.5px var(--white); font-variant-numeric: tabular-nums; }
+      #rpm-label { position: absolute; left: 0; right: 0; top: 314px; text-align: center; font-weight: 500; font-size: 26px;
+                   letter-spacing: 0.32em; color: var(--cyan); }
+
+      /* B — HUD lock-on (wheel pull-out) */
+      #hud { position: absolute; inset: 0; }
+      #hud svg { position: absolute; inset: 0; overflow: visible; }
+      #hud-card { position: absolute; left: 1220px; top: 196px; padding: 26px 34px 28px; border-radius: 26px; opacity: 0; }
+      #hud-card .kicker { font-weight: 500; font-size: 26px; letter-spacing: 0.3em; color: var(--cyan); }
+      #hud-card .title { margin-top: 8px; font-weight: 700; font-size: 46px; letter-spacing: -0.01em; white-space: nowrap;
+                         -webkit-text-stroke: 1px var(--white); }
+
+      /* C — kinetic headline (hero) */
+      #headline { position: absolute; left: 0; right: 0; top: 104px; display: flex; flex-direction: column; align-items: center; }
+      #headline .line { display: flex; gap: 0.26em; font-weight: 700; font-size: 124px; line-height: 1.04; letter-spacing: -0.015em;
+                        text-shadow: 0 6px 40px rgba(0, 0, 0, 0.45); }
+      #headline .mask { overflow: hidden; padding: 0 0.02em 0.08em; }
+      #headline .word { display: inline-block; -webkit-text-stroke: 2px var(--white); }
+      #headline .word.key { color: var(--cyan); -webkit-text-stroke: 2px var(--cyan); }
+      #underline { margin-top: 18px; width: 560px; height: 8px; border-radius: 4px;
+                   background: linear-gradient(90deg, var(--cyan), var(--blue)); transform-origin: left center; }
+
+      #fade { position: absolute; inset: 0; background: #000; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="25.708" data-width="1920" data-height="1080">
+      <video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="25.708" data-track-index="0" muted playsinline></video>
+
+      <!-- A: tachometer, tunnel run 8.208–11.542 -->
+      <div id="tach" class="clip" data-start="8.208" data-duration="3.334" data-track-index="1">
+        <div id="tach-card" class="glass">
+          <svg viewBox="0 0 400 400" width="400" height="400">
+            <defs>
+              <linearGradient id="arcGrad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#0AF0F0" />
+                <stop offset="1" stop-color="#0005EE" />
+              </linearGradient>
+            </defs>
+            <g id="ticks"></g>
+            <!-- 270° track, centre (200,200), r 140, from 135° to 405° -->
+            <path id="track" d="M 101.0 299.0 A 140 140 0 1 1 299.0 299.0" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="14" stroke-linecap="round" />
+            <path id="redline" d="M 337.3 227.3 A 140 140 0 0 1 299.0 299.0" fill="none" stroke="#FFB904" stroke-width="14" stroke-linecap="round" opacity="0.9" />
+            <path id="arc" d="M 101.0 299.0 A 140 140 0 1 1 299.0 299.0" fill="none" stroke="url(#arcGrad)" stroke-width="14" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+            <g id="needle" transform="rotate(-135 200 200)">
+              <line x1="200" y1="200" x2="200" y2="82" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+            </g>
+            <circle cx="200" cy="200" r="12" fill="#FFFFFF" />
+          </svg>
+          <div id="rpm">0</div>
+          <div id="rpm-label">RPM</div>
+        </div>
+      </div>
+
+      <!-- B: HUD lock-on, wheel pull-out 15.042–18.667 -->
+      <div id="hud" class="clip" data-start="15.042" data-duration="3.625" data-track-index="2">
+        <svg width="1920" height="1080">
+          <g id="lock">
+            <circle id="ring" cx="0" cy="0" r="1" fill="none" stroke="#0AF0F0" stroke-width="3" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+            <g id="brackets" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round"></g>
+            <circle id="dot" cx="0" cy="0" r="6" fill="#0AF0F0" />
+          </g>
+          <polyline id="leader" points="0,0 0,0 0,0" fill="none" stroke="#0AF0F0" stroke-width="3" stroke-linejoin="round" />
+        </svg>
+        <div id="hud-card" class="glass">
+          <div class="kicker">DETAIL</div>
+          <div class="title">Every spoke, engineered.</div>
+        </div>
+      </div>
+
+      <!-- C: kinetic headline, hero 18.667–25.708 -->
+      <div id="hero" class="clip" data-start="18.667" data-duration="7.041" data-track-index="3">
+        <div id="headline">
+          <div class="line">
+            <span class="mask"><span class="word">BUILT</span></span>
+            <span class="mask"><span class="word">TO</span></span>
+            <span class="mask"><span class="word">TURN</span></span>
+            <span class="mask"><span class="word key">HEADS</span></span>
+          </div>
+          <div id="underline"></div>
+        </div>
+      </div>
+
+      <div id="fade" class="clip" data-start="0" data-duration="25.708" data-track-index="4"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const IN = 0.4, OUT = 0.35, EASE_IN = "power2.out", EASE_OUT = "power2.in";
+
+      /* ---------- A: tachometer ---------- */
+      (function () {
+        const g = document.getElementById("ticks");
+        const NS = "http://www.w3.org/2000/svg";
+        for (let i = 0; i <= 8; i++) {
+          const a = ((135 + i * (270 / 8)) * Math.PI) / 180;
+          const r1 = 112, r2 = i % 2 ? 120 : 126;
+          const l = document.createElementNS(NS, "line");
+          l.setAttribute("x1", 200 + r1 * Math.cos(a)); l.setAttribute("y1", 200 + r1 * Math.sin(a));
+          l.setAttribute("x2", 200 + r2 * Math.cos(a)); l.setAttribute("y2", 200 + r2 * Math.sin(a));
+          l.setAttribute("stroke", i >= 7 ? "#FFB904" : "rgba(255,255,255,0.55)");
+          l.setAttribute("stroke-width", i % 2 ? 2 : 3);
+          g.appendChild(l);
+        }
+      })();
+      const A0 = 8.30, SWEEP0 = 8.62, SWEEP = 1.7, MAX = 7500, FULL = 8000;
+      tl.fromTo("#tach-card", { opacity: 0, y: 40, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: IN, ease: EASE_IN }, A0);
+      const rpm = { v: 0 };
+      tl.to(rpm, {
+        v: MAX, duration: SWEEP, ease: "power3.out",
+        onUpdate: () => {
+          const v = rpm.v;
+          document.getElementById("rpm").textContent = Math.round(v / 10) * 10 === 0 ? "0" : (Math.round(v / 10) * 10).toLocaleString("en-US");
+          document.getElementById("needle").setAttribute("transform", `rotate(${-135 + (v / FULL) * 270} 200 200)`);
+          document.getElementById("arc").setAttribute("stroke-dashoffset", 1 - v / FULL);
+        },
+      }, SWEEP0);
+      tl.to("#tach-card", { opacity: 0, y: 24, duration: OUT, ease: EASE_OUT }, 11.10);
+
+      /* ---------- B: HUD lock-on ---------- */
+      const B0 = 15.042;
+      // Hub centre / ring radius tracked from the footage (shot-local seconds).
+      const track = [
+        { t: 0.0, x: 910, y: 578, r: 178 },
+        { t: 1.0, x: 958, y: 574, r: 160 },
+        { t: 2.0, x: 974, y: 574, r: 138 },
+        { t: 3.0, x: 967, y: 576, r: 122 },
+        { t: 3.625, x: 974, y: 576, r: 116 },
+      ];
+      (function () {
+        const g = document.getElementById("brackets");
+        const NS = "http://www.w3.org/2000/svg";
+        for (let i = 0; i < 4; i++) {
+          const p = document.createElementNS(NS, "path");
+          p.setAttribute("d", "M -1 -0.55 L -1 -1 L -0.55 -1");
+          p.setAttribute("vector-effect", "non-scaling-stroke");
+          p.setAttribute("transform", `rotate(${i * 90})`);
+          g.appendChild(p);
+        }
+      })();
+      const hud = { x: track[0].x, y: track[0].y, r: track[0].r, br: 2.2, lead: 0 };
+      function drawHud() {
+        document.getElementById("lock").setAttribute("transform", `translate(${hud.x} ${hud.y})`);
+        document.getElementById("ring").setAttribute("r", hud.r);
+        document.getElementById("brackets").setAttribute("transform", `scale(${hud.r * hud.br})`);
+        // leader: from the ring at -40° to an elbow, then across to the card
+        const a = (-40 * Math.PI) / 180;
+        const sx = hud.x + hud.r * Math.cos(a), sy = hud.y + hud.r * Math.sin(a);
+        const ex = 1220, ey = 266;
+        const elbow = { x: Math.min(sx + (sy - ey), ex - 40), y: ey }; // 45° up-right, then across
+        const seg1 = Math.hypot(elbow.x - sx, elbow.y - sy), seg2 = ex - elbow.x, L = seg1 + seg2, d = hud.lead * L;
+        let px, py, qx, qy;
+        if (d <= seg1) { px = sx + (elbow.x - sx) * (d / seg1); py = sy + (elbow.y - sy) * (d / seg1); qx = px; qy = py; }
+        else { px = elbow.x; py = elbow.y; qx = elbow.x + (d - seg1); qy = ey; }
+        document.getElementById("leader").setAttribute("points", `${sx},${sy} ${px},${py} ${qx},${qy}`);
+      }
+      tl.set("#lock", { opacity: 0 }, 0);
+      tl.set("#leader", { opacity: 0 }, 0);
+      for (let i = 1; i < track.length; i++) {
+        const k = track[i], k0 = track[i - 1];
+        tl.to(hud, { x: k.x, y: k.y, r: k.r, duration: k.t - k0.t, ease: "none", onUpdate: drawHud }, B0 + k0.t);
+      }
+      tl.call(drawHud, null, B0);
+      // lock-on: brackets close in, ring draws, then leader + card
+      tl.to("#lock", { opacity: 1, duration: 0.2, ease: "none" }, B0 + 0.12);
+      tl.to(hud, { br: 1.0, duration: 0.5, ease: "power3.out", onUpdate: drawHud }, B0 + 0.12);
+      tl.fromTo("#ring", { attr: { "stroke-dashoffset": 1 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.6, ease: "power2.out" }, B0 + 0.3);
+      tl.to("#leader", { opacity: 1, duration: 0.01 }, B0 + 0.75);
+      tl.to(hud, { lead: 1, duration: 0.45, ease: "power2.out", onUpdate: drawHud }, B0 + 0.75);
+      tl.fromTo("#hud-card", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: IN, ease: EASE_IN }, B0 + 1.05);
+      tl.to(["#lock", "#leader", "#hud-card"], { opacity: 0, duration: OUT, ease: EASE_OUT }, B0 + 3.625 - 0.45);
+
+      /* ---------- C: kinetic headline ---------- */
+      const C_LAND = 20.45; // first word fully up on the bass hit
+      tl.fromTo("#headline .word", { yPercent: 110 }, { yPercent: 0, duration: IN, ease: "power3.out", stagger: 0.09 }, C_LAND - IN);
+      tl.fromTo("#underline", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, C_LAND + 0.45);
+
+      /* ---------- end: fade to black ---------- */
+      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "none" }, 25.708 - 0.6);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
