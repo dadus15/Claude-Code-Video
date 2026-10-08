@@ -20,26 +20,30 @@ W, H = 1920, 1080
 #   creep: 100% -> `to` across the whole shot (ease-in-out).
 # Every shot starts at 100%, so the frame is back to 100% at every cut.
 EDL = [
-    # file,                          in,  out, camera move,                                         note
-    ("headlight-rain.mp4",            34,  85, None,                                                "dark headlight in the rain"),
-    ("ignition-garage-tunnel.mp4",     2,  23, dict(kind="punch", to=1.22, at=2, frames=8, ax=0.5, ay=0.53), "START pressed (lights up at src f9)"),
-    ("headlight-rain.mp4",            85, 145, None,                                                "headlight ignites at src f90"),
-    ("ignition-garage-tunnel.mp4",    24,  89, dict(kind="creep", to=1.10, ax=0.5, ay=0.40),        "garage door rises"),
-    ("ignition-garage-tunnel.mp4",    89, 169, None,                                                "tunnel run (tachometer)"),
-    ("details-badge-wheel-spoiler.mp4", 120, 169, None,                                             "spoiler rising"),
-    ("details-badge-wheel-spoiler.mp4",  58,  93, None,                                             "caliper"),
-    ("wheel-pullout.mp4",             58, 145, None,                                                "wheel pull-out (HUD lock-on)"),
-    ("mountain-road-hero.mp4",         0, 169, dict(kind="creep", to=1.08, ax=0.5, ay=0.30),        "hero approach (headline)"),
+    # file,                               in,  out, camera move,                                         note
+    ("headlight-studio.mp4",               10,  62, None,                                                "dark headlight, wide (opening)"),
+    ("ignition-garage-tunnel.mp4",          2,  23, dict(kind="punch", to=1.22, at=2, frames=8, ax=0.5, ay=0.53), "START pressed (lights up at src f9)"),
+    ("headlight-rain.mp4",                 85, 145, None,                                                "headlight ignites at src f90"),
+    ("ignition-garage-tunnel.mp4",         24,  89, dict(kind="creep", to=1.10, ax=0.5, ay=0.40),        "garage door rises"),
+    ("rain-garage-tunnel-taillight.mp4",    8,  80, None,                                                "rolls out of the rain garage"),
+    ("ignition-garage-tunnel.mp4",         89, 169, None,                                                "tunnel run (tachometer)"),
+    ("rain-garage-tunnel-taillight.mp4",   90, 142, None,                                                "low tunnel wheel"),
+    ("rain-garage-tunnel-taillight.mp4",  143, 169, None,                                                "taillight in the rain"),
+    ("details-badge-wheel-spoiler.mp4",    58,  93, None,                                                "caliper"),
+    ("details-badge-caliper-spoiler.mp4",  59,  79, None,                                                "caliper macro"),
+    ("wheel-pullout.mp4",                  58, 145, None,                                                "wheel pull-out (HUD lock-on)"),
+    ("mountain-road-hero.mp4",              0, 110, None,                                                "mountain-road approach"),
+    ("clifftop-sunset.mp4",                10, 169, dict(kind="creep", to=1.08, ax=0.5, ay=0.55),        "clifftop sunset (headline)"),
 ]
 
 # Sound design (seconds on the output timeline). Everything else is the clips' own audio.
 CLIP_AUDIO_GAIN = 0.75
 SFX = [
     # file,               at,     gain, trim (s)
-    ("click.mp3",         2.40,   0.9,  None),   # START button press (src f9 of shot 2 -> T 2.417; click onset 0.04 s)
-    ("impact-bass-1.mp3", 3.17,   0.45, None),   # headlight ignites (T 3.208)
-    ("riser.mp3",         16.05,  0.30, 4.40),   # builds under the wheel shot, stops on the headline
-    ("impact-bass-2.mp3", 20.45,  0.28, 1.40),   # headline lands (T 20.46)
+    ("click.mp3",         2.42,   0.9,  None),   # START button press (T 2.458; click onset 0.04 s)
+    ("impact-bass-1.mp3", 3.21,   0.45, None),   # headlight ignites (T 3.250)
+    ("riser.mp3",         26.50,  0.30, 4.40),   # builds through the mountain road, stops on the headline
+    ("impact-bass-2.mp3", 30.90,  0.28, 1.40),   # headline lands (T 30.90)
 ]
 FADE_OUT = 0.6
 
@@ -130,7 +134,7 @@ def build_audio():
          "-ac", "2", "-c:a", "pcm_s16le", os.path.join(BUILD, "mix.wav")])
 
 
-def mux(name="porsche-hook_v1.mp4"):
+def mux(name="porsche-hook_v2.mp4"):
     run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(BUILD, "overlay.mp4"), "-i",
          os.path.join(BUILD, "mix.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac",
          "-b:a", "256k", "-movflags", "+faststart", os.path.join(HERE, "renders", name)])

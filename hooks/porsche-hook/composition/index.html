@@ -63,11 +63,11 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="25.708" data-width="1920" data-height="1080">
-      <video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="25.708" data-track-index="0" muted playsinline></video>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="34.958" data-width="1920" data-height="1080">
+      <video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="34.958" data-track-index="0" muted playsinline></video>
 
-      <!-- A: tachometer, tunnel run 8.208–11.542 -->
-      <div id="tach" class="clip" data-start="8.208" data-duration="3.334" data-track-index="1">
+      <!-- A: tachometer, tunnel run 11.250–14.583 -->
+      <div id="tach" class="clip" data-start="11.25" data-duration="3.333" data-track-index="1">
         <div id="tach-card" class="glass">
           <svg viewBox="0 0 400 400" width="400" height="400">
             <defs>
@@ -91,8 +91,8 @@
         </div>
       </div>
 
-      <!-- B: HUD lock-on, wheel pull-out 15.042–18.667 -->
-      <div id="hud" class="clip" data-start="15.042" data-duration="3.625" data-track-index="2">
+      <!-- B: HUD lock-on, wheel pull-out 20.125–23.750 -->
+      <div id="hud" class="clip" data-start="20.125" data-duration="3.625" data-track-index="2">
         <svg width="1920" height="1080">
           <g id="lock">
             <circle id="ring" cx="0" cy="0" r="1" fill="none" stroke="#0AF0F0" stroke-width="3" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
@@ -107,8 +107,8 @@
         </div>
       </div>
 
-      <!-- C: kinetic headline, hero 18.667–25.708 -->
-      <div id="hero" class="clip" data-start="18.667" data-duration="7.041" data-track-index="3">
+      <!-- C: kinetic headline, clifftop 28.333–34.958 -->
+      <div id="hero" class="clip" data-start="28.333" data-duration="6.625" data-track-index="3">
         <div id="headline">
           <div class="line">
             <span class="mask"><span class="word">BUILT</span></span>
@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div id="fade" class="clip" data-start="0" data-duration="25.708" data-track-index="4"></div>
+      <div id="fade" class="clip" data-start="0" data-duration="34.958" data-track-index="4"></div>
     </div>
 
     <script>
@@ -143,7 +143,7 @@
           g.appendChild(l);
         }
       })();
-      const A0 = 8.30, SWEEP0 = 8.62, SWEEP = 1.7, MAX = 7500, FULL = 8000;
+      const A0 = 11.342, SWEEP0 = 11.662, SWEEP = 1.7, MAX = 7500, FULL = 8000;
       tl.fromTo("#tach-card", { opacity: 0, y: 40, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: IN, ease: EASE_IN }, A0);
       const rpm = { v: 0 };
       tl.to(rpm, {
@@ -155,10 +155,10 @@
           document.getElementById("arc").setAttribute("stroke-dashoffset", 1 - v / FULL);
         },
       }, SWEEP0);
-      tl.to("#tach-card", { opacity: 0, y: 24, duration: OUT, ease: EASE_OUT }, 11.10);
+      tl.to("#tach-card", { opacity: 0, y: 24, duration: OUT, ease: EASE_OUT }, 14.142);
 
       /* ---------- B: HUD lock-on ---------- */
-      const B0 = 15.042;
+      const B0 = 20.125;
       // Hub centre / ring radius tracked from the footage (shot-local seconds).
       const track = [
         { t: 0.0, x: 910, y: 578, r: 178 },
@@ -211,12 +211,12 @@
       tl.to(["#lock", "#leader", "#hud-card"], { opacity: 0, duration: OUT, ease: EASE_OUT }, B0 + 3.625 - 0.45);
 
       /* ---------- C: kinetic headline ---------- */
-      const C_LAND = 20.45; // first word fully up on the bass hit
+      const C_LAND = 30.90; // first word fully up on the bass hit
       tl.fromTo("#headline .word", { yPercent: 110 }, { yPercent: 0, duration: IN, ease: "power3.out", stagger: 0.09 }, C_LAND - IN);
       tl.fromTo("#underline", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, C_LAND + 0.45);
 
       /* ---------- end: fade to black ---------- */
-      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "none" }, 25.708 - 0.6);
+      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "none" }, 34.958 - 0.6);
 
       window.__timelines["main"] = tl;
       tl.seek(0);
