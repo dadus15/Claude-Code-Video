@@ -59,12 +59,18 @@
       #underline { margin-top: 18px; width: 560px; height: 8px; border-radius: 4px;
                    background: linear-gradient(90deg, var(--cyan), var(--blue)); transform-origin: left center; }
 
+      /* Product lower-thirds (wheel shots): one line, bottom centre, key words cyan */
+      .clip.lower { inset: 0; display: flex; justify-content: center; align-items: flex-end; padding-bottom: 84px; }
+      .lower .pill { padding: 20px 40px 22px; border-radius: 22px; font-weight: 500; font-size: 52px; letter-spacing: -0.01em;
+                     white-space: nowrap; opacity: 0; }
+      .lower .pill b { font-weight: 700; color: var(--cyan); -webkit-text-stroke: 1px var(--cyan); }
+
       #fade { position: absolute; inset: 0; background: #000; opacity: 0; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="34.958" data-width="1920" data-height="1080">
-      <video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="34.958" data-track-index="0" muted playsinline></video>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="35.875" data-width="1920" data-height="1080">
+      <video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="35.875" data-track-index="0" muted playsinline></video>
 
       <!-- A: tachometer, tunnel run 11.250–14.583 -->
       <div id="tach" class="clip" data-start="11.25" data-duration="3.333" data-track-index="1">
@@ -91,8 +97,8 @@
         </div>
       </div>
 
-      <!-- B: HUD lock-on, wheel pull-out 20.125–23.750 -->
-      <div id="hud" class="clip" data-start="20.125" data-duration="3.625" data-track-index="2">
+      <!-- B: HUD lock-on, wheel pull-out 20.125–24.667 -->
+      <div id="hud" class="clip" data-start="20.125" data-duration="4.542" data-track-index="2">
         <svg width="1920" height="1080">
           <g id="lock">
             <circle id="ring" cx="0" cy="0" r="1" fill="none" stroke="#0AF0F0" stroke-width="3" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
@@ -102,13 +108,14 @@
           <polyline id="leader" points="0,0 0,0 0,0" fill="none" stroke="#0AF0F0" stroke-width="3" stroke-linejoin="round" />
         </svg>
         <div id="hud-card" class="glass">
-          <div class="kicker">DETAIL</div>
-          <div class="title">Every spoke, engineered.</div>
+          <div class="kicker">MODERN DESIGN</div>
+          <div class="title">5 double spokes,</div>
+          <div class="title">with a distinctive slit.</div>
         </div>
       </div>
 
-      <!-- C: kinetic headline, clifftop 28.333–34.958 -->
-      <div id="hero" class="clip" data-start="28.333" data-duration="6.625" data-track-index="3">
+      <!-- C: kinetic headline, clifftop 29.250–35.875 -->
+      <div id="hero" class="clip" data-start="29.25" data-duration="6.625" data-track-index="3">
         <div id="headline">
           <div class="line">
             <span class="mask"><span class="word">BUILT</span></span>
@@ -120,7 +127,15 @@
         </div>
       </div>
 
-      <div id="fade" class="clip" data-start="0" data-duration="34.958" data-track-index="4"></div>
+      <!-- Product lines: low wheel 15.667–17.833, caliper + macro 17.833–20.125 -->
+      <div id="line-name" class="clip lower" data-start="15.667" data-duration="2.166" data-track-index="5">
+        <div class="pill glass"><b>Turismo Forged IS02</b> aluminum wheels</div>
+      </div>
+      <div id="line-material" class="clip lower" data-start="17.833" data-duration="2.292" data-track-index="6">
+        <div class="pill glass">Made of <b>forged 6061 aluminum</b></div>
+      </div>
+
+      <div id="fade" class="clip" data-start="0" data-duration="35.875" data-track-index="4"></div>
     </div>
 
     <script>
@@ -161,11 +176,16 @@
       const B0 = 20.125;
       // Hub centre / ring radius tracked from the footage (shot-local seconds).
       const track = [
-        { t: 0.0, x: 910, y: 578, r: 178 },
-        { t: 1.0, x: 958, y: 574, r: 160 },
-        { t: 2.0, x: 974, y: 574, r: 138 },
-        { t: 3.0, x: 967, y: 576, r: 122 },
-        { t: 3.625, x: 974, y: 576, r: 116 },
+        { t: 0.0, x: 895, y: 610, r: 200 },
+        { t: 0.25, x: 896, y: 606, r: 196 },
+        { t: 0.5, x: 920, y: 604, r: 190 },
+        { t: 0.75, x: 930, y: 596, r: 184 },
+        { t: 1.0, x: 930, y: 595, r: 178 },
+        { t: 1.25, x: 935, y: 598, r: 172 },
+        { t: 1.917, x: 958, y: 574, r: 160 },
+        { t: 2.917, x: 974, y: 574, r: 138 },
+        { t: 3.917, x: 967, y: 576, r: 122 },
+        { t: 4.542, x: 974, y: 576, r: 116 },
       ];
       (function () {
         const g = document.getElementById("brackets");
@@ -186,7 +206,7 @@
         // leader: from the ring at -40° to an elbow, then across to the card
         const a = (-40 * Math.PI) / 180;
         const sx = hud.x + hud.r * Math.cos(a), sy = hud.y + hud.r * Math.sin(a);
-        const ex = 1220, ey = 266;
+        const ex = 1220, ey = 300;
         const elbow = { x: Math.min(sx + (sy - ey), ex - 40), y: ey }; // 45° up-right, then across
         const seg1 = Math.hypot(elbow.x - sx, elbow.y - sy), seg2 = ex - elbow.x, L = seg1 + seg2, d = hud.lead * L;
         let px, py, qx, qy;
@@ -208,15 +228,23 @@
       tl.to("#leader", { opacity: 1, duration: 0.01 }, B0 + 0.75);
       tl.to(hud, { lead: 1, duration: 0.45, ease: "power2.out", onUpdate: drawHud }, B0 + 0.75);
       tl.fromTo("#hud-card", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: IN, ease: EASE_IN }, B0 + 1.05);
-      tl.to(["#lock", "#leader", "#hud-card"], { opacity: 0, duration: OUT, ease: EASE_OUT }, B0 + 3.625 - 0.45);
+      tl.to(["#lock", "#leader", "#hud-card"], { opacity: 0, duration: OUT, ease: EASE_OUT }, B0 + 4.542 - 0.45);
+
+      /* ---------- product lines ---------- */
+      // name line rises in; material line wipes in (no two identical entrances in a row)
+      tl.fromTo("#line-name .pill", { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: IN, ease: EASE_IN }, 15.667 + 0.15);
+      tl.to("#line-name .pill", { opacity: 0, y: 16, duration: OUT, ease: EASE_OUT }, 17.833 - 0.35);
+      tl.fromTo("#line-material .pill", { opacity: 0, clipPath: "inset(0 100% 0 0 round 22px)" },
+        { opacity: 1, clipPath: "inset(0 0% 0 0 round 22px)", duration: 0.5, ease: EASE_IN }, 17.833 + 0.05);
+      tl.to("#line-material .pill", { opacity: 0, duration: OUT, ease: EASE_OUT }, 20.125 - 0.35);
 
       /* ---------- C: kinetic headline ---------- */
-      const C_LAND = 30.90; // first word fully up on the bass hit
+      const C_LAND = 31.82; // first word fully up on the bass hit
       tl.fromTo("#headline .word", { yPercent: 110 }, { yPercent: 0, duration: IN, ease: "power3.out", stagger: 0.09 }, C_LAND - IN);
       tl.fromTo("#underline", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, C_LAND + 0.45);
 
       /* ---------- end: fade to black ---------- */
-      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "none" }, 34.958 - 0.6);
+      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "none" }, 35.875 - 0.6);
 
       window.__timelines["main"] = tl;
       tl.seek(0);

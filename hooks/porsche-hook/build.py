@@ -27,11 +27,11 @@ EDL = [
     ("ignition-garage-tunnel.mp4",         24,  89, dict(kind="creep", to=1.10, ax=0.5, ay=0.40),        "garage door rises"),
     ("rain-garage-tunnel-taillight.mp4",    8,  80, None,                                                "rolls out of the rain garage"),
     ("ignition-garage-tunnel.mp4",         89, 169, None,                                                "tunnel run (tachometer)"),
-    ("rain-garage-tunnel-taillight.mp4",   90, 142, None,                                                "low tunnel wheel"),
     ("rain-garage-tunnel-taillight.mp4",  143, 169, None,                                                "taillight in the rain"),
-    ("details-badge-wheel-spoiler.mp4",    58,  93, None,                                                "caliper"),
-    ("details-badge-caliper-spoiler.mp4",  59,  79, None,                                                "caliper macro"),
-    ("wheel-pullout.mp4",                  58, 145, None,                                                "wheel pull-out (HUD lock-on)"),
+    ("rain-garage-tunnel-taillight.mp4",   90, 142, None,                                                "low tunnel wheel (IS02 name line)"),
+    ("details-badge-wheel-spoiler.mp4",    58,  93, None,                                                "caliper (6061 line)"),
+    ("details-badge-caliper-spoiler.mp4",  59,  79, None,                                                "caliper macro (6061 line)"),
+    ("wheel-pullout.mp4",                  36, 145, None,                                                "wheel pull-out (HUD lock-on: design card)"),
     ("mountain-road-hero.mp4",              0, 110, None,                                                "mountain-road approach"),
     ("clifftop-sunset.mp4",                10, 169, dict(kind="creep", to=1.08, ax=0.5, ay=0.55),        "clifftop sunset (headline)"),
 ]
@@ -42,10 +42,16 @@ SFX = [
     # file,               at,     gain, trim (s)
     ("click.mp3",         2.42,   0.9,  None),   # START button press (T 2.458; click onset 0.04 s)
     ("impact-bass-1.mp3", 3.21,   0.45, None),   # headlight ignites (T 3.250)
-    ("riser.mp3",         26.50,  0.30, 4.40),   # builds through the mountain road, stops on the headline
-    ("impact-bass-2.mp3", 30.90,  0.28, 1.40),   # headline lands (T 30.90)
+    ("riser.mp3",         27.42,  0.30, 4.40),   # builds through the mountain road, stops on the headline
+    ("impact-bass-2.mp3", 31.82,  0.28, 1.40),   # headline lands (T 31.82)
 ]
 FADE_OUT = 0.6
+
+# Optional licensed music bed (e.g. an Epidemic Sound track edit). When the file exists it runs under
+# the whole hook and the clips' own audio drops to CLIP_AUDIO_UNDER_MUSIC.
+MUSIC = os.path.join(COMP, "assets", "music", "bed.wav")
+MUSIC_GAIN = 0.55
+CLIP_AUDIO_UNDER_MUSIC = 0.35
 
 
 def run(cmd):
@@ -109,6 +115,7 @@ def build_audio():
     dur = total / FPS
     pad = 0.05  # short overlap at each cut so the clip audio crossfades instead of clicking
     inputs, chains, labels = [], [], []
+    clip_gain = CLIP_AUDIO_UNDER_MUSIC if os.path.exists(MUSIC) else CLIP_AUDIO_GAIN
     for i, s in enumerate(shots):
         a = max(0.0, s["src_in"] / FPS - pad)
         b = s["src_out"] / FPS + pad
@@ -117,7 +124,7 @@ def build_audio():
         chains.append(
             f"[{i}:a]aresample=48000,atrim={a:.4f}:{b:.4f},asetpts=PTS-STARTPTS,"
             f"afade=t=in:d={pad},afade=t=out:st={b - a - pad:.4f}:d={pad},"
-            f"volume={CLIP_AUDIO_GAIN},adelay={int(delay * 1000)}:all=1[c{i}]")
+            f"volume={clip_gain},adelay={int(delay * 1000)}:all=1[c{i}]")
         labels.append(f"[c{i}]")
     n = len(shots)
     for j, (f, at, gain, trim) in enumerate(SFX):
@@ -126,6 +133,11 @@ def build_audio():
         tr = f"atrim=0:{trim},afade=t=out:st={trim - 0.5}:d=0.5," if trim else ""
         chains.append(f"[{k}:a]aresample=48000,{tr}volume={gain},adelay={int(at * 1000)}:all=1[s{j}]")
         labels.append(f"[s{j}]")
+    if os.path.exists(MUSIC):
+        k = len(inputs) // 2
+        inputs += ["-i", MUSIC]
+        chains.append(f"[{k}:a]aresample=48000,atrim=0:{dur:.4f},volume={MUSIC_GAIN}[m]")
+        labels.append("[m]")
     chains.append(
         f"{''.join(labels)}amix=inputs={len(labels)}:normalize=0:duration=longest,"
         f"atrim=0:{dur:.4f},afade=t=out:st={dur - FADE_OUT:.4f}:d={FADE_OUT},"
@@ -134,7 +146,7 @@ def build_audio():
          "-ac", "2", "-c:a", "pcm_s16le", os.path.join(BUILD, "mix.wav")])
 
 
-def mux(name="porsche-hook_v2.mp4"):
+def mux(name="porsche-hook_v3.mp4"):
     run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(BUILD, "overlay.mp4"), "-i",
          os.path.join(BUILD, "mix.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac",
          "-b:a", "256k", "-movflags", "+faststart", os.path.join(HERE, "renders", name)])
