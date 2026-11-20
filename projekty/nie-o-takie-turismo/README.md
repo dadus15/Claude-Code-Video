@@ -1,5 +1,7 @@
 # Turismo Wheels | „Nie o takie Turismo” — produkcja
 
+> **Aktualny przebieg: [`v2/README-v2.md`](v2/README-v2.md)** (pokój z assetu, pstryk → biuro, hol, laptop, C01 w Blenderze). Poniżej v1 — zostają z niej karta postaci, bloki Cinedance i mechanika podmiany pod kciukiem.
+
 Spot 9:16, 40 s, 1080 × 1920, 25 kl./s. Bohater produktowy (założenie robocze): **Turismo Forged C19-R, Gloss Silver**.
 
 ## Stan (20.11.2026)
