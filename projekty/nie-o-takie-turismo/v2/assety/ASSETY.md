@@ -24,9 +24,17 @@
 | L1 pokój gier (przód) | = @GAME (asset w barwach Turismo) | — | 882c50ae-… (media) | ✅ |
 | L1c pokój gier, kontrplan | L1c_pokoj_gier_kontrplan.png | Seedream 5.0 Pro | 416a4078-a444-44a8-a26e-1c41a4883fda | ✅ |
 | L2 wejście do biura (4 widoki) | L2_wejscie.png | Soul Cinema | f925a3c0-cd3f-42fa-a799-c72c7481b4cd | ✅ |
-| L3 hol z felgami (4 widoki) | L3_hol.png | Soul Cinema | 11a847b5-c190-4487-a1da-abfe125961cb | ✅ |
-| L4c sales room z podstawką | L4c_sales_room_z_podstawka.png | Seedream 5.0 Pro (edycja) | 34c44466-3ab8-49bf-ab32-d452d6a1a80c | ✅ |
+| L3 hol z felgami (4 widoki) — tylko referencja stylu | L3_hol.png | Soul Cinema | 11a847b5-c190-4487-a1da-abfe125961cb | ⚠️ za dużo felg |
+| **L3b hol od wejścia — galeria 8 modeli Turismo** | L3b_hol_od_wejscia.jpg | Seedream 5.0 Pro | 9da892f6-21e5-493e-a077-7b3e5811d09f | ✅ |
+| **L3c hol od sales roomu (kamera prowadząca)** | L3c_hol_od_sales_roomu.jpg | Seedream 5.0 Pro | 64adcd37-4bd6-47cf-a302-e38b93631a9f | ✅ |
+| L4c sales room z podstawką | L4c_sales_room_z_podstawka.png | Seedream 5.0 Pro (edycja) | 34c44466-3ab8-49bf-ab32-d452d6a1a80c | ⚠️ felgi nie Turismo |
+| **L4d sales room — na ścianie C10, C12, D05, FP04** | L4d_sales_room_felgi_Turismo.jpg | Seedream 5.0 Pro (edycja) | 26fbc27f-70c0-48fc-84bf-4610eefe51d5 | ✅ |
 | C01 przód | F_C01_front.png | Seedream 5.0 Pro | 771b8d06-a6e2-4115-b131-f3d789b2cd42 | ✅ |
 | C19-R przód (Gloss Silver) | F_C19-R_front.png | Seedream 5.0 Pro | e8b1f62e-0279-4b53-a734-e46cf679f705 | ✅ |
 | RR przód | F_RR_front.png | Seedream 5.0 Pro | 34b40bc3-601e-4ae1-acb9-d864c571fd79 | ✅ |
 | odrzucone: L1 (osoba w kadrze), L1b (osoba), L4 (logo Apple, zła podstawka), L4b (taca zamiast podstawki) | L1_pokoj_gier.png, L1b_…, L4_…, L4b_… | Soul Cinema | — | ❌ |
+
+## Felgi Turismo do scenografii (packshoty z turismo-wheels.com, media_id)
+Hol (8): AV01 6b2e47e6-d87e-429a-af47-bdf59065eb81 · C03 72769632-f285-4014-9af2-2abb34de88f1 · C04 9ca47ff6-b3b8-4b57-a8c2-4b40c055582a · C07 e2148f12-bb96-4b57-a1b5-efbe2d91fe99 · FP05 d10cb010-3461-4f76-96bc-18561530eb38 · V16 409b7f7d-4338-43fc-9353-9c852a1b7245 · X03 4ccd3945-3f92-4702-9538-88a535808777 · DVF-EVO-R fd63cb8a-91b8-4baa-a8de-31bb3296586f
+Sales room (4): C10 7d3066a0-9eac-4156-9580-3ac53ebed987 · C12 bf9b7197-57a0-4aed-887f-d84ab4473fc4 · D05 9a796489-2c75-45d9-8db0-5835849945ae · FP04 0cdef8d0-71e8-4e39-8ead-52f36c19e314
+C01 / C19-R / RR celowo nie wiszą na ścianach — mają premierę na podstawce.
