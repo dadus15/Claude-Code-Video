@@ -1,6 +1,6 @@
 # „Nie o takie Turismo” — podsumowanie przed produkcją (Black Friday 27.11.2026)
 
-Stan na 20.11.2026. Wydane kredyty: **0** (saldo Higgsfield: **298,31 kr**, plan Plus).
+Stan na 20.11.2026. **Krok 1 (assety) wykonany: 20,72 kr** — saldo **277,59 kr**, automatyczne doładowanie włączone (zaakceptowane). Assety: `v2/assety/` (kontaktówka `00_kontaktowka_krok1.jpg`, identyfikatory `ASSETY.md`).
 Szczegóły: `v2/` (scenariusz, prompty, Blender, metoda), wersja v1 w katalogu głównym tylko do wglądu.
 
 ## 1. Koncepcja
@@ -86,14 +86,14 @@ Na Twoim koncie Higgsfield jest **włączone automatyczne doładowanie**: przy s
 ## 8. Od Ciebie przed bramką 2
 | Materiał | Do ujęcia |
 |---|---|
-| Nagranie Twoich kwestii (lip-sync) | G2–G5, G9 |
+| Nagranie Twoich kwestii dyktafonem, tekst i instrukcja: `v2/08-nagranie-glosu.md` | G2–G5, G8, G9 |
 | ✅ Ekran gry generujemy (G0), bez nagrania GT7 | 1 |
 | Nagranie ekranu laptopa: Google → turismo-wheels.com → Custom Forged Wheels → C01 | 7 |
 | ✅ Koszulka GT pobrana z playstation.com (`v2/referencje_koszulki/`) | karta CS1, G1–G3 |
 | Logo Turismo Wheels w wektorze | plansza |
 | ✅ Widoki FRONT felg generujemy z packshotów ANGLE (Seedream), z kontrolą nałożenia | 9–11 |
 | ✅ Ruch domyślny z promptów (bez nagrania) | G5, G6 |
-| **Oferta Black Friday** (rabat / gratis / termin) do hooka i CTA | 0, 11 |
+| ✅ Oferta BF: −15% na każdy produkt + kwestia „Teraz możesz je zamówić z 15% off.” | 0, 10 |
 
 ## 9. Ryzyka
 - **Prawa Sony/Polyphony** (gameplay i logo GT) oraz **plakaty z assetu** (Cyberpunk, Back to the Future). Plakaty podmienimy na rendery Turismo w montażu, za 0 kr.

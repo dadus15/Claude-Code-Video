@@ -4,7 +4,7 @@ Termin: **Black Friday 27.11.2026, za 7 dni od 20.11.** Publikacja najpóźniej 
 
 ## 1. Hook-intro (0–2,5 s) — metoda „Hook Writer” + Hookbook (Marti Fox)
 Zasada z poradnika „7 Claude Skills” (Hook Writer): 15 hooków, po 3 z każdego typu (mocna teza, pytanie, błąd, historia, liczba), każdy poniżej 12 słów, 3 najlepsze zaznaczone, a do najlepszego tekst na ekran na pierwsze 3 sekundy. Wzorce wziąłem z Hookbooka (kategorie: Porównania, Zaskakujące, Obalanie Mitów, Edukacyjne, Storytelling).
-**[oferta BF]** = do uzupełnienia przez Ciebie (rabat / gratis / termin). Nie wymyślam promocji.
+**Oferta BF: −15% na każdy produkt** (potwierdzona). Nowa kwestia po prezentacji felg: „Teraz możesz je zamówić z 15% off.”
 
 | Typ | Hook | Wzorzec z Hookbooka |
 |---|---|---|
@@ -21,8 +21,8 @@ Zasada z poradnika „7 Claude Skills” (Hook Writer): 15 hooków, po 3 z każd
 | Historia | „Wczoraj grałem w Turismo. Dziś pokażę Ci prawdziwe.” | Storytelling №010 |
 | Historia | „Tak jeden pstryk zmienił moje Turismo.” | Storytelling №005 |
 | Liczba | „Black Friday trwa [X] dni. Twoje felgi zostaną na lata.” | — |
-| Liczba | „3 modele, 1 felga pod Twoje auto, [oferta BF].” | — |
-| Liczba | „[X]% taniej na felgi, których nikt inny nie ma.” | Porównania №010 |
+| Liczba | „3 modele, 1 felga pod Twoje auto, −15% NA KAŻDY PRODUKT.” | — |
+| Liczba | „15% taniej na felgi, których nikt inny nie ma.” | Porównania №010 |
 
 **Najmocniejsze 3:**
 1. **„To jest Turismo. A to jest Turismo.”** — wizualne porównanie w 1,5 s, nie wymaga wiedzy o grze, zapowiada cały żart spotu.
@@ -34,7 +34,7 @@ Zasada z poradnika „7 Claude Skills” (Hook Writer): 15 hooków, po 3 z każd
 |---|---|---|---|
 | 0,0–0,8 | felga z gry na ekranie (kadr z G0) | **TO JEST TURISMO** | klik pada |
 | 0,8–1,6 | twarde cięcie: C01 spada na rolki (kadr z G7 / Blender) | **A TO JEST TURISMO** | metaliczny stuk |
-| 1,6–2,5 | ta sama felga w obrocie + czerwona belka | **BLACK FRIDAY · [oferta BF]** | szum rolek, start bitu |
+| 1,6–2,5 | ta sama felga w obrocie + czerwona belka | **BLACK FRIDAY · −15% NA KAŻDY PRODUKT** | szum rolek, start bitu |
 | 2,5 → | start sceny 1 (najazd na ekran) | — | — |
 
 Tekst duży, biały, czerwony akcent na „BLACK FRIDAY”, w strefie bezpiecznej TikToka (nie w dolnych 300 px). CTA na końcu dostaje oferte i termin: „Napisz «BLACK» w komentarzu / DM do [data]”.
