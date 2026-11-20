@@ -9,6 +9,34 @@ Zasada spójności lokacji: każda lokacja ma **jedną klatkę bazową**, a kole
 
 ---
 
+## Scena 1 (v2.1) — najazd na ekran → panorama → Ty z padem
+
+### KF-S1a — nad Twoim ramieniem (start S1a)
+Pliki: [1] @HERO, [2] `plansze/G0_pokoj_kolory_Turismo.jpg`, [3] @GT (do podmiany)
+```
+Edit image 2 — keep the room, its black/red/white colours and the camera position exactly. Add him sitting on the sofa in the lower centre of the frame, seen from BEHIND: the back of his head and his shoulders fill the lower 30% of the frame, both hands holding a plain black controller at chest height (the controller visible past his right shoulder). Black T-shirt. The big screen stays a flat dark-grey surface (game footage is added in post). Red LED light rims his hair and shoulders.
+[HERO LOCK — identity from the back panel of the sheet: hair shape and fade, neck, shoulders]
+```
+
+### S1a | 4 s | start KF-S1a | AI std 720p
+```
+SCENE: a slow push over the gamer's shoulder toward the big screen.
+FORMAT: 4 s, one shot, 9:16, no music, no text. ONE PERSON ONLY, seen from behind.
+MOST IMPORTANT: (1) the camera pushes forward over his right shoulder toward the screen; his head and shoulders slide DOWN and out of the bottom of the frame by 2.4 s with real parallax against the room. (2) The screen stays a flat dark-grey surface with all four corners visible until it fills the frame. (3) In the last 0.4 s the camera starts a fast pan to the RIGHT. IF THE SCREEN SHOWS ANY IMAGE OR TEXT — THE SHOT IS WRONG.
+TIMING: 0.0–2.4 s push over the shoulder, his thumbs move on the controller. 2.4–3.6 s the screen grows to fill 80% of the frame. 3.6–4.0 s whip pan begins to the right with strong horizontal motion blur.
+[GRADE-LOCK]  STOP-INVERSION: no face visible; no second person; no camera pulling back; no pan to the left.
+[STOP-BASE]
+```
+
+### S1c | 5 s | start KF-U2 (Ty z przodu, pad w dłoniach) | koniec KF-U3a | audio_references: „Nie o takie Turismo nam chodzi.”
+Prompt U2 z jedną zmianą na początku TIMING:
+```
+0.0–0.3 s the shot starts INSIDE a fast pan to the right with strong horizontal motion blur and brakes onto him, settling by 0.3 s.
+```
+Pad w dłoniach od pierwszej klatki do odłożenia w 2,6 s.
+
+---
+
 ## Klatki
 
 ### KF-U2 — kontrplan w pokoju gier (start U2)
@@ -53,7 +81,7 @@ Edycja KF-U5: plan średni-bliski, siedzi, patrzy w obiektyw, po prawej rozmyta 
 
 ## Ruch
 
-### U2 | 5 s | start KF-U2, koniec KF-U3a | audio_references: „To chyba nie to Turismo.”
+### U2 | 5 s | start KF-U2, koniec KF-U3a | audio_references: „Nie o takie Turismo nam chodzi.” (S1c)
 ```
 SCENE: a gamer in his black-and-red room realises this is not the Turismo he meant.
 FORMAT: 5 s, one shot, 9:16, no music, no text. ONE PERSON ONLY, from @HERO.

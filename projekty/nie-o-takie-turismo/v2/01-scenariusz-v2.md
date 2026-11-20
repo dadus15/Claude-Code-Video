@@ -1,37 +1,54 @@
-# „Nie o takie Turismo” — wersja 2 (Twój przebieg)
+# „Nie o takie Turismo” — wersja 2.1 (Twój przebieg)
 
 Zmiany względem v1:
-- Start w **pokoju z assetu** (`Gamingroom_tk700sti-A.jpg`), w którym zmieniamy tylko barwy.
+- Start w **pokoju z assetu** (zmienione tylko barwy).
 - Pstryk przenosi Cię **przed biuro**. Potem wejście, hol z felgami i drugi pokój z laptopem.
 - Na laptopie: Google → turismo-wheels.com → Custom Forged Wheels.
-- Produktem jest **C01**. Felgę obsługuje **Blender**.
+- Felgami zajmuje się **Blender**.
 
-Format: 9:16, 1080 × 1920, 25 kl./s, ok. **52 s** (przebieg jest dłuższy niż 40 s, cięcia na skrót w `README-v2.md`).
+Zmiany v2.1:
+- **Scena 1** to jeden ruch kamery: najazd na ekran GT, a potem szybka panorama na Ciebie z padem na kanapie.
+- **Gama trzech modeli: C01 → C19-R → RR.**
 
-Legenda źródeł: **AI** = klip z generatora (płatny), **BL** = render Blendera (0 kr), **NAGR** = Twoje nagranie, **2.5D** = ruch kamery po nieruchomym kadrze w montażu (0 kr).
+Format: 9:16, 1080 × 1920, 25 kl./s, ok. **54 s**.
+Źródła: **AI** = generator (płatny), **BL** = Blender (0 kr), **NAGR** = Twoje nagranie, **2.5D** = ruch kamery po kadrze w montażu (0 kr).
 
 | # | Czas (s) | Obraz | Głos | Źródło |
 |---|---|---|---|---|
-| U1 | 0,0–4,0 | Pokój z assetu w barwach Turismo (czerń, czerwień, biel). Kamera powoli najeżdża na duży ekran: w GT7 trwa personalizacja auta, wybór felg | dźwięk menu gry | 2.5D na `plansze/G0` + **NAGR** gry na ekranie |
-| U2 | 4,0–7,6 | Kontrplan: siedzisz na kanapie z padem, przenosisz wzrok z ekranu w obiektyw. Odkładasz pad, unosisz prawą dłoń | 4,6–6,4 „To chyba nie to Turismo.” | AI 5 s |
-| U3 | 7,6–9,6 | **PSTRYK** (7,60) → przejście w stylu tutorialu: Ty stoisz w kadrze w tym samym miejscu, a świat wokół się zmienia. Pokój gier zamienia się w wejście do biura Turismo. Opcjonalnie w tym samym momencie koszulka GT → koszulka Turismo. Kamera odjeżdża: stoisz przed szklanymi drzwiami | — | 2 klatki AI + cięcie (lub AI 4 s, wariant B) |
-| U4a | 9,6–12,0 | Otwierasz drzwi i wchodzisz. Kamera cofa się przed Tobą | — | AI 4 s |
-| U4b | 12,0–19,0 | Hol: obie ściany pełne felg. Idziesz do kamery, ona cofa się przed Tobą (steadicam). Gest „chodźcie” na drugiej kwestii, skręcasz w drzwi drugiego pokoju | 12,4–16,6 „W Turismo Wheels projektujemy customowe felgi kute na indywidualne zamówienie.” · 16,9–18,8 „Chodźcie, przedstawię wam naszą gamę modelową.” | AI 7 s |
-| U5 | 19,0–22,5 | Drugi pokój: kanapa, niski stolik, laptop, czarna podstawka z rolkami. Siadasz, otwierasz laptop | — | AI 4 s |
-| U6 | 22,5–29,5 | Ekran: przeglądarka → Google → wpisujesz `turismo-wheels.com` (pisanie przyspieszone ×2) → zakładka **Custom Forged Wheels** → lista modeli | 25,8–27,8 „Tutaj znajduje się lista naszych produktów.” | **NAGR** ekranu (+1 s widoku zza ramienia z U5) |
-| U7 | 29,5–31,5 | Najazd kursorem i klik w **C01** → karta C01, felga z przodu | 29,6–31,4 „Weźmy pod lupę na przykład model C01.” („ce zero jeden”) | **NAGR** ekranu |
-| U8 | 31,5–36,0 | Kciuk na rancie obrazu → podmiana 2D→3D pod kciukiem → C01 wychodzi z ekranu → ląduje na dwóch rolkach → pchnięcie, obrót | cisza od kontaktu kciuka do 35,0 | AI 5 s (dłonie) + **BL** (felga, podstawka, cienie) |
-| U9 | 36,0–46,0 | Opis C01: 3 zbliżenia z Blendera (cecha 1 / 2 / 3) przeplatane krótkim ujęciem Ciebie przy kręcącej się feldze | 3 kwestie opisu — **do uzupełnienia** (np. konstrukcja, ramiona, wykończenia) | **BL** + AI 4 s |
-| U10 | 46,0–52,0 | CTA do kamery, potem plansza: C01 z przodu w tej samej wielkości i miejscu co felga z gry w 4,0 s (pętla) + kontakt | „Rozmiar, ET i wykończenie dobieramy pod Twoje auto. Napisz, czym jeździsz. Strzała!” | AI 4 s + **BL** |
+| S1a | 0,0–3,4 | Pokój z assetu w barwach Turismo. Kamera startuje **nad Twoim ramieniem**: siedzisz tyłem, pad w dłoniach. Powoli najeżdża na duży ekran z GT7 (personalizacja auta, wybór felg), a Twoja głowa wychodzi dołem kadru | dźwięk menu gry, klik wyboru felgi | AI 4 s (wariant A) |
+| S1b | 3,4–3,8 | **Szybka panorama** z ekranu na Ciebie, 10 kl. rozmycia. W rozmyciu jest ukryte cięcie | świst panoramy | montaż, 0 kr |
+| S1c | 3,8–7,6 | Ty z przodu na kanapie, **pad w dłoniach**. Wzrok z ekranu przechodzi w obiektyw. Kwestia. Odkładasz pad, unosisz prawą dłoń | 4,4–6,4 „Nie o takie Turismo nam chodzi.” | AI 5 s (start w rozmyciu ruchu) |
+| U3 | 7,6–9,6 | **PSTRYK** → przejście w stylu tutorialu: stoisz w tym samym miejscu kadru, a świat wokół się zmienia (pokój → wejście do biura). Kamera odjeżdża | — | 2 klatki AI + cięcie |
+| U4a | 9,6–12,0 | Otwierasz szklane drzwi i wchodzisz | — | AI 4 s |
+| U4b | 12,0–19,0 | Hol pełen felg, idziesz do kamery | 12,4–16,6 „W Turismo Wheels projektujemy customowe felgi kute na indywidualne zamówienie.” · 16,9–18,8 „Chodźcie, przedstawię wam naszą gamę modelową.” | AI 7 s |
+| U5 | 19,0–22,5 | Salon: siadasz, otwierasz laptop | — | AI 4 s |
+| U6 | 22,5–29,5 | Google → `turismo-wheels.com` → **Custom Forged Wheels** → lista (C01, C19-R i RR widoczne na liście) | 25,8–27,8 „Tutaj znajduje się lista naszych produktów.” | NAGR ekranu |
+| U7 | 29,5–31,5 | Klik w C01 → karta C01 | 29,6–31,4 „Weźmy pod lupę na przykład model C01.” | NAGR ekranu |
+| U8 | 31,5–36,0 | C01 wychodzi z ekranu i ląduje na dwóch rolkach, pchnięcie, obrót | cisza od kontaktu kciuka do 35,0 | AI 5 s (dłonie) + BL |
+| **U9** | 36,0–46,5 | **Gama na podstawce** (zbliżenie BL): C01 się kręci → „dopchnięcie”, obroty rosną do ok. 5 obr./s, model zamienia się w rozmyciu, zwalnia jako **C19-R** → ponownie podmiana na **RR**. Każdy model ma etykietę PL/EN w stylu INVENTA | 36,2–38,8 „C01 — [cecha].” · 39,8–42,4 „C19-R — [cecha].” · 43,4–46,0 „Albo RR — [cecha].” | BL (0 kr) |
+| U10 | 46,5–54,0 | CTA do kamery (obok kręci się RR), potem plansza: **trzy felgi obok siebie**, środkowa w miejscu i rozmiarze felgi z gry (pętla) + kontakt | „Rozmiar, ET i wykończenie dobieramy pod Twoje auto. Napisz, czym jeździsz. Strzała!” | AI 4 s + BL |
 
-## Przejście z tutorialu (U3) — do potwierdzenia
-YouTube jest zablokowany w tej sesji, więc nie obejrzałem filmu. Z kadru `Tutorial-fragment.jpg` odczytuję trik projektu kaye.creatives tak: **postać i kadr stoją, a lokacja zmienia się wokół niej** (pokój → klif). Tak to zaprojektowałem:
-- **Wariant A (rekomendowany, ok. 1 kr):** dwie klatki w identycznym kadrze od pasa w górę. Twoja głowa i barki są w tym samym miejscu i w tej samej skali. W 1. klatce tło to pokój gier, w 2. wejście do biura. Twarde cięcie na trzask palców plus 2 klatki rozmycia ruchu dłoni. To ta sama mechanika co sprawdzona zmiana koszulki z v1: zgodność piksel w piksel, bez ryzyka „pływania” twarzy.
-- **Wariant B (ok. 12 kr draft + finał):** Seedance generuje 4 s płynnej przemiany tła między tymi dwiema klatkami.
+## Scena 1 — trzy sposoby realizacji
+Podgląd ruchu: `plansze/S1_previs_ekran-pan-kanapa.mp4`. To szkic z pokoju z assetu i Twojej karty, nie render.
 
-Jeśli w filmie chodziło o inny moment, podaj minutę i sekundę albo wrzuć tu krótki fragment.
+| Wariant | Jak | Kredyty | Ocena |
+|---|---|---|---|
+| **A (rekomendowany)** | S1a i S1c jako dwa klipy AI, łączone panoramą z rozmyciem | 18 + 22,5 = **40,5** | prawdziwa paralaksa nad ramieniem, ukryte cięcie jest pewne |
+| B (oszczędny) | S1a jako najazd 2.5D po jednej wygenerowanej klatce (Ty tyłem) + S1c AI | 0,5 + 22,5 = **23** | brak paralaksy przy Twojej głowie; przy wolnym najeździe i szybkim wyjściu głowy z kadru jest akceptowalny |
+| C | jedno ujęcie AI 8–9 s z obrotem kamery o 180° | ok. **40** | najładniejsze w teorii, ale największe ryzyko, że twarz i pokój „popłyną” w trakcie obrotu; odradzam |
 
-## Słowa do decyzji
-- Kwestie mówią do wielu osób („Chodźcie”, „wam”), a CTA do jednej („Napisz, czym jeździsz”). Proponuję zostawić CTA w liczbie pojedynczej, bo komentarz pisze jedna osoba. Alternatywa: „Napiszcie, czym jeździcie”.
-- „C01”: wymowa „ce zero jeden” (pliki na Drive używają też zapisu „C1”).
-- U9 potrzebuje 3 cech C01 z karty produktu. Nie zgaduję ich, bo karta jest dla mnie niedostępna.
+Rozmycie panoramy ukrywa cięcie tylko wtedy, gdy oba klipy mają ruch w tym samym kierunku. S1a kończy się ruchem kamery w prawo, a S1c zaczyna się w ruchu w prawo i hamuje na Tobie. Jest to zapisane w promptach.
+
+## Gama C01 → C19-R → RR (U9)
+- Podmiana w szczycie obrotów to trik w Blenderze, nie w AI. Przy 5 obr./s i 25 kl./s ramiona zlewają się w dysk, więc w klatce podmiany (kl. 245 i 320 w scenie) zamiany modelu nie widać. Podgląd: `plansze/BL_podmiana_modeli.mp4`.
+- Ta sama podstawka, światło i kierunek obrotu, więc pokaz trzech modeli trwa tylko ok. 10 s i nie kosztuje kredytów.
+- Wymowa: „ce zero jeden”, „ce dziewiętnaście er”, „er er”.
+- **Do potwierdzenia:** w bibliotece „RENDERY FELG” folder nazywa się **C19**, a C19-R występuje tylko na renderach aut (Audi RS5, BMW M8, Ferrari, VW Passat). Czy C19 i C19-R to ten sam wzór? Jeśli nie, potrzebuję packshotu C19-R.
+- Cechy do etykiet i kwestii, po jednej na model: wpisz je albo podeślij karty produktów. Nie zgaduję ich.
+
+## Przejście z tutorialu (U3)
+Bez zmian (wariant A, ok. 1 kr). Jeśli w filmie chodzi o inny moment, podaj minutę i sekundę.
+
+## Kwestie
+- Scena 1: „Nie o takie Turismo nam chodzi.” — tak jak napisałeś. Wcześniejsze „Chyba nie o takie Turismo nam chodzi” zostaje jako wariant do nagrania.
+- CTA w liczbie pojedynczej („Napisz…”). Alternatywa: „Napiszcie, czym jeździcie”.

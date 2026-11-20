@@ -1,4 +1,4 @@
-# Blender: C01 z ekranu na rolki, obrót i zbliżenia
+# Blender: C01 z ekranu na rolki, obrót, gama C01 → C19-R → RR
 
 Plik: `blender/scena_c01.py` (parametryczny, Blender 4.0+).
 ```bash
@@ -21,6 +21,15 @@ blender -b -P scena_c01.py -- --wheel /sciezka/C01.obj --stills
 | Zbliżenia cech C01 (U9) | macro, refleks prowadzony po ramieniu, ta sama faza obrotu we wszystkich ujęciach |
 | Plansza końcowa | C01 dokładnie w miejscu i rozmiarze felgi z gry (pętla) |
 | Okno detalu | ten sam obrót z drugiej kamery, idealnie zsynchronizowany |
+
+## Gama trzech modeli (v2.1)
+```bash
+blender -b -P scena_c01.py -- --models C01,C19-R,RR --files C01.obj,C19R.obj,RR.obj --swap
+```
+- Wszystkie modele wiszą pod jednym obracanym punktem (pivot), więc pozycja, faza i kierunek obrotu są wspólne.
+- Profil obrotów liczony klatka po klatce: pchnięcie 1,4 obr./s z wygaszaniem do 0,35; przy każdej podmianie krótki szczyt do ok. 5 obr./s (kl. 245 i 320). Model zmienia się w klatce szczytu, a rozmycie ruchu (migawka 0,5) zlewa ramiona w dysk.
+- Rolki zawsze kręcą się przeciwnie z przełożeniem 9:1.
+- Bez plików CAD każdy model dostaje **inną felgę zastępczą** (C01: 5 podwójnych ramion, C19-R: 10 prostych + grubszy pierścień, RR: 5 × 3 cienkie). Dzięki temu podmiana jest widoczna w podglądzie, ale to nie są wzory Turismo.
 
 ## Stan
 - ✅ Scena: stolik, laptop z matrycą, ściana z lameli jak tło @STAND, podstawka z dwiema rolkami (bez napisów), światło biurowe, refleks z boku, czerwony akcent.
