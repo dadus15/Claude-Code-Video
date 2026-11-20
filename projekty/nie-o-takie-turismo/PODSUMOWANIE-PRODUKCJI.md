@@ -1,4 +1,4 @@
-# „Nie o takie Turismo” — podsumowanie przed produkcją
+# „Nie o takie Turismo” — podsumowanie przed produkcją (Black Friday 27.11.2026)
 
 Stan na 20.11.2026. Wydane kredyty: **0** (saldo Higgsfield: **298,31 kr**, plan Plus).
 Szczegóły: `v2/` (scenariusz, prompty, Blender, metoda), wersja v1 w katalogu głównym tylko do wglądu.
@@ -10,7 +10,8 @@ Format: 9:16, 1080 × 1920, ok. **52 s**, klatkaż według generatora (24 kl./s,
 ## 2. Przebieg (v2.3; rytm metody Kareemy: krótkie ujęcia, cięcia w ruchu) — szczegóły przejść: `v2/06-przejscia-i-ruch.md`
 | # | Ujęcie | Głos | Źródło |
 |---|---|---|---|
-| 1 | najazd nad Twoim ramieniem na ekran: GT7, personalizacja felg | dźwięk menu | **G1** + nagranie GT |
+| 0 | **HOOK Black Friday (0–2,5 s):** „TO JEST TURISMO” (felga z gry) → „A TO JEST TURISMO” (C01 spada na rolki) → „BLACK FRIDAY · [oferta]” | stuk, bit | kadry z G0/G7 + Blender (`v2/07-black-friday-hook-i-decyzje.md`) |
+| 1 | najazd nad Twoim ramieniem na ekran: garaż gry wyścigowej, wybór felg (generowany, bez UI GT7) | dźwięk menu | **G1** + **G0** (ekran gry) |
 | 2 | szybka panorama → Ty z padem | „Nie o takie Turismo nam chodzi.” | **G2** |
 | 3 | **PSTRYK 1 = teleport**: ten sam kadr, świat się zmienia → stoisz przed biurem Turismo (nadal w koszulce GT) | — | cięcie na akcji, 2 identyczne klatki |
 | 4 | patrzysz na koszulkę, chwytasz materiał | „Coś mi nie pasuje.” | **G3** |
@@ -42,9 +43,10 @@ Długość: ok. 60 s.
 Stawki: Seedance 2.5 **draft 3 kr/s**, finalizacja **720p 7 kr/s**, **1080p 16 kr/s**; Seedream 5.0 Pro 2,5 kr; Soul Cinema 1 kr (dokładnie 0,12 kr).
 Finalizacja draftu kosztuje tyle co render w tej rozdzielczości: 720p 4 s = 28 kr, 5 s = 35 kr, 10 s = 70 kr.
 
-**Generacje wideo (v2.3, 9 klipów, 48 s):**
+**Generacje wideo (v2.4, 10 klipów, 53 s):**
 | Gen. | Długość | 1 draft | Finał 720p | Finał 1080p |
 |---|---|---|---|---|
+| G0 ekran gry (16:9): garaż, wybór felg | 5 s | 15 | 35 | 80 |
 | G1 najazd na ekran | 4 s | 12 | 28 | 64 |
 | G2 Ty z padem + pstryk 1 | 5 s | 15 | 35 | 80 |
 | G3 przed biurem (GT) | 5 s | 15 | 35 | 80 |
@@ -54,22 +56,18 @@ Finalizacja draftu kosztuje tyle co render w tej rozdzielczości: 720p 4 s = 28 
 | G7 wyjęcie felgi (slow-mo) | 5 s | 15 | 35 | 80 |
 | G8 twarz przy gamie | 4 s | 12 | 28 | 64 |
 | G9 CTA | 5 s | 15 | 35 | 80 |
-| **Suma** | **48 s** | **144** | **336** | **768** |
+| **Suma** | **53 s** | **159** | **371** | **848** |
 
-**Assety:** 3 karty postaci/produktu × 2,5 + 4 lokacje × 1 + 3 klatki przejść × 2,5 + ok. 50% powtórek ≈ **29 kr**.
+**Assety:** 3 karty × 2,5 + 4 lokacje × 1 + 3 klatki przejść × 2,5 + **3 widoki FRONT felg × 2,5** + ok. 50% powtórek ≈ **40 kr**.
 
 **Razem:**
 | Scenariusz prób | Finał 720p | 720p + G7 i G9 w 1080p | Wszystko 1080p |
 |---|---|---|---|
-| optymistyczny (1 draft/klip) | 509 kr (~28 USD) | 599 kr | 941 kr |
-| **realistyczny (2 drafty/klip)** | **653 kr (~36 USD)** | **743 kr (~41 USD)** | 1085 kr |
-| ostrożny (3 drafty/klip) | 797 kr (~44 USD) | 887 kr | 1229 kr |
+| optymistyczny (1 draft/klip) | 570 kr (~32 USD) | 660 kr | 1047 kr |
+| **realistyczny (2 drafty/klip)** | **729 kr (~41 USD)** | **819 kr (~46 USD)** | 1206 kr |
+| ostrożny (3 drafty/klip) | 888 kr (~49 USD) | 978 kr | 1365 kr |
 
-Dla porównania: reklama Kareemy kosztowała ~1180 kr.
-
-**Wniosek:** saldo 298 kr nie wystarczy. **Rekomendacja: realistyczny, 720p + 1080p dla wyjęcia felgi i CTA ≈ 743 kr.** Brakuje ok. 445 kr.
-- **Pakiet 1000 kr za 55,56 USD** (ważny 90 dni): z zapasem ok. 555 kr na trudniejsze ujęcia, np. hol czy drzwi.
-- Pakiet 500 kr za 29,41 USD + automatyczne doładowanie jako bufor: na styk.
+**Wniosek:** saldo 298 kr nie wystarczy. **Rekomendacja: realistyczny, 720p + 1080p dla wyjęcia felgi i CTA ≈ 819 kr.** Brakuje ok. 521 kr, więc **pakiet 1000 kr za 55,56 USD** (ważny 90 dni) daje zapas ok. 480 kr.
 
 Poza kredytami (0 zł): Blender, montaż, nagrania ekranu i gry. Do decyzji: muzyka z biblioteki TikToka (darmowa w aplikacji) albo Epidemic Sound (subskrypcja, konektor wymaga autoryzacji). Nie wyceniłem z góry: Topaz upscale (bez wyceny wstępnej) i ewentualny wpływ lip-syncu na cenę. Wycenię je przy pierwszym użyciu.
 
@@ -89,12 +87,13 @@ Na Twoim koncie Higgsfield jest **włączone automatyczne doładowanie**: przy s
 | Materiał | Do ujęcia |
 |---|---|
 | Nagranie Twoich kwestii (lip-sync) | G2–G5, G9 |
-| Nagranie GT7: personalizacja felg, felga w środkowej 1/3 obrazu | 1 |
+| ✅ Ekran gry generujemy (G0), bez nagrania GT7 | 1 |
 | Nagranie ekranu laptopa: Google → turismo-wheels.com → Custom Forged Wheels → C01 | 7 |
 | ✅ Koszulka GT pobrana z playstation.com (`v2/referencje_koszulki/`) | karta CS1, G1–G3 |
 | Logo Turismo Wheels w wektorze | plansza |
-| **Packshoty FRONT** C01 / C19-R / RR z Drive („RENDERY FELG”), załączone w czacie (plików 3D brak, więc gama opiera się na prawdziwych packshotach) | 9–11 |
-| **Nagranie Twojego ruchu telefonem**: drzwi → korytarz → siadanie na kanapie, laptop (referencja ruchu dla AI) | G5, G6 |
+| ✅ Widoki FRONT felg generujemy z packshotów ANGLE (Seedream), z kontrolą nałożenia | 9–11 |
+| ✅ Ruch domyślny z promptów (bez nagrania) | G5, G6 |
+| **Oferta Black Friday** (rabat / gratis / termin) do hooka i CTA | 0, 11 |
 
 ## 9. Ryzyka
 - **Prawa Sony/Polyphony** (gameplay i logo GT) oraz **plakaty z assetu** (Cyberpunk, Back to the Future). Plakaty podmienimy na rendery Turismo w montażu, za 0 kr.
