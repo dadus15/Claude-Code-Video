@@ -15,6 +15,7 @@ Zastępuje przebieg z v1 (pliki w katalogu nadrzędnym). Z v1 zostają: karta po
 - `01-scenariusz-v2.md` — przebieg S1–U10, czasy, kwestie, źródła, przejście z tutorialu.
 - `02-prompty-v2.md` — klatki i ruch (EN).
 - `03-blender-C01.md` — rola Blendera, stan, czego brakuje.
+- `04-lekcje-z-tutorialu.md` — analiza reklamy kaye.creatives, 7 zasad jakości, szkic v3 w jej rytmie.
 - `blender/scena_c01.py` — scena parametryczna (felga, podstawka z rolkami, tor wyjęcia, obrót).
 - `plansze/` — podglądy.
 
