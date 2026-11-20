@@ -1,5 +1,6 @@
 # „Nie o takie Turismo” — wersja 2.1
 
+v2.2: modele C01 / C19-R / RR w Blenderze według packshotów z turismo-wheels.com, fakty z kart produktów w opisie gamy. Sesja ma teraz dostęp do turismo-wheels.com (środowisko „Claude-Code-Video”).
 v2.1: scena 1 to jeden ruch kamery (najazd na ekran GT → panorama → Ty z padem), a U9 pokazuje gamę C01 → C19-R → RR z podmianą w obrocie (Blender).
 
 Zastępuje przebieg z v1 (pliki w katalogu nadrzędnym). Z v1 zostają: karta postaci `HERO LOCK`, bloki Cinedance, mechanika „podmiana pod kciukiem” i budżet z bramkami akceptacji.
@@ -36,11 +37,10 @@ Sekundy AI: S1a 4 · S1c 5 · U4a 4 · U4b 7 · U5 4 · U8 5 · U10 4 = **33 s**
 ## Materiały do dostarczenia
 | # | Co | Do ujęcia |
 |---|---|---|
-| 1 | **Packshoty C01, C19 (C19-R?) i RR**: FRONT + ANGLE w jednym wykończeniu (Brushed Grey), załączone w czacie (najlepiej jako JPG ok. 2000 px, bo PNG-i mają 9–13 MB), albo CAD tych modeli | U8–U10, cały Blender |
-| 1a | Potwierdzenie: czy C19 z biblioteki „RENDERY FELG” = C19-R? | U9 |
+| 1 | ✅ Packshoty C01 / C19-R / RR (`referencje_felg/`). **Do finału: pliki 3D tych trzech modeli od producenta** (OBJ/FBX/STEP) | U8–U10 |
 | 2 | Nagranie GT7: personalizacja auta / felgi, felga w środkowej 1/3 obrazu (ekran 16:9 w kadrze 9:16 pokazuje tylko środek) | U1 |
 | 3 | Nagranie ekranu laptopa: przeglądarka → Google → turismo-wheels.com → Custom Forged Wheels → C01, okno przeglądarki na pełnym ekranie, bez zakładek prywatnych | U6–U7 |
-| 4 | Po 1 cesze dla C01, C19-R i RR (z kart produktów) | U9 |
+| 4 | ✅ Cechy z kart produktów (w `01-scenariusz-v2.md`) | U9 |
 | 5 | Twoje nagranie kwestii (lip-sync) | U2, U4b, U9, U10 |
 | 6 | Przód koszulki GT (jeśli zostaje) i logo Turismo w wektorze | U2, plansza |
 | 7 | Minuta:sekunda przejścia w filmie z YouTube | U3 |

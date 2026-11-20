@@ -22,6 +22,18 @@ blender -b -P scena_c01.py -- --wheel /sciezka/C01.obj --stills
 | Plansza końcowa | C01 dokładnie w miejscu i rozmiarze felgi z gry (pętla) |
 | Okno detalu | ten sam obrót z drugiej kamery, idealnie zsynchronizowany |
 
+## Modele C01 / C19-R / RR — stan i uczciwa ocena (v2.2)
+- `blender/felgi.py`: trzy modele proceduralne zbudowane według packshotów z turismo-wheels.com (`referencje_felg/`):
+  - C01: 5 ramion rozwidlonych w „Y”, frezowane okna, deep concave, bez aero-ringu;
+  - C19-R: rodzina C19 + aero-ring z 18 kieszeniami;
+  - RR: 40 szprych + dekiel TURISMO jako **gravity cap**, który w scenie nie obraca się z felgą (Child Of bez rotacji Y).
+- Porównanie z packshotami: `plansze/BL_porownanie_felg_z_packshotami.jpg`.
+- **Ocena: te modele wystarczają do ruchu, czasu i previs, ale NIE do ultrarealistycznego finału.** Kształt ramion jest uproszczony (bryły zamiast frezowanych profili), kieszenie aero-ringu i concave są tylko przybliżone.
+- Droga do jakości packshotu (od najlepszej):
+  1. **Pliki 3D od producenta.** Packshoty Turismo to rendery CGI, więc modele istnieją. Na Drive leżą OBJ C26 i C11 od „Computex”; poproś o C01, C19-R, RR w tym samym formacie. Skrypt przyjmie je przez `--files`.
+  2. **Hybryda 2.5D (0 kr):** prawdziwy packshot FRONT obracany w montażu (idealna geometria w widoku z przodu), packshot na ekranie laptopa i na planszy; ujęcia 3/4 na podstawce z AI z packshotem jako referencją.
+  3. **Higgsfield image-to-3D** z FRONT + SIDE + ANGLE. Płatne, koszt podam przed zleceniem; jakość cienkich ramion niepewna.
+
 ## Gama trzech modeli (v2.1)
 ```bash
 blender -b -P scena_c01.py -- --models C01,C19-R,RR --files C01.obj,C19R.obj,RR.obj --swap

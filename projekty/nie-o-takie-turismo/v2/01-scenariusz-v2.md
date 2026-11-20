@@ -25,7 +25,7 @@ Format: 9:16, 1080 × 1920, 25 kl./s, ok. **54 s**.
 | U6 | 22,5–29,5 | Google → `turismo-wheels.com` → **Custom Forged Wheels** → lista (C01, C19-R i RR widoczne na liście) | 25,8–27,8 „Tutaj znajduje się lista naszych produktów.” | NAGR ekranu |
 | U7 | 29,5–31,5 | Klik w C01 → karta C01 | 29,6–31,4 „Weźmy pod lupę na przykład model C01.” | NAGR ekranu |
 | U8 | 31,5–36,0 | C01 wychodzi z ekranu i ląduje na dwóch rolkach, pchnięcie, obrót | cisza od kontaktu kciuka do 35,0 | AI 5 s (dłonie) + BL |
-| **U9** | 36,0–46,5 | **Gama na podstawce** (zbliżenie BL): C01 się kręci → „dopchnięcie”, obroty rosną do ok. 5 obr./s, model zamienia się w rozmyciu, zwalnia jako **C19-R** → ponownie podmiana na **RR**. Każdy model ma etykietę PL/EN w stylu INVENTA | 36,2–38,8 „C01 — [cecha].” · 39,8–42,4 „C19-R — [cecha].” · 43,4–46,0 „Albo RR — [cecha].” | BL (0 kr) |
+| **U9** | 36,0–46,5 | **Gama na podstawce** (zbliżenie BL): C01 się kręci → „dopchnięcie”, obroty rosną do ok. 5 obr./s, model zamienia się w rozmyciu, zwalnia jako **C19-R** → ponownie podmiana na **RR**. Każdy model ma etykietę PL/EN w stylu INVENTA | 36,2–38,8 „C01 — nasz bestseller. Wyjątkowo głęboki deep concave i frezowane detale.” · 39,8–42,4 „C19-R ma zintegrowany aero-ring: lepsza aerodynamika i jeszcze więcej charakteru.” · 43,4–46,0 „A RR to klasyka: minimalizm i obrotowy dekiel gravity cap.” | BL (0 kr) |
 | U10 | 46,5–54,0 | CTA do kamery (obok kręci się RR), potem plansza: **trzy felgi obok siebie**, środkowa w miejscu i rozmiarze felgi z gry (pętla) + kontakt | „Rozmiar, ET i wykończenie dobieramy pod Twoje auto. Napisz, czym jeździsz. Strzała!” | AI 4 s + BL |
 
 ## Scena 1 — trzy sposoby realizacji
@@ -43,8 +43,13 @@ Rozmycie panoramy ukrywa cięcie tylko wtedy, gdy oba klipy mają ruch w tym sam
 - Podmiana w szczycie obrotów to trik w Blenderze, nie w AI. Przy 5 obr./s i 25 kl./s ramiona zlewają się w dysk, więc w klatce podmiany (kl. 245 i 320 w scenie) zamiany modelu nie widać. Podgląd: `plansze/BL_podmiana_modeli.mp4`.
 - Ta sama podstawka, światło i kierunek obrotu, więc pokaz trzech modeli trwa tylko ok. 10 s i nie kosztuje kredytów.
 - Wymowa: „ce zero jeden”, „ce dziewiętnaście er”, „er er”.
-- **Do potwierdzenia:** w bibliotece „RENDERY FELG” folder nazywa się **C19**, a C19-R występuje tylko na renderach aut (Audi RS5, BMW M8, Ferrari, VW Passat). Czy C19 i C19-R to ten sam wzór? Jeśli nie, potrzebuję packshotu C19-R.
-- Cechy do etykiet i kwestii, po jednej na model: wpisz je albo podeślij karty produktów. Nie zgaduję ich.
+- ✅ Wyjaśnione: **C19-R ≠ C19.** C19-R to nowsza wersja C19 z zintegrowanym aero-ringiem (karta produktu). Packshoty z turismo-wheels.com są w `referencje_felg/`.
+- ✅ Cechy z kart produktów (turismo-wheels.com):
+  - **C01**: wyjątkowo głęboki „deep concave”, agresywne linie, frezowane detale; bestseller; 6061, monoblok lub 2-/3-częściowa; wykończenia Brushed Deep Black / Brushed Grey / Satin Black.
+  - **C19-R**: najnowsza wersja C19 z **zintegrowanym aero-ringiem** (aerodynamika + wygląd), ostro zarysowane ramiona i głębia; wykończenia Gloss Silver / Neodyme.
+  - **RR**: klasyczny, minimalistyczny wzór CNC z 6061, do luksusowych limuzyn, **obrotowy dekiel gravity cap**; zalecane wykończenie szczotkowane ręcznie.
+- Zapis fonetyczny do lektora: „dip konkejw”, „grawiti kap”.
+- Etykiety PL/EN: C01 „Deep concave” / „Deep concave” · C19-R „Zintegrowany aero-ring” / „Integrated aero-ring” · RR „Gravity cap” / „Floating centre cap”.
 
 ## Przejście z tutorialu (U3)
 Bez zmian (wariant A, ok. 1 kr). Jeśli w filmie chodzi o inny moment, podaj minutę i sekundę.

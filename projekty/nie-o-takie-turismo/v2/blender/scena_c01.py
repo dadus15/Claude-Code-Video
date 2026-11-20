@@ -4,6 +4,8 @@ Bez --wheel używana jest felga ZASTĘPCZA (nie geometria C01).
 Jednostki: metry. 25 kl./s. Kadr 9:16.
 """
 import bpy, math, sys, os, argparse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import felgi
 from mathutils import Vector
 
 argv = sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
@@ -138,6 +140,13 @@ for i,mname in enumerate(MODELS):
     h=bpy.data.objects.new('MODEL_'+mname,None); sc.collection.objects.link(h); h.parent=wheel
     f=FILES[i].strip() if i < len(FILES) else ''
     if f and os.path.exists(f): import_cad(f,h); PLACEHOLDER=False
+    elif mname=='C01':   felgi.build_c01(h, R_WHEEL, W_WHEEL, M_WHEEL, M_BLACK, M_LIP)
+    elif mname=='C19-R': felgi.build_c19r(h, R_WHEEL, W_WHEEL, M_WHEEL, M_BLACK, M_LIP)
+    elif mname=='RR':
+        # gravity cap: podąża za położeniem i przechyłem felgi, ale NIE za obrotem wokół osi (Child Of bez rotacji Y)
+        capp=bpy.data.objects.new('RR_GRAVITY_CAP',None); sc.collection.objects.link(capp)
+        cc=capp.constraints.new('CHILD_OF'); cc.target=wheel; cc.use_rotation_y=False
+        felgi.build_rr(h, R_WHEEL, W_WHEEL, M_WHEEL, M_BLACK, M_LIP, cap_parent=capp)
     else: build_placeholder(mname,h)
     holders.append(h)
 
@@ -184,7 +193,8 @@ for i,h in enumerate(holders):
     on_to   = SWAPS[i] if i < len(SWAPS) else sc.frame_end+1
     for f,vis in ((1, i==0), (on_from, True), (on_to, False)):
         if f>sc.frame_end: continue
-        for ob in [h]+list(h.children_recursive):
+        extra=[o for o in bpy.data.objects if o.name.startswith('RR_GRAVITY_CAP')] if MODELS[i]=='RR' else []
+        for ob in [h]+list(h.children_recursive)+[c for e in extra for c in [e]+list(e.children_recursive)]:
             ob.hide_render = not vis; ob.hide_viewport = not vis
             ob.keyframe_insert('hide_render', frame=f); ob.keyframe_insert('hide_viewport', frame=f)
 sc.render.use_motion_blur = True; sc.render.motion_blur_shutter = 0.5
