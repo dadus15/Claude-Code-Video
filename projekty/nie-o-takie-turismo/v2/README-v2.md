@@ -16,6 +16,7 @@ Zastępuje przebieg z v1 (pliki w katalogu nadrzędnym). Z v1 zostają: karta po
 - `02-prompty-v2.md` — klatki i ruch (EN).
 - `03-blender-C01.md` — rola Blendera, stan, czego brakuje.
 - `04-lekcje-z-tutorialu.md` — analiza reklamy kaye.creatives, 7 zasad jakości, szkic v3 w jej rytmie.
+- `05-metoda-kareemy.md` — **jej workflow krok po kroku** (karty postaci / lokacji, Seedance 2.5 draft → złoty take, szkice, rytm), prompty kart, budżet A/B.
 - `blender/scena_c01.py` — scena parametryczna (felga, podstawka z rolkami, tor wyjęcia, obrót).
 - `plansze/` — podglądy.
 

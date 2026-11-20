@@ -65,5 +65,5 @@ Kadr z tutorialu (`Tutorial-fragment.jpg`) potwierdza też metodę, którą już
 
 Koszt: v3 ma więcej ujęć, ale nie więcej sekund z generatora. Najkrótsza generacja trwa 4 s, więc kilka krótkich ujęć wycinamy z jednej generacji (np. ujęcia 7–9 z jednego klipu z cięciami w prompcie). Szacunek: ok. 36–40 s generacji, **ok. 230–250 kr z 298**. Dokładnie przeliczę, gdy zatwierdzisz strukturę.
 
-## Czego brakuje: narracja „krok po kroku”
-Dalszej części filmu (jakich narzędzi i modeli autorka używa, jak buduje prompty, jak montuje) nie przeczytałem. YouTube jest w tej sesji zablokowany, a analiza Higgsfield objęła tylko pierwszą minutę. Najprostsza droga: na YouTube pod filmem kliknij **„…więcej” → „Pokaż transkrypcję”**, zaznacz całość i wklej tutaj. Na tej podstawie dopasuję prompty i workflow 1:1 do jej metody.
+## Narracja „krok po kroku”
+Transkrypcja otrzymana. Pełna metoda i jej przełożenie na nasz spot: **`05-metoda-kareemy.md`**.
