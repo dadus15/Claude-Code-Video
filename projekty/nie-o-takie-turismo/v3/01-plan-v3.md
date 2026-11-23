@@ -139,3 +139,41 @@ Decyzja należy do Ciebie. Robię tak, jak prosisz, a ostrzeżenie zapisuję.
   - RR: BMW i7 G70 ×3;
   - `MERCEDES-BENZ-S-COUPE-C257-TURISMO-FORGED-C26` ma w nazwie **C26**, nie RR. Do wyjaśnienia;
   - C19-R: na Drive są pliki 4–15 MB (Audi RS5 8W Neodyme, BMW M8 GC Neodyme, VW Passat B9, BMW X7). Konektor Drive przesyła pliki jako tekst, więc takich nie pobierze. Do uzupełnienia ZIP-em jak C01/RR.
+
+## 10. Napisy: głos po polsku, **każda fraza z napisem po angielsku** (decyzja 23.11)
+Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL. Duże słowa (Anton) też po angielsku.
+
+| # | PL (głos) | EN (napis) |
+|---|---|---|
+| 01 | Nie o takie Turismo nam chodzi. | That's not the Turismo we meant. |
+| 02 | Od razu lepiej. | Much better. |
+| 03 | W Turismo Wheels projektujemy felgi kute na indywidualne zamówienie. | At Turismo Wheels we design custom forged wheels, made to order. |
+| 04 | Chodźcie, przedstawię wam naszą gamę. | Come on, let me show you our range. |
+| 05 | Otwieramy przeglądarkę i wpisujemy turismo-wheels.com. | Open the browser and type turismo-wheels.com. |
+| 06 | Wybieramy zakładkę Felgi aluminiowe… i Felgi kute na zamówienie. | Go to Aluminum wheels… then Custom forged wheels. |
+| 07 | Co my tu mamy? Na przykład nasz unikatowy bestseller: C01. | What do we have here? Our one-of-a-kind bestseller: the C01. |
+| 08 | Wyjątkowo głęboki deep concave i agresywne linie z charakterystycznymi frezowanymi detalami. | An extra-deep concave and aggressive lines with signature milled details. |
+| 09 | Kute aluminium 6061: większa wytrzymałość i mniejsza masa niż w felgach odlewanych. | Forged 6061 aluminium: stronger and lighter than cast wheels. |
+| 10 | Tak wygląda na BMW M4 i na Ferrari F8. | This is how it looks on a BMW M4 and a Ferrari F8. |
+| 11 | C19-R to kolejna odsłona naszego popularnego wzoru C19, wzbogacona o zintegrowany aero-ring. | The C19-R is the next take on our popular C19, now with an integrated aero-ring. |
+| 12 | Poprawia aerodynamikę, a wyraźnie zarysowane ramiona dają jej głębię i sportowy charakter. | Better aerodynamics, and sharp spokes give it depth and a sporty character. |
+| 13 | RR to klasyczny wzór frezowany z aluminium 6061. Elegancja i minimalizm, stworzone dla luksusowych limuzyn. | The RR is a classic design, CNC-milled from 6061 aluminium. Elegant and minimal, made for luxury saloons. |
+| 14 | Całość dopełnia rotacyjny dekiel gravity cap, a ręcznie szczotkowane wykończenie podkreśla każdy detal. | Finished with a floating gravity cap, and a hand-brushed finish brings out every detail. |
+| 15 | Tak wygląda na BMW i7. | This is how it looks on a BMW i7. |
+| 16 | A w Black Friday każdą z nich zamówisz 15% taniej. | And this Black Friday, every one of them is 15% off. |
+| 17 | To tylko kilka z naszych propozycji. Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała! | These are just a few of our designs. Get in touch for advice and pricing. Cheers! |
+
+## 11. Postęp 23.11 (2)
+- **Realizacje C19-R:** Audi RS5 ×3, od Ciebie (`assety/realizacje/C19-R/`).
+- **Biuro:**
+  - YouTube nie wydaje wideo serwerowi chmurowemu („Sign in to confirm you're not a bot”). Zabezpieczenia nie obchodziłem.
+  - Pobrałem publiczną miniaturę i klatki podglądu filmu: białe ściany, schody z białą balustradą, magazyn z regałami.
+  - Do tego budynek Turismo z Twoich zdjęć realizacji: biały tynk, grafitowe panele, czarne ramy, bramy garażowe.
+- **Karty lokacji** (Seedream, 3 × 2,5 = **7,5 kr**):
+  - `L2_wejscie`: fasada jak na Waszych zdjęciach, szklane drzwi z sygnetem;
+  - `L3_hol`: biały korytarz, schody z balustradą, 4 felgi z gamy, w głębi magazyn;
+  - `L4_salon`: kanapa, stolik z laptopem, 3 felgi (C01, C19-R, RR).
+- **Przejście logo:** `narzedzia/logo_morph.py`, test `podglady/przejscie_logo_test.mp4` (1,75 s, na klatkach z v2 jako atrapie).
+  - Przebieg: negatyw → logo GT zrywa się z koszulki → czerwone odłamki → sygnet Turismo → napis TURISMO → lot w kamerę przez sygnet do biura.
+  - Logo TW pochodzi z wektora ze strony (sygnet i napis rozdzielone po ścieżkach SVG).
+- Wydane na v3: **15 kr** (assety 7,5 + lokacje 7,5).
