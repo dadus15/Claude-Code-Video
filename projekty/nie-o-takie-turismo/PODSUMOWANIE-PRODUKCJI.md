@@ -1,6 +1,7 @@
 # „Nie o takie Turismo” — podsumowanie przed produkcją (Black Friday 27.11.2026)
 
 Stan na 20.11.2026. **Krok 1 (assety) wykonany: 20,72 kr** — saldo **277,59 kr**, automatyczne doładowanie włączone (zaakceptowane). Assety: `v2/assety/` (kontaktówka `00_kontaktowka_krok1.jpg`, identyfikatory `ASSETY.md`).
+**23.11: montaż roboczy v1 gotowy (bramka 4).** Plik: `v2/montaz/nie-o-takie-turismo_BF_draft_v1_720p.mp4`, opis i **korekta kosztu finalizacji (16 kr/s, wariant A = 832 kr)** w `v2/09-montaz-draft-v1.md`. Saldo 629,96 kr (auto-doładowanie zadziałało).
 Szczegóły: `v2/` (scenariusz, prompty, Blender, metoda), wersja v1 w katalogu głównym tylko do wglądu.
 
 ## 1. Koncepcja

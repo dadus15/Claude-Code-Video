@@ -10,6 +10,8 @@
 - Nazwy plików: `01_nie-o-takie.wav`, `02_cos-mi.wav` itd. Możesz też nagrać wszystko w jednym pliku, z wyraźnymi przerwami.
 
 ## Tekst (kolejność w spocie)
+**23.11:** kwestie 08–10 skrócone pod rytm montażu (`09-montaz-draft-v1.md`). Nagraj je w tempie z wersji roboczej. Kwestie na kamerę nagraj w tempie draftów, bo usta w ujęciach są już ustawione pod te zdania.
+
 | # | Kwestia | Gdzie | Uwagi do wymowy |
 |---|---|---|---|
 | 01 | „Nie o takie Turismo nam chodzi.” | na kamerę (G2) | z przekąsem, po chwili ciszy |
@@ -19,11 +21,11 @@
 | 05 | „Chodźcie, przedstawię wam naszą gamę modelową.” | na kamerę (G5) | zapraszająco |
 | 06 | „Tutaj znajduje się lista naszych produktów.” | głos z offu (ekran) | |
 | 07 | „Weźmy pod lupę na przykład model C01.” | głos z offu | „ce zero jeden” |
-| 08 | „C01 — nasz bestseller. Wyjątkowo głęboki deep concave i frezowane detale.” | głos z offu (gama) | „ce zero jeden”, „dip konkejw” |
-| 09 | „C19-R ma zintegrowany aero-ring: lepsza aerodynamika i jeszcze więcej charakteru.” | głos z offu | „ce dziewiętnaście er” |
-| 10 | „A RR to klasyka: minimalizm i obrotowy dekiel gravity cap.” | głos z offu | „er er”, „grawiti kap” |
+| 08 | „C01. Nasz bestseller, głęboki deep concave.” | głos z offu (gama, max 4,5 s) | „ce zero jeden”, „dip konkejw” |
+| 09 | „C19-R. Zintegrowany aero-ring.” | głos z offu (max 2,8 s) | „ce dziewiętnaście er” |
+| 10 | „RR. Klasyka z gravity capem.” | głos z offu (max 3 s) | „er er”, „grawiti kapem” |
 | 11 | **„Teraz możesz je zamówić z 15% off.”** | na kamerę (G8) | „piętnaście procent of”; wariant zapasowy: „…z rabatem piętnaście procent” |
-| 12 | „Rozmiar, ET i wykończenie dobieramy pod Twoje auto. Napisz, czym jeździsz. Strzała!” | na kamerę (G9) | „e-te”; uśmiech na „Strzała!” |
+| 12 | „Rozmiar, ET i wykończenie dobieramy pod Twoje auto. Napisz, czym jeździsz. Na razie!” | na kamerę (G9) | „e-te”; draft G9 ma ruch ust pod „Na razie!” (wersja „Strzała!” była blokowana przez filtr) |
 | (opc.) | „To jest Turismo. A to jest Turismo.” | hook 0–1,6 s | jeśli chcesz, żeby hook był też mówiony |
 
 Kwestie 01–05, 11 i 12 posłużą też do synchronizacji ust w generowanych ujęciach.

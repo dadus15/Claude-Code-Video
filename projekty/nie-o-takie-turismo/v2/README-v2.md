@@ -1,5 +1,7 @@
 # „Nie o takie Turismo” — wersja 2.1
 
+> **23.11: montaż roboczy v1** → [`09-montaz-draft-v1.md`](09-montaz-draft-v1.md), podgląd `montaz/nie-o-takie-turismo_BF_draft_v1_720p.mp4`.
+
 v2.2: modele C01 / C19-R / RR w Blenderze według packshotów z turismo-wheels.com, fakty z kart produktów w opisie gamy. Sesja ma teraz dostęp do turismo-wheels.com (środowisko „Claude-Code-Video”).
 v2.1: scena 1 to jeden ruch kamery (najazd na ekran GT → panorama → Ty z padem), a U9 pokazuje gamę C01 → C19-R → RR z podmianą w obrocie (Blender).
 
