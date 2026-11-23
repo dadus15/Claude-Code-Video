@@ -195,3 +195,16 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
   - odsłuch: `glos/wszystkie_kwestie_MARK.mp3`.
 - Transkrypcja whisper zgadza się z tekstem we wszystkich kwestiach. Jedyne odstępstwo to „RRR” w 13, do sprawdzenia uchem.
 - Suma mowy **84,6 s**. Skróty proponowane w czacie.
+
+## 14. Głos FINAL (23.11): **Twój głos, klon v2 na silniku ElevenLabs**
+- Druga próbka 40 s (spokojna) → voice `Daniel - Turismo v2 (PL)`, id `df90db6f-17e8-4847-81ee-d1128b5f30b9`.
+- **Test A/B:** ElevenLabs (`text2speech_v2`, variant `elevenlabs`, voice_type `element`) kontra Seed Audio. ElevenLabs czytelny, Seed przekręcił kwestię 17. Wybrany ElevenLabs.
+- **Kwestie:** 17 kwestii + skróty `11s` (C19-R) i `13s` (RR) w `glos/daniel_el/`, master FLAC w `glos/daniel_el/master/`. Odsłuch: `glos/wszystkie_kwestie_DANIEL_v2.mp3`.
+- **Długość mowy:** pełna wersja 78,6 s; skrócona 54,2 s (bez 09, 12, 14; 11→11s, 13→13s).
+- **Do odsłuchu:** 12 („głębię i sportowy”), 15 („Tak wygląda…”).
+- Mark i klon v1 zostają w repo jako zapas.
+
+## 15. Lokacje v2 (23.11): felgi na ścianach **inne niż C01 / C19-R / RR**
+- `L3_hol_v2`: AV01, C07, X03 (bronze), DVF-EVO-R (black).
+- `L4_salon_v2`: C10, D05, FP04.
+- Seedream edit, 2 × 2,5 kr. C01, C19-R i RR pojawiają się tylko jako bohaterowie (kafelki, realizacje).
