@@ -13,32 +13,28 @@
 | 6 | Bez rolek: scena przy laptopie | — | Nowy blok przy laptopie (p. 3). Montaż pokazuje to, o czym mówisz: wskazania na feldze, przybliżenia, kafelek modelu i realizacje |
 | 7 | Za bardzo umięśniony | Karta postaci + obcisła koszulka | Nowa karta postaci: szczupła, przeciętna sylwetka, koszulka regular fit. Najlepiej z Twoim aktualnym zdjęciem całej sylwetki jako referencją |
 
-## 2. Tekst do nagrania (v3)
+## 2. Tekst do nagrania (v3.1: opisy modeli z polskiej wersji turismo-wheels.com)
 Zasady nagrania jak w `../v2/08-nagranie-glosu.md`: każda kwestia osobno, 3 podejścia, WAV/48 kHz, 15–20 cm od ust, 10 s ciszy na końcu.
 
 | # | Kwestia | Gdzie |
 |---|---|---|
 | 01 | „Nie o takie Turismo nam chodzi.” | kanapa, pad (pstryk zaraz po) |
 | 02 | „Od razu lepiej.” | przed biurem, po transformacji logo |
-| 03 | „W Turismo Wheels projektujemy customowe felgi kute na indywidualne zamówienie.” | hol |
+| 03 | „W Turismo Wheels projektujemy felgi kute na indywidualne zamówienie.” | hol |
 | 04 | „Chodźcie, przedstawię wam naszą gamę.” | hol → salon |
 | 05 | „Otwieramy przeglądarkę i wpisujemy turismo-wheels.com.” | laptop |
-| 06 | „Wybieramy zakładkę Aluminium wheels… i Custom forged wheels.” | laptop |
+| 06 | „Wybieramy zakładkę Felgi aluminiowe… i Felgi kute na zamówienie.” | laptop. Nazwy zakładek mówisz po polsku (PL wersja strony) albo po angielsku: „Aluminum wheels… Custom forged wheels”. Wybierz jedną wersję |
 | 07 | „Co my tu mamy? Na przykład nasz unikatowy bestseller: C01.” | laptop (klik) |
-| 08 | „Wyjątkowo głęboki deep concave, agresywne linie i frezowane detale.” | C01 |
-| 09 | „Tak wygląda na Ferrari 296 GTB i na Mercedesie E63.” | C01, realizacje |
-| 10 | „Dalej C19-R: najnowsza wersja C19 ze zintegrowanym aero-ringiem.” | C19-R |
-| 11 | „Lepsza aerodynamika i jeszcze więcej charakteru.” | C19-R, realizacje |
-| 12 | „I RR: klasyka. Minimalizm, ręcznie szczotkowane wykończenie i obrotowy dekiel gravity cap.” | RR |
-| 13 | „Na Rolls-Roysie Wraith wygląda tak.” | RR, realizacja |
-| 14 | „A w Black Friday każdą z nich zamówisz 15% taniej.” | laptop (propozycja, to spot BF) |
-| 15 | „To tylko kilka z naszych propozycji. Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!” | zamykasz laptop |
-| (opc.) | „To jest Turismo. A to jest Turismo.” | hook |
-
-Do zatwierdzenia:
-- Kwestię 15 lekko wygładziłem. W Twojej wersji było „to tylko jedno z kilku propozycji”.
-- Kwestie 09, 11 i 13 zależą od tego, jakie realizacje pokażemy. Na stronie są C01 na Ferrari 296 GTB i Mercedesie E63 W214 oraz RR na Rolls-Roysie Wraith. **Dla C19-R potrzebuję zdjęć realizacji.**
-- Kwestię „Coś mi nie pasuje” usuwam, bo transformacja logo pokazuje zmianę koszulki od razu.
+| 08 | „Wyjątkowo głęboki deep concave i agresywne linie z charakterystycznymi frezowanymi detalami.” | C01 (strona: „Wyjątkowo głęboki deep concave i agresywne linie z charakterystycznymi frezowanymi detalami…”) |
+| 09 | „Kute aluminium 6061: większa wytrzymałość i mniejsza masa niż w felgach odlewanych.” | C01 (strona: „zwiększona wytrzymałość przy jednoczesnej redukcji masy felgi”) |
+| 10 | „Tak wygląda na BMW M4 i na Ferrari F8.” | C01, realizacje (Twoje zdjęcia: BMW M4 G83 Satin Bronze, Ferrari F8 Gloss Black) |
+| 11 | „C19-R to kolejna odsłona naszego popularnego wzoru C19, wzbogacona o zintegrowany aero-ring.” | C19-R (strona) |
+| 12 | „Poprawia aerodynamikę, a wyraźnie zarysowane ramiona dają jej głębię i sportowy charakter.” | C19-R, realizacje (Drive: Audi RS5, BMW M8, VW Passat B9, BMW X7) |
+| 13 | „RR to klasyczny wzór frezowany z aluminium 6061. Elegancja i minimalizm, stworzone dla luksusowych limuzyn.” | RR (strona) |
+| 14 | „Całość dopełnia rotacyjny dekiel gravity cap, a ręcznie szczotkowane wykończenie podkreśla każdy detal.” | RR: felga się kręci, a dekiel stoi |
+| 15 | „Tak wygląda na BMW i7.” | RR, realizacja (Twoje zdjęcia) |
+| 16 | „A w Black Friday każdą z nich zamówisz 15% taniej.” | laptop (propozycja, to spot BF) |
+| 17 | „To tylko kilka z naszych propozycji. Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!” | zamykasz laptop |
 
 ## 3. Plan montażu (beat sheet, ok. 70 s)
 Oznaczenia:
@@ -131,3 +127,15 @@ Decyzja należy do Ciebie. Robię tak, jak prosisz, a ostrzeżenie zapisuję.
 - Śr 25.11: generacje, montaż roboczy v3 z Twoim głosem.
 - Czw 26.11: poprawki, finał 1080p.
 - Publikacja 26.11 wieczorem albo 27.11 rano, wyłącznie na Twoje polecenie.
+
+## 9. Postęp 23.11 (po południu)
+- Assety v3 (Seedream, 3 × 2,5 = **7,5 kr**), w `assety/`:
+  - `L1_pokoj_ps5_gt7.jpg`: pokój z assetu, PS5 Slim, DualSense, na ekranie GT7 (GT Auto);
+  - `CS1_GT_slim.jpg`, `CS2_TW_slim.jpg`: karty postaci, szczuplejsza sylwetka, koszulki regular fit.
+- Ekran gry to **oficjalne screenshoty GT7 z playstation.com** (`assety/referencje_gt_ps5/`): GT Auto, edytor malowania, wyścigi. Oficjalne logo GT posłuży do transformacji.
+- Logo Turismo Wheels w wektorze: `assety/logo/turismo-wheels-logo.svg` (wyciągnięte z kodu strony) + sygnet PNG.
+- Realizacje:
+  - C01: BMW M4 G83 Satin Bronze ×3, Ferrari F8 Gloss Black ×3;
+  - RR: BMW i7 G70 ×3;
+  - `MERCEDES-BENZ-S-COUPE-C257-TURISMO-FORGED-C26` ma w nazwie **C26**, nie RR. Do wyjaśnienia;
+  - C19-R: na Drive są pliki 4–15 MB (Audi RS5 8W Neodyme, BMW M8 GC Neodyme, VW Passat B9, BMW X7). Konektor Drive przesyła pliki jako tekst, więc takich nie pobierze. Do uzupełnienia ZIP-em jak C01/RR.
