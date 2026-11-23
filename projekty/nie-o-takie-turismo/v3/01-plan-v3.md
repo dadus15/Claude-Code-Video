@@ -184,3 +184,14 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
 - **Do odsłuchu** (transkrypcja whisper wychwyciła możliwe błędy wymowy): 05 „turismo-wheels.com”, 07 „C01”, 11 „C19-R”, 13 „RR”, 14 „wykończenie”, 12 „ramiona”.
 - **⚠️ Długość:** same kwestie trwają **ok. 92 s**, więc spot wyszedłby ok. 1:45. Propozycje skrótów są w odpowiedzi w czacie.
 - Mercedes S Coupé ma felgi **RR**: zdjęcia przemianowane w `assety/realizacje/RR/`.
+
+## 13. Głos: decyzja 23.11 → **ElevenLabs, głos „Mark”** (preset w Higgsfield)
+- Klon głosu Daniela odrzucony: próbka była nagrana w stresie.
+- Głos „Daniel” z ElevenLabs nie jest dostępny w Higgsfield („Voice not found”). Dostępu do API ElevenLabs nie było (brak klucza).
+- **Wybrany: Mark** (`text2speech_v2`, variant `elevenlabs`, voice_id `27c04473-84a9-4b60-a41f-c8e8458bd4f1`). 17 kwestii + skrót 11b, ok. 0,15 kr/kwestia.
+- Pliki:
+  - surowe: `glos/mark/m*.mp3`;
+  - master (-16 LUFS, FLAC): `glos/mark/master/`;
+  - odsłuch: `glos/wszystkie_kwestie_MARK.mp3`.
+- Transkrypcja whisper zgadza się z tekstem we wszystkich kwestiach. Jedyne odstępstwo to „RRR” w 13, do sprawdzenia uchem.
+- Suma mowy **84,6 s**. Skróty proponowane w czacie.
