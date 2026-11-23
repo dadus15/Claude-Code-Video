@@ -208,3 +208,13 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
 - `L3_hol_v2`: AV01, C07, X03 (bronze), DVF-EVO-R (black).
 - `L4_salon_v2`: C10, D05, FP04.
 - Seedream edit, 2 × 2,5 kr. C01, C19-R i RR pojawiają się tylko jako bohaterowie (kafelki, realizacje).
+
+## 16. Głos FINAL v2 (23.11): **Mark → speech-to-speech → Twój głos**
+- Porównanie A/B/C: wybrana **C**. Intonacja i tempo zawodowego lektora (Mark, ElevenLabs), barwa Twojego głosu (`voice_change` na klon v2 `df90db6f…`).
+- Wszystkie kwestie przerobione jednym przebiegiem i pocięte według znaczników: `glos/sts/final/v*.flac` (+ `segments.json`, `words_whisper.json`).
+- **„deep concave”, 3 warianty:**
+  - 08a: „deep concave” (pisownia angielska);
+  - 08b: „dipkonkejw” (fonetycznie, jednym słowem);
+  - 08c: „wyjątkowo głęboka wklęsłość…” (bez angielskiego terminu).
+  - Odsłuch: `glos/deep_concave_3_warianty.mp3`.
+- Całość: `glos/wszystkie_kwestie_FINAL_Mark-w-glos-Daniela.mp3` (z 08b, skróty 11b i 13s na końcu).
