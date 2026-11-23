@@ -54,3 +54,17 @@ Saldo: 490,34 kr. Przy tym budżecie zadziała automatyczne doładowanie (+545 k
 2. Zdjęcia prawdziwego holu i sales roomu: 5–10 z różnych stron, w świetle dziennym, plus wejście do budynku.
 3. Kaye / Red Bull: higgsfield.ai nie otwiera się z tego środowiska. Potrzebne zrzuty ekranu bloga albo sam film.
 4. Wybór lektora (A Mark, B Bram, C Marcus, D Callum).
+
+## Klatki kluczowe v4 (23.11, Nano Banana Pro 2k, 8 × 2 kr = 16 kr)
+`v4/klatki/` (JPG w repo, PNG lokalnie):
+
+| Klatka | Opis | Job |
+|---|---|---|
+| K0_hook_gra | ekran TV, felga w grze, widoczne subpiksele | 13210ffe-44fd-406c-94a1-3fdee3f111a9 |
+| K1_hook_prawdziwa_C01 | prawdziwa C01 Satin Bronze na BMW M4, ten sam kadr | 37e179d7-4347-461c-b715-0268038318ea |
+| K2_zdjecie_koszulki | zdejmowanie koszulki GT w pokoju gracza | c8382172-eddb-4113-bf31-afb3b8163c21 |
+| K3_odsloniecie_TW | koszulka TW przed biurem, materiał przy obiektywie | 443a8edb-0237-4e9f-889a-6d6336ce0e4d |
+| K4_hol_vossen | hol: rząd felg z gamy, listwa światła, oś czasu, logo | 561cb524-4e65-4ff2-98d1-eea2620af24f |
+| K5_hol_sciana_felg | detal ściany felg (insert) | be77a3de-0b76-470f-bf7f-8c82174a710b |
+| K6_salon_szeroki | sales room: ściana-galeria, stół konsultacyjny | 8b52c3e2-8184-4665-8708-5f45d617cb9c |
+| K7_salon_laptop | plan średni przy laptopie (do ujęć z mową) | 2d60b1e8-4834-47c6-a54e-fb049d3728d4 |
