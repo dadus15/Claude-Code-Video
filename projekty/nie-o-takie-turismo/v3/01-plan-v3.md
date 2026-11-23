@@ -177,3 +177,10 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
   - Przebieg: negatyw → logo GT zrywa się z koszulki → czerwone odłamki → sygnet Turismo → napis TURISMO → lot w kamerę przez sygnet do biura.
   - Logo TW pochodzi z wektora ze strony (sygnet i napis rozdzielone po ścieżkach SVG).
 - Wydane na v3: **15 kr** (assety 7,5 + lokacje 7,5).
+
+## 12. Głos (23.11)
+- **Klon głosu:** z Twojej próbki WhatsApp (29 s). Higgsfield voice `Daniel - Turismo (PL)`, voice_id `b16b6e39-0ba1-42ba-b197-06353d17c5b5`.
+- **Kwestie:** 17 kwestii (Seed Audio) w `glos/kwestie/`, master (-16 LUFS, bez ciszy) w `glos/master/*.flac`. Odsłuch wszystkich: `glos/wszystkie_kwestie_glos_daniela.mp3`. Koszt ok. 10 kr.
+- **Do odsłuchu** (transkrypcja whisper wychwyciła możliwe błędy wymowy): 05 „turismo-wheels.com”, 07 „C01”, 11 „C19-R”, 13 „RR”, 14 „wykończenie”, 12 „ramiona”.
+- **⚠️ Długość:** same kwestie trwają **ok. 92 s**, więc spot wyszedłby ok. 1:45. Propozycje skrótów są w odpowiedzi w czacie.
+- Mercedes S Coupé ma felgi **RR**: zdjęcia przemianowane w `assety/realizacje/RR/`.
