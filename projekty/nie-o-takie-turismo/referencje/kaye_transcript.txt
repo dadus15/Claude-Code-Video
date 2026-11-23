@@ -1,0 +1,321 @@
+[00:00.00] People online are claiming you don't need After Effects, Premiere Pro or even a motion designer anymore
+[00:05.40] because Claude can build high-end motion graphics and edit full social media videos for you.
+[00:10.48] I wanted to see for myself if that's actually true.
+[00:12.88] So I called my motion designer friend to put Claude head-to-head against real human skills on my own projects.
+[00:19.24] Today we're running two blind tests so you can guess who made what
+[00:22.52] and at the end I'm breaking down what motion designers actually charge on the market so you can compare it to cost.
+[00:28.16] Hey I'm Karima and welcome back to my creative space.
+[00:31.04] Today I'm walking away with my exact car workflow for turning raw clips into high retention reels
+[00:36.36] in a fraction of time at cost giving you a massive head start as a creator.
+[00:40.80] Right now every expert and creator who goes viral with talking head videos has one thing in common
+[00:46.84] that's high-end visual editing that makes it impossible to scroll past
+[00:51.20] because a raw clip of someone talking to a camera isn't enough anymore.
+[00:54.64] And usually getting that level of visual editing is the biggest bottleneck for creators.
+[00:59.32] Because think about the value of this.
+[01:00.88] Instead of paying a motion designer hundreds of dollars or spending months sucking tutorials
+[01:06.04] you can just write what you want in a chat and get a finished edit in minutes.
+[01:09.96] You can use this to level up your own content or literally just offer this as a service to brands
+[01:15.04] and other creators who are willing to pay money for content.
+[01:17.64] Today we're running two tests so first that's a classic talking head reel where I'm on screen
+[01:23.00] and Claude adds motion graphics, captions and b-rolls around me.
+[01:26.36] Then in part two we only keep my voice over and make Claude generate a full motion graphics video from zero
+[01:32.00] and that second test is the one that actually blew my mind.
+[01:35.08] As you go you'll guess which edit was made by human and which one was built by Claude
+[01:39.24] and at the end I'm revealing the real market cost and giving you my custom motion skill for free.
+[01:45.16] To make this tutorial actually useful open Claude on your laptop right now
+[01:49.32] and follow along with me step by step.
+[01:51.56] To make this a fair test I recorded a raw vertical talking head video for my Instagram page
+[01:56.80] sent the exact same unedited clip to my motion designer friend and now I'm handing it to Claude.
+[02:02.16] Before we jump into the steps here is the best part for the beginners.
+[02:06.12] You don't need Claude code, After Effects or Premium Pro for this.
+[02:09.84] If you know how to send a text message and attach a file
+[02:12.80] you can do this entire workflow inside the regular Claude chat pod.
+[02:16.44] Here's how it works behind the scenes.
+[02:17.92] Claude pulls out frames from your video to see where your face sits.
+[02:21.44] Reads your script to cut out every stylus and bad take automatically.
+[02:25.52] Royces the motion graphics for you so every animation lands on the exact words you say.
+[02:30.16] Now before we upload our video there is one quick setup step
+[02:33.36] that makes your edit look 10 times more professional.
+[02:36.00] Text animations alone aren't enough.
+[02:38.16] Vinyl Reels also cut the cool visual clips and images while you talk and
+[02:42.56] nobody wants to waste hours hunting for stock footage right?
+[02:45.60] So before I start my chat, I connect Hazel's MCP straight into Claude.
+[02:49.28] Quick explanation, if you haven't tried this yet,
+[02:51.36] connecting Hazel's MCP gives Claude direct access to image and video generation models
+[02:56.64] right inside your conversation.
+[02:58.48] That means I don't have to open another tab to make my visuals.
+[03:01.84] While Claude is building my motion graphics,
+[03:03.68] it automatically generates custom AI photos and video clips through
+[03:07.52] and layers them straight into my edit.
+[03:09.68] Once you have Hazel's MCP connected, open a new Claude chat
+[03:13.36] and drop in four simple things and you can literally do this
+[03:16.88] with any vertical video on your phone right now.
+[03:19.36] So first, upload your raw unedited talking head clips straight from your phone or camera.
+[03:23.52] What if I told you the safest AI tool you use every day is actually lying to you?
+[03:29.28] Let me explain.
+[03:30.08] And don't even bother cutting out your mistakes or awkward pauses
+[03:33.84] because Claude handles all the cutting for you.
+[03:36.16] After that, I paste in the script of what I say in the video
+[03:38.72] so Claude knows every exact word
+[03:40.96] and can sync the cuts and captions to my voice.
+[03:43.60] Next, and this is actually one of the most important parts of this tutorial,
+[03:47.92] I drop in two or three visual references.
+[03:50.32] It can be a reel whose editing style you love
+[03:52.64] or grab a screenshot of a font, perhaps, or a color palette from Pinterest
+[03:57.20] and I attach it straight into the chat.
+[03:59.68] And the more references you feed AI, the better.
+[04:02.08] And input number four is a secret weapon that makes this whole thing work.
+[04:06.96] I attach my Claude motion skill from the free guide and description.
+[04:10.40] I built this file with all the layout rules, spacing math,
+[04:13.52] and smooth animation curves already baked in.
+[04:16.08] So all you have to do is drag and drop my file into your chat
+[04:19.76] and Claude automatically knows how to design like a pro.
+[04:22.64] Once all my assets are in, I write a simple brief telling Claude what I'm going for.
+[04:27.84] Notice I'm not saying anything technical.
+[04:30.08] I'm not naming complex video effects.
+[04:32.24] I'm just talking to it exactly how I text my motion designer friend
+[04:35.68] and describe what I want at every moment of the video.
+[04:38.72] Okay, let's hit send and see what happens.
+[04:41.92] While Claude puts the first version together,
+[04:43.92] I want to talk about something super important
+[04:45.84] that holds a lot of creators back.
+[04:47.52] A lot of people worry that using references means you're stealing,
+[04:50.96] but that's a very huge misconception.
+[04:53.92] Every filmmaker and designer borrows layouts, styles, and energy from things they love.
+[04:58.32] Taking a style reference isn't copying frame for frame.
+[05:01.20] It's giving the AI a clear visual example so it understands your taste.
+[05:05.20] Okay, it's done and gave me a file right here in the chat.
+[05:10.08] Just click download and let's watch.
+[05:13.28] Now before I show it, keep one thing in mind.
+[05:15.92] The first generation is never the final version.
+[05:18.64] Even when you work with a real human editor,
+[05:20.56] version one is always a rough draft.
+[05:22.64] So don't look at the first pass and think that's the limit
+[05:25.68] because the iteration step is where this actually gets crazy.
+[05:29.44] Wait, no way.
+[05:31.36] Did Claude actually just make that?
+[05:34.08] Okay, that's insane.
+[05:35.52] See, it stripped out every pause
+[05:38.40] and matched the brand colors from the references
+[05:40.80] and I see the captions are perfectly saved
+[05:42.88] and yeah, the overall generations are also here.
+[05:46.64] Looks pretty solid, right?
+[05:47.92] Now I want you to look closer.
+[05:49.28] For the algorithm, the pacing in the first five seconds still feel a little bit too slow
+[05:54.16] and the headline text in the top card is sitting a bit too small
+[05:58.64] and in the middle section where I explain the main point,
+[06:01.44] it stays on my face for four seconds straight
+[06:03.76] without enough motion happening on the screen.
+[06:06.24] By the way, I have great news for you.
+[06:08.64] You don't have to go back and redo everything from scratch.
+[06:11.76] I just dropped in some more visual references for that middle section.
+[06:15.76] Okay, Claude updates the instructions, builds the video again
+[06:19.60] and it just gave me version two.
+[06:21.28] Okay, let's watch it.
+[06:22.24] Now instead of just showing you the Claude's final edit,
+[06:24.88] let's make this interesting.
+[06:26.32] Here are both videos, edit A and B.
+[06:28.72] One of those took my motion designer friend five hours to build by hand
+[06:32.88] and the other was built right here in Claude.
+[06:35.28] Take a close look at the cuts, the typography, the pacing and the visuals
+[06:40.96] and lock your guests in the comments before I reveal the answer.
+[06:44.00] Okay, do you have your guests locked in?
+[06:46.00] Here is the truth, edit A was built by my motion designer friend
+[06:50.00] and edit B was built entirely with Claude and his philanthropy.
+[06:53.84] What if I told you the safest AI tool you use every day
+[06:57.44] is actually lying to you?
+[06:59.60] Let me explain.
+[07:00.48] What if I told you the safest AI you use every day
+[07:03.76] is actually lying to you?
+[07:05.28] Let me explain.
+[07:06.24] Okay, let's look at both of them honestly.
+[07:08.56] In edit A, you can immediately see that my friend has a lot of experience.
+[07:14.00] The way the camera pushes in naturally with my voice
+[07:17.84] and the organic rhythm of the wishes and the hits feel super handcrafted.
+[07:22.00] But look at edit B for a second.
+[07:24.24] The text appears on the screen right on beat.
+[07:27.04] I really like the transitions it created between the shots
+[07:30.48] and the custom B-roll clips it generated through hits feel fit the exact mood of my script.
+[07:35.20] Okay, be honest with me.
+[07:36.32] If Claude's version showed up on your Instagram feed today,
+[07:39.60] would you ever scroll past it thinking a chatbot edited it?
+[07:42.80] I personally think that the gap between these two
+[07:45.76] is way smaller than people want to admit.
+[07:47.76] Now look at the time comparison.
+[07:49.52] It took me about 50 minutes to gather references,
+[07:52.80] chatbot plot and do the iterations.
+[07:55.52] Now my motion designer friends spent about five and a half hours sitting in focus
+[07:59.92] editing to build this.
+[08:01.20] But wait until you see the cost difference coming up at the end
+[08:04.48] because that is where the numbers get wild.
+[08:06.88] Are you guys ready for part two?
+[08:08.48] Because editing on top of a talking head video is one thing
+[08:11.44] and what we are about to test next is on a completely different level.
+[08:15.68] Real quick before we jump in,
+[08:17.36] only 10% of you watching right now are actually subscribed.
+[08:20.40] So if you're enjoying this test and learning something useful,
+[08:23.36] you can apply to your own content
+[08:25.44] hit that subscribe button and tap the notification bell right now
+[08:28.72] so you never miss my next breakdown.
+[08:30.56] Now think about why this matters so much.
+[08:32.80] Bottle wheels are the number one way brands and creators grow right now
+[08:36.56] so companies and influencers are willing to pay
+[08:39.12] serious money for product explainers,
+[08:41.44] launch videos and educational shorts that actually bring views.
+[08:45.12] Normally a full motion video like these are the hardest
+[08:48.08] and most expensive ones to produce which means
+[08:50.64] if Claude can pull this off in minutes,
+[08:52.88] you have a high paying skill you can use for your own page
+[08:56.64] or sell to clients without ever touching anything software.
+[08:59.44] Now let's push this workflow to an absolute limit.
+[09:01.76] What if we take that exact same raw video,
+[09:04.24] remove my face from the video completely
+[09:06.64] and force Claude to build a full screen motion design reel
+[09:09.36] from start to finish only using my voice.
+[09:12.32] Let's build it using the exact same setup.
+[09:14.96] I open our chat with Tasteful MCP Connected
+[09:18.56] and I upload the exact same raw talking head video
+[09:21.20] except this time I tell Claude we are only keeping the audio track.
+[09:25.20] Next I drop in my script again and upload a folder
+[09:28.16] full of pure motion design references.
+[09:30.56] Basically the more the better.
+[09:32.40] Then I attach my custom Claude motion skill
+[09:34.96] and this time I have a different one
+[09:37.28] and if you're wondering why my Claude motion outputs
+[09:40.08] actually look like real design work,
+[09:42.40] this skill is the entire reason.
+[09:44.80] Remember keep watching this video until the end
+[09:47.20] because I'm sharing this exact skill for free at the end of the video.
+[09:50.72] Now I type in my plain English request to Claude
+[09:54.40] and notice again no technical words.
+[09:57.36] I'm just describing the aesthetic, the pacing and the assets I hit send
+[10:01.76] and let's see what Claude builds for us.
+[10:03.84] Okay let's download the first pass and check it out.
+[10:06.32] Oh my god this is actually insane.
+[10:10.24] First of all the fact that it took my raw voiceover
+[10:13.20] and built an entire visual story from nothing is wild.
+[10:18.48] This is actually really good for our first attempt.
+[10:20.80] The typography and text are right in sync with my voice
+[10:24.56] and take a look at the generation sit at it.
+[10:26.56] But we still have something to fix.
+[10:28.32] The main typography is sitting too small in the center
+[10:31.28] and the glass cries they enter a little too slowly
+[10:34.40] so the visual energy drags behind the voiceover.
+[10:37.76] Watch how easy it is to fix both of those.
+[10:39.84] So I just send another reply to Claude.
+[10:42.40] Now you already know the drill.
+[10:44.00] I send the exact same voiceover and brief to my motion designer friend
+[10:47.60] so he could build his own version from scratch.
+[10:50.08] Here are both finished videos side by side.
+[10:52.96] Video A and Video B.
+[10:54.72] Watch the floating frames, the lighting depth,
+[10:57.36] the typography speed and the transitions.
+[11:00.96] And drop your second guess in the comments.
+[11:02.96] Let's see if you can actually spot the AI this time.
+[11:05.84] Time to reveal the truth.
+[11:08.16] In this round, Video A was built by Claude with Higgs Hold MCP
+[11:11.92] and Video B was made by the Motion Design friend.
+[11:14.40] What if I told you the safest AI tool
+[11:16.80] you use every day is actually lying to you?
+[11:19.36] Let me explain.
+[11:20.00] What if I told you the safest AI tool
+[11:22.32] you use every day is actually lying to you?
+[11:25.04] Let me explain.
+[11:25.76] Be honest with me.
+[11:26.64] Did Video A catch you off guard?
+[11:28.72] Because when I opened this version from Claude,
+[11:31.04] I genuinely sat back in my chair and stared at my screen.
+[11:34.40] Look at how clean these video clips look,
+[11:36.96] how smooth the push and camera motion feels
+[11:40.72] and how the text changes on the exact beat of my voice.
+[11:44.16] Nobody watching this on Instagram or shorts
+[11:46.96] would ever call this AI slop
+[11:48.88] if I hadn't done this myself.
+[11:50.48] I would 100% assume a skilled motion designer
+[11:53.04] spent an entire day working on this.
+[11:55.20] But also when you look at Video B from my friend,
+[11:58.00] you see why he's so good at what he does.
+[12:00.56] The custom 3D camera transition between the topics
+[12:03.76] and the microbalances on the icons
+[12:05.76] and the way he paints the visual creativity
+[12:07.68] gives that extra layer of human personality.
+[12:10.40] Looking at both of these side by side,
+[12:12.00] I'm genuinely torn on which one wins
+[12:13.84] for everyday social media content
+[12:15.76] and seeing an AI chatbot pull this off in under an hour
+[12:20.24] forces me to question something.
+[12:22.24] When AI models are advancing this fast,
+[12:24.80] what actually happens next?
+[12:26.16] Before I break down what motion designers
+[12:28.08] actually charge on the market
+[12:29.44] and give you my final verdict,
+[12:31.28] let's look at the real pros and cons of both sides.
+[12:34.08] First, where does Claude win hands down?
+[12:36.24] That's speed and consistency at scale.
+[12:38.72] On Instagram and shorts,
+[12:40.40] the creators who win are the ones that test ideas fast,
+[12:43.84] spot what works and double down immediately
+[12:46.40] and finishing a full reel in just 45 minutes
+[12:49.36] instead of waiting days
+[12:50.64] lets you put out five videos
+[12:52.48] in the time it used to take to make just one.
+[12:54.96] The second biggest advantage is zero revision guilt
+[12:57.84] plus custom visuals on demand.
+[12:59.92] With a human designer,
+[13:01.04] you feel bad texting at midnight
+[13:02.80] to change the font for the fourth time.
+[13:04.72] But in Claude, you can iterate as many times as you need
+[13:08.56] and using Huxfield MCP,
+[13:10.00] you can generate fresh AI B-rolls right in the chat
+[13:13.04] instead of using overused stock clips.
+[13:15.28] But to be fair,
+[13:16.16] Claude has two clear downsides.
+[13:18.40] First, it has zero creative intuition.
+[13:20.48] So weak references will give you generic results.
+[13:23.60] Second, there is no manual control.
+[13:26.16] If a word sits slightly off center,
+[13:28.16] you can't just drag it with your mouse.
+[13:30.32] You have to prompt again and wait for a new file.
+[13:33.20] And what about a human motion designer like my friend?
+[13:36.00] When basic editing gets easy,
+[13:38.24] human taste, humor and emotional timing
+[13:40.96] becomes more valuable than ever.
+[13:43.04] My friend builds custom transitions and micro details.
+[13:46.40] I wouldn't even know how to put in a prompt
+[13:48.40] and the only real downside is speed and budget.
+[13:51.60] Just look at the real market math.
+[13:54.16] Hiring a freelance motion designer
+[13:55.76] for a talking head reel like Part 1
+[13:58.00] normally costs around $200 to $500 per video
+[14:01.60] and full motion video from scratch like in Part 2
+[14:05.36] easily runs $500 or more for a single short clip.
+[14:08.96] With the workflow I showed you today,
+[14:10.56] all you need is a regular Claude subscription
+[14:13.12] and a handful of credits for the AI visuals
+[14:15.44] which comes out just a couple of dollars per reel.
+[14:17.84] Which brings me to my honest verdict.
+[14:20.24] Everyone frames this as AI versus human
+[14:22.80] like Claude is here to steal every designer's job
+[14:26.16] and that's where people miss the whole point.
+[14:28.16] Even for real editors,
+[14:29.92] using AI alongside your skills is insane.
+[14:33.36] It knocks out 80% of the heavy lifting in videos
+[14:36.32] so you can put your energy into the final 20% of human taste.
+[14:40.08] And if you're a creator with zero editing experience
+[14:42.96] you have no excuse not to try it out today.
+[14:46.00] I put a step by step guide with my exact copy paste prompts
+[14:49.36] and both of my custom Claude motion skills
+[14:51.76] in the free guide in the description below
+[14:53.68] so literally anyone can open it up,
+[14:56.24] drop in any clip and build their first motion reel
+[14:58.72] in the next 20 minutes.
+[14:59.92] Tell me in the comments
+[15:00.88] did you guess both blind tests right
+[15:02.72] and whose edit would actually make you stop scrolling?
+[15:06.08] Claude's or my motion designer friends?
+[15:08.16] Drop a like if this made AI motion design
+[15:10.40] a little less confusing.
+[15:11.92] Subscribe to my creator space for more breakdowns
+[15:14.72] and tag me KaiCreatives in your works.
+[15:17.44] Now go make some art and I'll see you in my next one.
+[15:20.24] Bye everyone.
