@@ -1,0 +1,162 @@
+[
+ {
+  "index": 101,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "f1373f24-3b96-433f-9a68-e595810ef608",
+   "prompt": "Nie, nie, nie... Nie o takie Turismo nam chodzi!"
+  }
+ },
+ {
+  "index": 107,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "f1373f24-3b96-433f-9a68-e595810ef608",
+   "prompt": "Co my tu mamy? O, proszę! Nasz unikatowy bestseller... ce zero jeden!"
+  }
+ },
+ {
+  "index": 108,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "f1373f24-3b96-433f-9a68-e595810ef608",
+   "prompt": "Deep concave, agresywne linie i charakterystyczne, frezowane detale!"
+  }
+ },
+ {
+  "index": 117,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "f1373f24-3b96-433f-9a68-e595810ef608",
+   "prompt": "To tylko kilka z naszych propozycji! Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!"
+  }
+ },
+ {
+  "index": 201,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "573e5163-59b3-4926-aab1-951ef2985f81",
+   "prompt": "Nie, nie, nie... Nie o takie Turismo nam chodzi!"
+  }
+ },
+ {
+  "index": 207,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "573e5163-59b3-4926-aab1-951ef2985f81",
+   "prompt": "Co my tu mamy? O, proszę! Nasz unikatowy bestseller... ce zero jeden!"
+  }
+ },
+ {
+  "index": 208,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "573e5163-59b3-4926-aab1-951ef2985f81",
+   "prompt": "Deep concave, agresywne linie i charakterystyczne, frezowane detale!"
+  }
+ },
+ {
+  "index": 217,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "573e5163-59b3-4926-aab1-951ef2985f81",
+   "prompt": "To tylko kilka z naszych propozycji! Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!"
+  }
+ },
+ {
+  "index": 301,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "858499d9-fef5-40e1-bc29-b4dc661dc283",
+   "prompt": "Nie, nie, nie... Nie o takie Turismo nam chodzi!"
+  }
+ },
+ {
+  "index": 307,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "858499d9-fef5-40e1-bc29-b4dc661dc283",
+   "prompt": "Co my tu mamy? O, proszę! Nasz unikatowy bestseller... ce zero jeden!"
+  }
+ },
+ {
+  "index": 308,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "858499d9-fef5-40e1-bc29-b4dc661dc283",
+   "prompt": "Deep concave, agresywne linie i charakterystyczne, frezowane detale!"
+  }
+ },
+ {
+  "index": 317,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "858499d9-fef5-40e1-bc29-b4dc661dc283",
+   "prompt": "To tylko kilka z naszych propozycji! Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!"
+  }
+ },
+ {
+  "index": 401,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "27c04473-84a9-4b60-a41f-c8e8458bd4f1",
+   "prompt": "Nie, nie, nie... Nie o takie Turismo nam chodzi!"
+  }
+ },
+ {
+  "index": 407,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "27c04473-84a9-4b60-a41f-c8e8458bd4f1",
+   "prompt": "Co my tu mamy? O, proszę! Nasz unikatowy bestseller... ce zero jeden!"
+  }
+ },
+ {
+  "index": 408,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "27c04473-84a9-4b60-a41f-c8e8458bd4f1",
+   "prompt": "Deep concave, agresywne linie i charakterystyczne, frezowane detale!"
+  }
+ },
+ {
+  "index": 417,
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "27c04473-84a9-4b60-a41f-c8e8458bd4f1",
+   "prompt": "To tylko kilka z naszych propozycji! Zapraszam do kontaktu w sprawie doradztwa i cennika. Strzała!"
+  }
+ }
+]

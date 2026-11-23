@@ -218,3 +218,17 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
   - 08c: „wyjątkowo głęboka wklęsłość…” (bez angielskiego terminu).
   - Odsłuch: `glos/deep_concave_3_warianty.mp3`.
 - Całość: `glos/wszystkie_kwestie_FINAL_Mark-w-glos-Daniela.mp3` (z 08b, skróty 11b i 13s na końcu).
+
+## 17. Dynamika głosu (23.11)
+- Uwagi: barwa i czystość OK, za mało dynamiki i spontaniczności. Kwestia 08 bez „Wyjątkowo głęboki…”: **„Deep concave, agresywne linie i charakterystyczne, frezowane detale!”**
+- **Test:** 4 lektory ElevenLabs jako źródło intonacji (Kevin, Harrison, Callum, Mark), tekst bardziej mówiony („Nie, nie, nie…”, „O, proszę!”), potem speech-to-speech na Twój głos. Wybór lektorów po pomiarze rozpiętości intonacji w ich próbkach.
+- **Rozpiętość intonacji po konwersji** (odchylenie wysokości w półtonach):
+
+| Lektor | Odchylenie | Start w pliku |
+|---|---|---|
+| Kevin | **3,97** | 0:00 |
+| Harrison | 2,95 | 0:27 |
+| Mark | 2,93 | 1:21 |
+| Callum | 2,24 | 0:54 |
+
+- Odsłuch: `glos/dynamika_4_lektorow_w_Twoim_glosie.mp3`.
