@@ -6,3 +6,4 @@ projekt/audio/*.wav
 projekt/qa/**/f_*.png
 projekt/render/*.tmp*
 projekt/render/parts/
+projekt/render/*.txt
