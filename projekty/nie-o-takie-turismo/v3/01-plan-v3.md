@@ -232,3 +232,22 @@ Napisy EN pojawiają się słowo po słowie, zsynchronizowane z Twoim głosem PL
 | Callum | 2,24 | 0:54 |
 
 - Odsłuch: `glos/dynamika_4_lektorow_w_Twoim_glosie.mp3`.
+
+## 18. Nagrania Daniela (23.11, 17:51): **naturalny głos, własne słowa**
+5 plików WhatsApp (AAC 128k, SNR 32–67 dB). Oczyszczone (odszumienie, EQ, de-esser, kompresja, skrócone pauzy, -16 LUFS): `glos/nagrania/clean/*.flac`. Odsłuch: `glos/nagrania_Daniela_oczyszczone.mp3`.
+
+| Plik | Treść | Miejsce w spocie |
+|---|---|---|
+| 36_1 | „Chyba każdy spodziewa się innego Turismo.” | kanapa / hook (zamiast 01) |
+| 36_3 | „W Turismo Wheels projektujemy felgi na indywidualne zamówienie.” | hol (03) |
+| 35_3 | „W przeglądarce internetowej wpisujemy turismo-wheels.com, a następnie w zakładce felgi aluminiowe wybieramy customowe felgi kute.” | laptop (05 + 06) |
+| 36_2 | „Następnie otwiera nam się lista całej gamy modelowej, która jest dostępna w Turismo Wheels. Mamy tutaj na przykład model C01, który jest naszym bestsellerem i pasuje do wielu modeli samochodów.” | laptop (07) |
+| 35_4 | Realizacje C01: BMW M4, Ferrari F8 (24 s, do skrócenia w montażu) | realizacje C01 (10) |
+
+Brakuje:
+- 02 („Od razu lepiej”) i 04 („Chodźcie…”);
+- 08 (deep concave);
+- C19-R + realizacja (Audi RS5);
+- RR + realizacje (BMW i7, Mercedes S Coupé);
+- 16 (Black Friday −15%);
+- 17 (CTA + „Strzała!”).
