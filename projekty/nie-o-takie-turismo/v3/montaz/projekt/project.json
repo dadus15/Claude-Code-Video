@@ -1,0 +1,6 @@
+{
+ "name": "TurismoV3",
+ "presenter": "footage/presenter.mp4",
+ "fps": 24,
+ "audio": "audio/program_master.wav"
+}

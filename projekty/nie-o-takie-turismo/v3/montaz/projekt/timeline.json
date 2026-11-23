@@ -1,0 +1,398 @@
+{
+ "total": 86.917,
+ "segments": [
+  {
+   "id": "hook",
+   "kind": "clip",
+   "t0": 0.0,
+   "t1": 2.4167,
+   "v": "V1",
+   "a": 0.0,
+   "vo": [],
+   "nat": null
+  },
+  {
+   "id": "V1",
+   "kind": "clip",
+   "t0": 2.4167,
+   "t1": 5.0,
+   "v": "V1",
+   "a": 1.0,
+   "vo": [],
+   "nat": [
+    1.0,
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "id": "V2",
+   "kind": "clip",
+   "t0": 5.0,
+   "t1": 9.0417,
+   "v": "V2",
+   "a": 0.0,
+   "vo": [
+    [
+     "N01_hook.wav",
+     0,
+     2.7,
+     -0.19
+    ]
+   ],
+   "nat": [
+    3.55,
+    4.03,
+    1.0
+   ]
+  },
+  {
+   "id": "morph",
+   "kind": "frames",
+   "t0": 9.0417,
+   "t1": 10.7917,
+   "v": null,
+   "a": null,
+   "vo": [],
+   "nat": null
+  },
+  {
+   "id": "V3",
+   "kind": "clip",
+   "t0": 10.7917,
+   "t1": 15.375,
+   "v": "V3",
+   "a": 0.0,
+   "vo": [
+    [
+     "L02.wav",
+     0,
+     1.2,
+     0.2
+    ]
+   ],
+   "nat": [
+    1.5,
+    4.6,
+    0.9
+   ]
+  },
+  {
+   "id": "V4",
+   "kind": "clip",
+   "t0": 15.375,
+   "t1": 22.7917,
+   "v": "V4",
+   "a": 0.0,
+   "vo": [
+    [
+     "chunks/c04_hol.wav",
+     0,
+     6.19,
+     0.03
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "V5",
+   "kind": "clip",
+   "t0": 22.7917,
+   "t1": 25.0833,
+   "v": "V5",
+   "a": 2.5,
+   "vo": [],
+   "nat": [
+    2.5,
+    4.8,
+    0.9
+   ]
+  },
+  {
+   "id": "V6",
+   "kind": "clip",
+   "t0": 25.0833,
+   "t1": 30.125,
+   "v": "V6",
+   "a": 0.0,
+   "vo": [
+    [
+     "N05_przegladarka.wav",
+     0,
+     9.0,
+     -0.1
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "screen1",
+   "kind": "hold",
+   "t0": 30.125,
+   "t1": 34.2083,
+   "v": null,
+   "a": null,
+   "vo": [],
+   "nat": null
+  },
+  {
+   "id": "V7",
+   "kind": "clip",
+   "t0": 34.2083,
+   "t1": 39.625,
+   "v": "V7",
+   "a": 0.0,
+   "vo": [
+    [
+     "N07_lista_C01.wav",
+     5.36,
+     10.5,
+     0.0
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "V8",
+   "kind": "clip",
+   "t0": 39.625,
+   "t1": 45.375,
+   "v": "V8",
+   "a": 0.0,
+   "vo": [
+    [
+     "L08.wav",
+     0,
+     5.06,
+     0.48
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "real_C01",
+   "kind": "hold",
+   "t0": 45.375,
+   "t1": 50.125,
+   "v": null,
+   "a": null,
+   "vo": [
+    [
+     "N10_realizacje_C01.wav",
+     9.12,
+     11.34,
+     0.15
+    ],
+    [
+     "N10_realizacje_C01.wav",
+     14.96,
+     16.96,
+     2.5100000000000002
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "V9",
+   "kind": "clip",
+   "t0": 50.125,
+   "t1": 54.7917,
+   "v": "V9",
+   "a": 0.0,
+   "vo": [
+    [
+     "L11.wav",
+     0,
+     6.04,
+     0.86
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "C19R_ring",
+   "kind": "hold",
+   "t0": 54.7917,
+   "t1": 57.25,
+   "v": null,
+   "a": null,
+   "vo": [],
+   "nat": null
+  },
+  {
+   "id": "real_C19R",
+   "kind": "hold",
+   "t0": 57.25,
+   "t1": 63.3333,
+   "v": null,
+   "a": null,
+   "vo": [
+    [
+     "L12.wav",
+     0,
+     5.82,
+     0.12
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "V10",
+   "kind": "clip",
+   "t0": 63.3333,
+   "t1": 69.3333,
+   "v": "V10",
+   "a": 0.0,
+   "vo": [
+    [
+     "L13.wav",
+     0,
+     5.58,
+     0.4
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "real_RR",
+   "kind": "hold",
+   "t0": 69.3333,
+   "t1": 74.2917,
+   "v": null,
+   "a": null,
+   "vo": [
+    [
+     "L15.wav",
+     0,
+     4.62,
+     0.12
+    ]
+   ],
+   "nat": null
+  },
+  {
+   "id": "V11",
+   "kind": "clip",
+   "t0": 74.2917,
+   "t1": 84.3333,
+   "v": "V11",
+   "a": 0.0,
+   "vo": [
+    [
+     "chunks/c11_CTA.wav",
+     0,
+     9.56,
+     0.24
+    ]
+   ],
+   "nat": [
+    0.0,
+    1.1,
+    1.0
+   ]
+  },
+  {
+   "id": "end",
+   "kind": "hold",
+   "t0": 84.3333,
+   "t1": 86.9167,
+   "v": null,
+   "a": null,
+   "vo": [],
+   "nat": null
+  }
+ ],
+ "vo_items": [
+  {
+   "file": "N01_hook.wav",
+   "src_in": 0,
+   "src_out": 2.7,
+   "at": 4.81,
+   "seg": "V2"
+  },
+  {
+   "file": "L02.wav",
+   "src_in": 0,
+   "src_out": 1.2,
+   "at": 10.992,
+   "seg": "V3"
+  },
+  {
+   "file": "chunks/c04_hol.wav",
+   "src_in": 0,
+   "src_out": 6.19,
+   "at": 15.405,
+   "seg": "V4"
+  },
+  {
+   "file": "N05_przegladarka.wav",
+   "src_in": 0,
+   "src_out": 9.0,
+   "at": 24.983,
+   "seg": "V6"
+  },
+  {
+   "file": "N07_lista_C01.wav",
+   "src_in": 5.36,
+   "src_out": 10.5,
+   "at": 34.208,
+   "seg": "V7"
+  },
+  {
+   "file": "L08.wav",
+   "src_in": 0,
+   "src_out": 5.06,
+   "at": 40.105,
+   "seg": "V8"
+  },
+  {
+   "file": "N10_realizacje_C01.wav",
+   "src_in": 9.12,
+   "src_out": 11.34,
+   "at": 45.525,
+   "seg": "real_C01"
+  },
+  {
+   "file": "N10_realizacje_C01.wav",
+   "src_in": 14.96,
+   "src_out": 16.96,
+   "at": 47.885,
+   "seg": "real_C01"
+  },
+  {
+   "file": "L11.wav",
+   "src_in": 0,
+   "src_out": 6.04,
+   "at": 50.985,
+   "seg": "V9"
+  },
+  {
+   "file": "L12.wav",
+   "src_in": 0,
+   "src_out": 5.82,
+   "at": 57.37,
+   "seg": "real_C19R"
+  },
+  {
+   "file": "L13.wav",
+   "src_in": 0,
+   "src_out": 5.58,
+   "at": 63.733,
+   "seg": "V10"
+  },
+  {
+   "file": "L15.wav",
+   "src_in": 0,
+   "src_out": 4.62,
+   "at": 69.453,
+   "seg": "real_RR"
+  },
+  {
+   "file": "chunks/c11_CTA.wav",
+   "src_in": 0,
+   "src_out": 9.56,
+   "at": 74.532,
+   "seg": "V11"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "raw/17.51.36_1.wav": {
+  "rate": 4.94,
+  "f0": 146,
+  "pitch_std": 4.94,
+  "range90": 21.6,
+  "pause_per_10s": 0.0,
+  "pause_mean": 0,
+  "loud_std": 5.7,
+  "centroid": 1376
+ },
+ "raw/17.51.36_3.wav": {
+  "rate": 6.44,
+  "f0": 163,
+  "pitch_std": 1.23,
+  "range90": 3.6,
+  "pause_per_10s": 0.0,
+  "pause_mean": 0,
+  "loud_std": 5.4,
+  "centroid": 1254
+ },
+ "raw/17.51.35_3.wav": {
+  "rate": 5.4,
+  "f0": 150,
+  "pitch_std": 2.8,
+  "range90": 5.6,
+  "pause_per_10s": 0.0,
+  "pause_mean": 0,
+  "loud_std": 5.2,
+  "centroid": 1014
+ },
+ "raw/17.51.36_2.wav": {
+  "rate": 5.27,
+  "f0": 149,
+  "pitch_std": 2.29,
+  "range90": 5.7,
+  "pause_per_10s": 1.4,
+  "pause_mean": 0.42,
+  "loud_std": 5.0,
+  "centroid": 1130
+ },
+ "raw/17.51.35_4.wav": {
+  "rate": 5.4,
+  "f0": 148,
+  "pitch_std": 1.54,
+  "range90": 3.7,
+  "pause_per_10s": 1.9,
+  "pause_mean": 0.41,
+  "loud_std": 4.5,
+  "centroid": 924
+ }
+}

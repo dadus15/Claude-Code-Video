@@ -251,3 +251,62 @@ Brakuje:
 - RR + realizacje (BMW i7, Mercedes S Coupé);
 - 16 (Black Friday −15%);
 - 17 (CTA + „Strzała!”).
+
+## 19. Montaż v1 (23.11): pełny spot 86,9 s w stylu Kareemy
+Decyzje Daniela: bez Black Friday; nowa kwestia końcowa: „To tylko namiastka tego, co oferujemy. Zapraszam do kontaktu w celu przedstawienia cennika i pozostałych szczegółów realizacji. Zapraszam. Strzała.”
+
+**Głos:**
+- naturalne nagrania Daniela (hook, hol, przeglądarka, lista + C01, realizacje C01);
+- brakujące kwestie (od razu lepiej, chodźcie, deep concave, C19-R, Audi, RR, BMW i7 / Mercedes, CTA) z klonu v3 zbudowanego z 56 s naturalnej mowy Daniela, wygenerowane w jego tempie i intonacji.
+
+**Wideo:** 11 ujęć Seedance 2.5 z synchronizacją ust do głosu (V1–V11). Lustrzane odbicie logo GT → TW (42 klatki) po pstryknięciu.
+
+**Montaż** (renderer talking-head-reels, `v3/montaz/projekt/edl.json`):
+- Kinetyczne napisy PL: Anton (wielkie hasła), Playfair Display (cytaty), akcent #ED3B22.
+- Angielskie napisy do każdej frazy, słowo po słowie, w krótkich liniach.
+- Wstawki:
+
+| Wstawka | Typ |
+|---|---|
+| hook | GT7 vs BMW M4 na C01 |
+| przeglądarka | split, wpisywanie adresu |
+| menu Felgi aluminiowe → kute | split |
+| lista gamy | split |
+| kafelek C01 + klik | split |
+| cechy C01 | koło na concave, linia na ramieniu, makro frezowania |
+| realizacje C01 | BMW M4, Ferrari F8 |
+| C19-R | aero-ring |
+| realizacje C19-R | Audi RS5 |
+| RR | gravity cap |
+| realizacje RR | BMW i7, Mercedes S Coupé |
+| plansza końcowa | — |
+
+- Przejścia: whip / zoom / bulge, flash invert; raster + winieta + ziarno.
+
+**Dźwięk** (`narzedzia/mix_v3.py`):
+- głos + dźwięk natywny ujęć;
+- muzyka ElevenLabs ściszana pod mową;
+- syntetyczne SFX: boom, whoosh, klik myszy, riser przed pstryknięciem;
+- -14 LUFS, TP -1 dB.
+
+**Odtworzenie:**
+```bash
+python3 narzedzia/v3_assemble.py $PWD/v3
+python3 narzedzia/v3_inserts.py ...
+python3 narzedzia/build_edl_v3.py $PWD/v3/montaz/projekt $PWD/v3/glos/vo_final
+python3 narzedzia/mix_v3.py $PWD/v3/montaz/projekt
+python3 narzedzia/reel/scripts/render_reel.py v3/montaz/projekt/edl.json --out v3/montaz/projekt/render/TurismoV3_v1.mp4
+```
+
+**Koszty v3 (kredyty Higgsfield):**
+
+| Pozycja | Koszt |
+|---|---|
+| wideo 11 ujęć | ok. 462 kr |
+| klon głosu v3 | 40 kr |
+| kwestie | ok. 3 kr |
+| klatki kluczowe | 12,5 kr |
+| muzyka | ok. 13 kr |
+| **Razem** | **ok. 530 kr** |
+
+Wcześniejsze testy głosu: 2 klony × 40 kr + STS ok. 10 kr.

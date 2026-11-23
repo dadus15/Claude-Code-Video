@@ -1,0 +1,1808 @@
+{
+ "name": "TurismoV3",
+ "W": 1080,
+ "H": 1920,
+ "fps": 24,
+ "accent": "#ED3B22",
+ "audio": "audio/program_master.wav",
+ "zoom": [
+  [
+   0.0,
+   5.0,
+   "wide"
+  ],
+  [
+   5.0,
+   9.0417,
+   "tight"
+  ],
+  [
+   9.0417,
+   15.375,
+   "wide"
+  ],
+  [
+   15.375,
+   25.0833,
+   "wide"
+  ],
+  [
+   25.0833,
+   37.848,
+   "tight"
+  ],
+  [
+   37.848,
+   39.625,
+   "wide"
+  ],
+  [
+   39.625,
+   41.945,
+   "tight"
+  ],
+  [
+   50.125,
+   54.665,
+   "wide"
+  ],
+  [
+   63.3333,
+   67.513,
+   "tight"
+  ],
+  [
+   74.2917,
+   77.512,
+   "wide"
+  ],
+  [
+   77.512,
+   83.352,
+   "tight"
+  ],
+  [
+   83.352,
+   84.3333,
+   "wide"
+  ],
+  [
+   84.3333,
+   86.92670000000001,
+   "wide"
+  ]
+ ],
+ "inserts": [
+  {
+   "id": "hook_gt",
+   "t0": 0.0,
+   "t1": 1.2,
+   "kind": "full",
+   "trans": "cut",
+   "flash": null,
+   "layout": "full",
+   "clips": [
+    {
+     "src": "../../assety/referencje_gt_ps5/ref_gt7_gtauto.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.15,
+      1.35
+     ],
+     "fx": 0.42,
+     "color": true
+    }
+   ]
+  },
+  {
+   "id": "hook_c01",
+   "t0": 1.2,
+   "t1": 2.42,
+   "kind": "full",
+   "trans": "whip",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "../../assety/realizacje/C01/BMW-M4-G83-TURISMO-FORGED-C01-SATIN-BRONZE_06-scaled.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.05,
+      1.25
+     ],
+     "fx": 0.5,
+     "color": true
+    }
+   ]
+  },
+  {
+   "id": "browser",
+   "t0": 25.433,
+   "t1": 30.125,
+   "kind": "full",
+   "trans": "cut",
+   "flash": "invert",
+   "layout": "split",
+   "clips": [
+    {
+     "src": "broll/i_browser_type.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "site_nav",
+   "t0": 30.125,
+   "t1": 34.208,
+   "kind": "full",
+   "trans": "cut",
+   "flash": "invert",
+   "layout": "split",
+   "clips": [
+    {
+     "src": "broll/i_site_nav.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "list",
+   "t0": 34.208,
+   "t1": 35.638,
+   "kind": "full",
+   "trans": "cut",
+   "flash": null,
+   "layout": "split",
+   "clips": [
+    {
+     "src": "broll/i_site_list.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "tile",
+   "t0": 35.988,
+   "t1": 37.798,
+   "kind": "full",
+   "trans": "zoom",
+   "flash": "invert",
+   "layout": "split",
+   "clips": [
+    {
+     "src": "broll/i_tile_C01.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "c01_cechy",
+   "t0": 41.645,
+   "t1": 45.375,
+   "kind": "full",
+   "trans": "bulge",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "broll/i_C01_cechy.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "real_C01",
+   "t0": 45.375,
+   "t1": 50.125,
+   "kind": "full",
+   "trans": "whip",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "../../assety/realizacje/C01/BMW-M4-G83-TURISMO-FORGED-C01-SATIN-BRONZE_03-scaled.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.55,
+     "color": true,
+     "dur": 1.25
+    },
+    {
+     "src": "../../assety/realizacje/C01/BMW-M4-G83-TURISMO-FORGED-C01-SATIN-BRONZE_05-scaled.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.58,
+     "color": true,
+     "dur": 1.05
+    },
+    {
+     "src": "../../assety/realizacje/C01/FERRARI-F8-TURISMO-FORGED-C01-GLOSS-BLACK_06.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.4,
+     "color": true,
+     "dur": 1.2
+    },
+    {
+     "src": "../../assety/realizacje/C01/FERRARI-F8-TURISMO-FORGED-C01-GLOSS-BLACK_08.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.5,
+     "color": true
+    }
+   ]
+  },
+  {
+   "id": "c19r_ring",
+   "t0": 54.565,
+   "t1": 57.25,
+   "kind": "full",
+   "trans": "zoom",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "broll/i_C19R.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "real_C19R",
+   "t0": 57.25,
+   "t1": 63.333,
+   "kind": "full",
+   "trans": "whip",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "../../assety/realizacje/C19-R/AUDI-RS5-C19-R_02.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.42,
+     "color": true,
+     "dur": 2.0
+    },
+    {
+     "src": "../../assety/realizacje/C19-R/AUDI-RS5-C19-R_01.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.55,
+     "color": true,
+     "dur": 2.0
+    },
+    {
+     "src": "../../assety/realizacje/C19-R/AUDI-RS5-C19-R_03.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.45,
+     "color": true
+    }
+   ]
+  },
+  {
+   "id": "rr_gravity",
+   "t0": 67.363,
+   "t1": 69.333,
+   "kind": "full",
+   "trans": "bulge",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "broll/i_RR_gravity.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  },
+  {
+   "id": "real_RR",
+   "t0": 69.333,
+   "t1": 74.292,
+   "kind": "full",
+   "trans": "whip",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "../../assety/realizacje/RR/BMW-i7-G70-RR_01.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.5,
+     "color": true,
+     "dur": 1.2
+    },
+    {
+     "src": "../../assety/realizacje/RR/BMW-i7-G70-RR_10.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.35,
+     "color": true,
+     "dur": 1.4197000000000088
+    },
+    {
+     "src": "../../assety/realizacje/RR/MERCEDES-S-COUPE-RR-SILVER-BRUSHED_06.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.55,
+     "color": true,
+     "dur": 1.3
+    },
+    {
+     "src": "../../assety/realizacje/RR/MERCEDES-S-COUPE-RR-SILVER-BRUSHED_09.jpg",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": 0.6,
+     "color": true
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "t0": 84.333,
+   "t1": 86.917,
+   "kind": "full",
+   "trans": "zoom",
+   "flash": "invert",
+   "layout": "full",
+   "clips": [
+    {
+     "src": "broll/i_plansza.mp4",
+     "t_in": 0.0,
+     "zoom": [
+      1.0,
+      1.02
+     ],
+     "color": true,
+     "speed": 1.0
+    }
+   ]
+  }
+ ],
+ "text": [
+  {
+   "font": "anton",
+   "text": "TO JEST",
+   "t0": 0.06,
+   "t1": 1.2,
+   "y": 900,
+   "size": 210,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "Turismo",
+   "t0": 0.32,
+   "t1": 1.2,
+   "y": 1080,
+   "size": 170,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "A TO JEST",
+   "t0": 1.22,
+   "t1": 2.42,
+   "y": 860,
+   "size": 190,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "anton",
+   "text": "TURISMO",
+   "t0": 1.45,
+   "t1": 2.42,
+   "y": 1050,
+   "size": 230,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "innego",
+   "t0": 6.43,
+   "t1": 9.042,
+   "y": 960,
+   "size": 140,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "TURISMO",
+   "t0": 6.78,
+   "t1": 9.042,
+   "y": 1150,
+   "size": 200,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Bet everyone expected a",
+   "t0": 4.76,
+   "t1": 6.215,
+   "y": 1310,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    4.76,
+    5.104,
+    5.448,
+    5.792
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "different Turismo.",
+   "t0": 6.235,
+   "t1": 7.59,
+   "y": 1310,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    6.235,
+    6.763
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "od razu",
+   "t0": 11.572,
+   "t1": 13.072,
+   "y": 960,
+   "size": 140,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "LEPIEJ",
+   "t0": 11.752,
+   "t1": 13.172,
+   "y": 1160,
+   "size": 210,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Now, that’s better.",
+   "t0": 10.942,
+   "t1": 12.292,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    10.942,
+    11.292,
+    11.642
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "PROJEKTUJEMY",
+   "t0": 16.305,
+   "t1": 17.735,
+   "y": 1150,
+   "size": 160,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "na indywidualne\nzamówienie",
+   "t0": 17.785,
+   "t1": 19.841,
+   "y": 1050,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "sub",
+   "text": "At Turismo Wheels we",
+   "t0": 15.405,
+   "t1": 17.177,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    15.405,
+    15.828,
+    16.251,
+    16.674
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "design",
+   "t0": 17.197,
+   "t1": 17.765,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    17.197
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "wheels made to order.",
+   "t0": 17.785,
+   "t1": 19.265,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    17.785,
+    18.08,
+    18.375,
+    18.67
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "pokażę wam",
+   "t0": 20.221,
+   "t1": 22.792,
+   "y": 930,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "GAMĘ",
+   "t0": 21.161,
+   "t1": 22.792,
+   "y": 1160,
+   "size": 220,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Come on, let me show you",
+   "t0": 19.941,
+   "t1": 20.994,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    19.941,
+    20.103,
+    20.265,
+    20.427,
+    20.59,
+    20.752
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "our range.",
+   "t0": 21.014,
+   "t1": 21.661,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    21.014,
+    21.187
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "In the browser we type",
+   "t0": 26.553,
+   "t1": 28.052,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    26.553,
+    26.837,
+    27.12,
+    27.404,
+    27.688
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "turismo-wheels.com,",
+   "t0": 28.072,
+   "t1": 29.563,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    28.072
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "felgi aluminiowe",
+   "t0": 30.663,
+   "t1": 32.463,
+   "y": 690,
+   "size": 110,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "FELGI KUTE",
+   "t0": 32.463,
+   "t1": 34.208,
+   "y": 850,
+   "size": 170,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "then under Aluminium",
+   "t0": 29.583,
+   "t1": 31.19,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    29.583,
+    30.092,
+    30.601
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "Wheels we pick custom",
+   "t0": 31.21,
+   "t1": 32.899,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    31.21,
+    31.613,
+    32.015,
+    32.417
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "forged wheels.",
+   "t0": 32.919,
+   "t1": 34.178,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    32.919,
+    33.439
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "C01",
+   "t0": 35.988,
+   "t1": 37.798,
+   "y": 860,
+   "size": 200,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Here we have, for",
+   "t0": 34.198,
+   "t1": 35.323,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    34.198,
+    34.459,
+    34.721,
+    34.982
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "example, the C01,",
+   "t0": 35.343,
+   "t1": 36.688,
+   "y": 960,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    35.343,
+    35.691,
+    36.04
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "which is our bestseller.",
+   "t0": 36.888,
+   "t1": 39.508,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    36.888,
+    37.468,
+    38.048,
+    38.628
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "nasz",
+   "t0": 37.798,
+   "t1": 39.625,
+   "y": 980,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "BESTSELLER",
+   "t0": 37.848,
+   "t1": 39.625,
+   "y": 1150,
+   "size": 190,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "It stands out with a",
+   "t0": 40.055,
+   "t1": 41.412,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    40.055,
+    40.31,
+    40.566,
+    40.821,
+    41.077
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "really",
+   "t0": 41.432,
+   "t1": 41.925,
+   "y": 1330,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    41.432
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "DEEP CONCAVE",
+   "t0": 41.945,
+   "t1": 42.615,
+   "y": 1150,
+   "size": 170,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "agresywne linie",
+   "t0": 42.665,
+   "t1": 43.955,
+   "y": 1150,
+   "size": 130,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "FREZOWANE DETALE",
+   "t0": 44.005,
+   "t1": 45.375,
+   "y": 1150,
+   "size": 130,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "deep concave, aggressive",
+   "t0": 41.945,
+   "t1": 43.54,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    41.945,
+    42.45,
+    42.955
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "lines and milled",
+   "t0": 43.56,
+   "t1": 44.617,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    43.56,
+    43.886,
+    44.211
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "details.",
+   "t0": 44.637,
+   "t1": 45.375,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    44.637
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "BMW M4",
+   "t0": 46.965,
+   "t1": 47.675,
+   "y": 900,
+   "size": 190,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "C01 · Satin Bronze",
+   "t0": 47.265,
+   "t1": 47.675,
+   "y": 1040,
+   "size": 62,
+   "anim": "pop",
+   "shadow": true,
+   "keep_t1": true
+  },
+  {
+   "font": "anton",
+   "text": "FERRARI F8",
+   "t0": 47.675,
+   "t1": 50.125,
+   "y": 900,
+   "size": 180,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "C01 · Gloss Black",
+   "t0": 47.925,
+   "t1": 50.125,
+   "y": 1040,
+   "size": 62,
+   "anim": "pop",
+   "shadow": true,
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Here’s a BMW M4,",
+   "t0": 45.475,
+   "t1": 47.865,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    45.475,
+    46.017,
+    46.56,
+    47.102
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "and I think it looks",
+   "t0": 47.885,
+   "t1": 49.088,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    47.885,
+    48.11,
+    48.334,
+    48.559,
+    48.783
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "truly exciting.",
+   "t0": 49.108,
+   "t1": 50.225,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    49.108,
+    49.516
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "C19-R",
+   "t0": 51.805,
+   "t1": 53.315,
+   "y": 1180,
+   "size": 220,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "nowsza wersja C19",
+   "t0": 53.365,
+   "t1": 54.615,
+   "y": 1180,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "sub",
+   "text": "Next up: the C19-R,",
+   "t0": 50.935,
+   "t1": 53.345,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    50.935,
+    51.492,
+    52.05,
+    52.608
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "a newer version of the",
+   "t0": 53.365,
+   "t1": 54.445,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    53.365,
+    53.565,
+    53.765,
+    53.965,
+    54.165
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "C19",
+   "t0": 54.465,
+   "t1": 54.645,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    54.465
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "zintegrowany",
+   "t0": 54.665,
+   "t1": 57.25,
+   "y": 980,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "AERO-RING",
+   "t0": 55.485,
+   "t1": 57.25,
+   "y": 1140,
+   "size": 190,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "with an integrated aero",
+   "t0": 54.665,
+   "t1": 56.686,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    54.665,
+    55.15,
+    55.636,
+    56.121
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "ring.",
+   "t0": 56.706,
+   "t1": 57.3,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    56.706
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "AUDI RS5",
+   "t0": 58.23,
+   "t1": 62.17,
+   "y": 900,
+   "size": 200,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "C19-R",
+   "t0": 58.53,
+   "t1": 62.17,
+   "y": 1040,
+   "size": 70,
+   "anim": "pop",
+   "shadow": true,
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "naprawdę",
+   "t0": 62.17,
+   "t1": 63.333,
+   "y": 860,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "AGRESYWNIE",
+   "t0": 62.47,
+   "t1": 63.333,
+   "y": 1010,
+   "size": 180,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Here’s an Audi RS5 on",
+   "t0": 57.32,
+   "t1": 60.007,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    57.32,
+    57.841,
+    58.363,
+    58.884,
+    59.405
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "C19-R,",
+   "t0": 60.027,
+   "t1": 61.0,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    60.027
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "and I think it looks",
+   "t0": 61.09,
+   "t1": 62.116,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    61.09,
+    61.279,
+    61.468,
+    61.657,
+    61.846
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "seriously aggressive.",
+   "t0": 62.136,
+   "t1": 63.433,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    62.136,
+    62.634
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "RR",
+   "t0": 64.113,
+   "t1": 64.893,
+   "y": 1180,
+   "size": 260,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "klasyka",
+   "t0": 64.913,
+   "t1": 65.543,
+   "y": 1180,
+   "size": 170,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "sub",
+   "text": "And the RR, a classic.",
+   "t0": 63.683,
+   "t1": 65.573,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    63.683,
+    64.025,
+    64.367,
+    64.709,
+    65.051
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "dla luksusowych\nlimuzyn",
+   "t0": 65.593,
+   "t1": 67.463,
+   "y": 1060,
+   "size": 120,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "sub",
+   "text": "Perfect for luxury",
+   "t0": 65.593,
+   "t1": 66.868,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    65.593,
+    65.991,
+    66.389
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "saloons,",
+   "t0": 66.888,
+   "t1": 67.493,
+   "y": 1340,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    66.888
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "GRAVITY CAP",
+   "t0": 68.333,
+   "t1": 69.333,
+   "y": 1150,
+   "size": 170,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "with a floating gravity",
+   "t0": 67.513,
+   "t1": 68.958,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    67.513,
+    67.854,
+    68.196,
+    68.537
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "cap.",
+   "t0": 68.978,
+   "t1": 69.383,
+   "y": 1300,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    68.978
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "BMW i7",
+   "t0": 70.333,
+   "t1": 71.903,
+   "y": 900,
+   "size": 200,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "anton",
+   "text": "MERCEDES",
+   "t0": 71.953,
+   "t1": 74.292,
+   "y": 860,
+   "size": 180,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "serif",
+   "text": "S Coupé",
+   "t0": 72.203,
+   "t1": 74.292,
+   "y": 1030,
+   "size": 130,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "sub",
+   "text": "Here’s a BMW i7 and a",
+   "t0": 69.403,
+   "t1": 71.645,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    69.403,
+    69.763,
+    70.124,
+    70.484,
+    70.844,
+    71.204
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "Mercedes S Coupé on RR.",
+   "t0": 71.665,
+   "t1": 74.342,
+   "y": 1180,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    71.665,
+    72.14,
+    72.615,
+    73.091,
+    73.566
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "serif",
+   "text": "to tylko",
+   "t0": 75.482,
+   "t1": 77.412,
+   "y": 960,
+   "size": 130,
+   "anim": "soft",
+   "tracking": -40,
+   "keep_t1": true,
+   "shadow": true
+  },
+  {
+   "font": "anton",
+   "text": "NAMIASTKA",
+   "t0": 75.732,
+   "t1": 77.412,
+   "y": 1160,
+   "size": 190,
+   "color": "#FFFFFF",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "This is just a taste of",
+   "t0": 75.482,
+   "t1": 76.631,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    75.482,
+    75.66,
+    75.838,
+    76.016,
+    76.194,
+    76.373
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "what we offer.",
+   "t0": 76.651,
+   "t1": 77.492,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    76.651,
+    76.854,
+    77.058
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "sub",
+   "text": "zapraszam po",
+   "t0": 77.512,
+   "t1": 83.252,
+   "y": 1010,
+   "size": 74,
+   "anim": "pop",
+   "shadow": true,
+   "keep_t1": true
+  },
+  {
+   "font": "anton",
+   "text": "CENNIK",
+   "t0": 79.652,
+   "t1": 83.252,
+   "y": 1150,
+   "size": 220,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "Get in touch for pricing",
+   "t0": 77.512,
+   "t1": 79.779,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    77.512,
+    77.949,
+    78.387,
+    78.824,
+    79.262
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "and all the project",
+   "t0": 79.799,
+   "t1": 81.59,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    79.799,
+    80.227,
+    80.654,
+    81.082
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": false
+  },
+  {
+   "font": "sub",
+   "text": "details.",
+   "t0": 81.61,
+   "t1": 82.452,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    81.61
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  },
+  {
+   "font": "anton",
+   "text": "STRZAŁA!",
+   "t0": 83.302,
+   "t1": 84.333,
+   "y": 1150,
+   "size": 230,
+   "color": "#ED3B22",
+   "anim": "build",
+   "keep_t1": true
+  },
+  {
+   "font": "sub",
+   "text": "See you. Cheers!",
+   "t0": 82.472,
+   "t1": 84.333,
+   "y": 1320,
+   "size": 80,
+   "anim": "words",
+   "wt": [
+    82.472,
+    82.992,
+    83.513
+   ],
+   "shadow": true,
+   "keep_t1": true,
+   "color": "#FFFFFF",
+   "fadeout": true
+  }
+ ],
+ "look": {
+  "halftone": "assets/halftone_1080x1920.png",
+  "halftone_opacity": 18,
+  "vignette": 36,
+  "grain": 4
+ },
+ "fonts": {
+  "anton": "Anton-Regular",
+  "serif": "PlayfairDisplay-Bold",
+  "didot": "PlayfairDisplay-Regular",
+  "sub": "Inter-SemiBold"
+ },
+ "presenter": {
+  "framing": {
+   "tight": {
+    "scale": 1.22,
+    "face_y": 0.33
+   },
+   "wide": {
+    "scale": 1.0125,
+    "face_y": 0.3
+   },
+   "half": {
+    "scale": 1.0,
+    "face_y": 0.05
+   }
+  }
+ }
+}

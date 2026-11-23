@@ -1,0 +1,8 @@
+# pliki pośrednie (odtwarzalne skryptami narzedzia/v3_assemble.py, mix_v3.py, render_reel.py)
+work/
+projekt/work/
+projekt/footage/
+projekt/audio/*.wav
+projekt/qa/**/f_*.png
+projekt/render/*.tmp*
+projekt/render/parts/

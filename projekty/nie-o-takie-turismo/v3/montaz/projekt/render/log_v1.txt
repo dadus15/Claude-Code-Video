@@ -1,0 +1,4 @@
+note: "Come on, let me show you" shrunk to size 76 to fit the frame
+note: "deep concave, aggressive" shrunk to size 76 to fit the frame
+note: "Mercedes S Coupé on RR." shrunk to size 77 to fit the frame
+rendering 2086 frames with 6 workers ...
