@@ -87,3 +87,17 @@ Oryginał nie ma lektora ani tekstu i jego siła to pętla. Proponowany kompromi
   „Kute felgi na zamówienie. Turismo Wheels. Unlock Your Style.”
   Uwaga: lektor osłabia efekt pętli, dlatego rekomenduję wersję bez niego, z CTA w opisie i przypiętym komentarzu;
 - opis: hook + CTA (telefon + e-mail).
+
+## 6. Produkcja v1: RS6 C7 + felga one-off KONCEPT 2 (bez lektora)
+
+Decyzje: hosted 3D Jutsu (Blender w chmurze, 0 kr), klimat dzienny jak oryginał, bez lektora.
+
+| Etap | Status | Koszt |
+|---|---|---|
+| Model felgi wg szkicu (10 szprych + 10 insertów w szprychach + 10 insertów na pierścieniu, 5×112, głęboki rant) | ✅ `blender/01_build_scene.py` + poprawki w projekcie 3D Jutsu (rev. 4) | 0 kr |
+| Animacja: skręt do oporu → reveal (3,3–4,6 s) → przejazd ~1 m/s (do 12,9 s) | ✅ | 0 kr |
+| Prowadnica 310 klatek, 24 fps, 720×1280 | ✅ `renders/blender_guide_720x1280.mp4` | 0 kr |
+| Fotorealizm: Seedance 2.5 `video_edit` (prowadnica + render RS6 + szkic jako referencje) | ⏳ czeka na akceptację | szkic 480p: 46 kr / 720p: 97 kr / 1080p: 259 kr |
+
+Projekt 3D Jutsu: https://higgsfield.ai/3d-jutsu/62d445b4-8ce8-4fd4-9f28-b83c87226b48
+Prompt: `reverse-engineering/SEEDANCE_PROMPT.md`
