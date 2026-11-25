@@ -73,3 +73,9 @@ Zgodność przepływu asfaltu model ↔ oryginał (px/s, kadr 360×640): cofanie
 
 Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewnątrz karoserii RS5 albo 2 cm od opony, bo oryginał to inne auto
 (większe koło, węższy narożnik). Dlatego zachowujemy kadr RS5, a dopasowujemy ruch.
+
+## I. Weryfikacja prowadnicy v3 (rev. 11)
+- Dokładny test geometryczny (punkty ziemi rzutowane przez kamerę Blendera klatka po klatce): cofanie ~(220,160) px/s, jazda ~(180…280, −110…−260) px/s; oryginał (160…244, 118…149) i (169…318, −126…−302). Kierunek i wielkość zgodne.
+- Pomiar optyczny na samym wideo prowadnicy zaniża prędkość (śnieg ma mało faktury), ale kierunek jest zgodny w każdej fazie: przy cofaniu i przy jeździe asfalt ucieka w prawo.
+- Drgania mocowania zmniejszone do zmierzonych σ ≈ 0,45 px; dryf mocowania 2–8 s z pomiaru.
+- Pliki: `renders/rs5_v05_guide_v3_720x1280.mp4`, `renders/porownanie_oryginal_vs_prowadnica_v3.mp4`.
