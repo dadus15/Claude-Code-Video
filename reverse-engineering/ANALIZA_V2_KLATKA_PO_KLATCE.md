@@ -59,3 +59,16 @@ BLOCKS: CAM-RIG OPT-WIDE GRADE-BRIGHT GRADE-LOCK LIVING-BACKGROUND PEOPLE-LAW CO
 1. Blender (3D Jutsu, 0 kr): nowe auto (przód + lewy bok) i nowa felga wg assetów, rig kamery z pkt 1, animacja co do klatki wg tabeli z pkt 2.
    Kontrola: porównanie side-by-side z oryginałem (slit-scan + klatki graniczne) **przed** jakąkolwiek generacją.
 2. Seedance 2.5 `video_edit` (fotorealizm): szkic 480p (~46 kr), potem 1080p (~259 kr), wyłącznie po akceptacji.
+
+## 6. Produkcja v2: Audi RS5 8W + Turismo Forged V05 brushed (stan)
+| Element | Plik | Status |
+|---|---|---|
+| Logo Turismo (wektor odtworzony ze znaku wodnego zdjęć RS5; na Drive brak pliku z logo) | `brand/turismo_logo_{navy,white}.{svg,png}` | ✅ |
+| Scena Blender (RS5 przód-lewy, felga V05: 5 ramion trójkątnych + 34 okna w ringu, śnieg) | `blender/02_build_rs5_v05.py` + projekt 3D Jutsu rev. 8 | ✅ |
+| Kamera dopasowana solverem do oryginału (piasta 60%/56%, horyzont na wysokości piasty, ~36 cm) | jw. | ✅ |
+| Prowadnica 311 kl. (oś czasu P0–P5 co do klatki) | `renders/rs5_v05_guide_720x1280.mp4` | ✅ |
+| Porównanie oryginał ↔ prowadnica | `renders/porownanie_oryginal_vs_prowadnica.mp4` | ✅ |
+| Przejście (push w piastę + spin blur → match cut → odjazd do całego RS5 → iris z piasty → karta) | `edit/compose.py` | ✅ |
+| End card (logo, UNLOCK YOUR STYLE, V05 · RS5, CTA) | `edit/end_card.png`, `edit/make_end_card.py` | ✅ |
+| Animatik całości (0 kr) | `renders/animatik_v2_PICTURE-LOCK-PREVIEW.mp4` | ✅ |
+| Fotorealizm Seedance (rig shot `video_edit` + scena RS5 start/end) | `reverse-engineering/SEEDANCE_PROMPTS_V2_RS5.md` | ⏳ czeka na akceptację |
