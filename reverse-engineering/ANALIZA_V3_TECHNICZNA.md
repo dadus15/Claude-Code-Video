@@ -92,3 +92,22 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 - **Pierścień aero (pomiar z rozwinięcia biegunowego zdjęcia _06, `v05/pierscien_aero_rozwiniecie.png`):** 20 przelotowych okien (4 na przęsło między ramionami, brak okien pod głowami ramion), rozstaw 13,1°, pas 0,85–0,95 R, kształt zaokrąglony 0,11 × 0,045 R, pochylenie 25° od promienia (zgodnie z ruchem wskazówek zegara), zawór między 2. a 3. oknem jednego przęsła.
 - **Hamulce:** tarcza nawiercana (otwory w łukowych rzędach, 48 na obwód, pas 0,62–0,93 R tarczy), logo RS na zacisku.
 - **Ślady:** auto cofało na pełnym skręcie 5 s przed pierwszą klatką, więc koleina przed kołem jest łukiem (R ≈ 4 m). Koleina ma przekrój: wgłębienie z bieżnikiem + wały śniegu po bokach (+16 mm). Stare ślady innych aut to łuki R 4–16 m (wcześniej proste pasy). Kontrola z góry: `renders/kontrola_slady_z_gory.png`.
+
+## L. Prowadnica v6 (rev. 21): pomiary 1:1 i fizyka RS5
+**Pierścień aero, pomiar każdego z 20 okien osobno** (detekcja konturów na wyprostowanym zdjęciu _06 + uśrednienie po obrocie do wspólnej pozycji, `v05/okna_aero_dopasowanie.jpg`):
+- 20 okien = 5 przęseł × 4, pierwsze okno przęsła 38,6° za osią ramienia, rozstaw 12,8°;
+- środek okna na 0,905 R, przesunięty o −0,009 R stycznie;
+- kształt: równoległobok, dłuższe krawędzie pochylone **60° od promienia** (prawie stycznie, zgodnie z ruchem wskazówek zegara), krótsze krawędzie promieniowe; otwór z fazą ok. 0,115 × 0,050 R (czysty otwór 0,095 × 0,042 R);
+- (wcześniejsze 25° było błędem odczytu z rozwinięcia biegunowego, które rozciąga obraz w poziomie);
+- za oknami ciemne wnętrze beczki (na feldze okna są ciemne, nie prześwitują jasnym rantem).
+
+**Tarcza hamulcowa** (RS5: 375 × 36 mm, wentylowana): detekcja otworów na widocznych fragmentach (`v05/tarcza_otwory_detekcja.jpg`):
+- grupy po **3 otwory** w skośnych rzędach, rozstaw grup 27,7° → **13 grup = 39 otworów** na stronę (±1 grupa, część zasłaniają ramiona);
+- średnica otworu ≈ **5–6 mm** (pomiar 4,3–4,6 mm, detektor zaniża krawędź o ~1 px);
+- pas otworów ok. 115–145 mm od osi.
+
+**Geometria i kinematyka RS5 Coupé** (dane producenta): rozstaw osi 2766 mm, rozstaw kół 1598 / 1588 mm, średnica zawracania 11,7 m.
+- Z zawracania: promień tylnej osi przy pełnym skręcie 4,36 m → kąt modelu jednośladowego **32,4°**, koło wewnętrzne **37,9°**, zewnętrzne **28,2°** (Ackermann). Poprzednie 42° było fizycznie niemożliwe.
+- Każde koło ma własny kąt (Ackermann) i własny tor bez poślizgu; obrót felgi liczony z rzeczywistej drogi punktu styku przedniego lewego koła.
+- Skręt w prawo 14° (model jednośladowy): koło lewe (zewnętrzne) 13,1°, prawe 15,0°, promień tylnej osi 11,1 m.
+- Po zmianie: cofanie 0,58 m/s, jazda 1,08 m/s; ruch tła nadal zgodny z oryginałem (koszt 1445 vs 1415).
