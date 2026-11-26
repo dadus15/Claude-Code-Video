@@ -87,3 +87,8 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 - **Ślady w śniegu:** 4 koleiny (FL, FR, RL, RR) wzdłuż prawdziwej trajektorii z modelu rowerowego; każdy fragment pojawia się dopiero, gdy koło po nim przejedzie. Ślady z cofania sprzed klatki 1 są już widoczne.
 - **Skręt w prawo:** 14° zamiast 8°; ruch tła dalej zgodny z oryginałem (koszt 1415 przy 1050). 25° dawało tło jadące wyraźnie bokiem (koszt 2959).
 - **Reflektor:** kamera z narożnikiem reflektora w kadrze (0,85 m przed osią) wymaga patrzenia wzdłuż długiej maski RS5. Czarna karoseria zajmuje wtedy pół kadru, a koło maleje. Zostaje kadr v3, a narożnik reflektora z białym DRL opisany jest w prompcie Seedance (z referencji RS5).
+
+## K. Prowadnica v5 (rev. 19)
+- **Pierścień aero (pomiar z rozwinięcia biegunowego zdjęcia _06, `v05/pierscien_aero_rozwiniecie.png`):** 20 przelotowych okien (4 na przęsło między ramionami, brak okien pod głowami ramion), rozstaw 13,1°, pas 0,85–0,95 R, kształt zaokrąglony 0,11 × 0,045 R, pochylenie 25° od promienia (zgodnie z ruchem wskazówek zegara), zawór między 2. a 3. oknem jednego przęsła.
+- **Hamulce:** tarcza nawiercana (otwory w łukowych rzędach, 48 na obwód, pas 0,62–0,93 R tarczy), logo RS na zacisku.
+- **Ślady:** auto cofało na pełnym skręcie 5 s przed pierwszą klatką, więc koleina przed kołem jest łukiem (R ≈ 4 m). Koleina ma przekrój: wgłębienie z bieżnikiem + wały śniegu po bokach (+16 mm). Stare ślady innych aut to łuki R 4–16 m (wcześniej proste pasy). Kontrola z góry: `renders/kontrola_slady_z_gory.png`.
