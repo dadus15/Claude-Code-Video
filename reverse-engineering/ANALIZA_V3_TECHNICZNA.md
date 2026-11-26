@@ -111,3 +111,12 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 - Każde koło ma własny kąt (Ackermann) i własny tor bez poślizgu; obrót felgi liczony z rzeczywistej drogi punktu styku przedniego lewego koła.
 - Skręt w prawo 14° (model jednośladowy): koło lewe (zewnętrzne) 13,1°, prawe 15,0°, promień tylnej osi 11,1 m.
 - Po zmianie: cofanie 0,58 m/s, jazda 1,08 m/s; ruch tła nadal zgodny z oryginałem (koszt 1445 vs 1415).
+
+## M. Rekonstrukcja V05 z fotografii (rev. 23): metoda i granice
+1. **Wyprostowanie** zdjęcia _06: elipsa rantu → koło (R = 539 px), środek dopracowany korelacją 5-krotnej symetrii.
+2. **Segmentacja** GrabCut zainicjowana modelem + głosowanie 5 obróconych kopii: zgodność 97,6% między ramionami.
+3. **Dopasowanie obrysu do krawędzi** (Powell, gradient obrazu wzdłuż krawędzi wielokąta, wszystkie 5 ramion naraz, regularyzacja gładkości): wynik krawędziowy 121 → 329. Plik `v05/v05_obrys_dopasowany.json`.
+4. **Geometria 2D bez kruchych booleanów 3D:** suma ramion i piasty minus okna policzona w Shapely, w Blenderze triangulacja z otworami i wyciągnięcie (ramię 30 mm, wklęsłość 45 mm ku piaście). Pierścień aero: 20 ślepych kieszeni 12 mm z promieniem narożnika 4 mm.
+5. **Weryfikacja promieniami:** okno = przelotowe (trafienie w tarczę), kieszeń = dno 12 mm, ramię = pełne.
+
+**Granica dokładności z jednego zdjęcia:** obrys pasuje do wewnętrznej krawędzi fazy okien (otwór), nie do zewnętrznej krawędzi lica; nie da się zmierzyć wysokości fazy, grzbietów na ramionach ani rzeczywistej głębokości/kąta wklęsłości. Dla zgodności 1:1 potrzebny jest model CAD (STEP/IGES/STL) lica V05 i pierścienia aero albo seria zdjęć do fotogrametrii (≥ 24 ujęcia dookoła felgi zdjętej z auta).
