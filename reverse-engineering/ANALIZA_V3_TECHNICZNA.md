@@ -79,3 +79,11 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 - Pomiar optyczny na samym wideo prowadnicy zaniża prędkość (śnieg ma mało faktury), ale kierunek jest zgodny w każdej fazie: przy cofaniu i przy jeździe asfalt ucieka w prawo.
 - Drgania mocowania zmniejszone do zmierzonych σ ≈ 0,45 px; dryf mocowania 2–8 s z pomiaru.
 - Pliki: `renders/rs5_v05_guide_v3_720x1280.mp4`, `renders/porownanie_oryginal_vs_prowadnica_v3.mp4`.
+
+## J. Prowadnica v4 (rev. 17): uwagi klienta
+- **Felga V05:** obrys z wyprostowanego zdjęcia _06 (elipsa → koło, R = krawędź rantu). 5 ramion z oknem trójkątnym i oknem w „głowie”, pierścień 0,80–1,0 R z 34 skośnymi oknami, piasta 0,25 R, lico wklęsłe 20 mm. Geometria powstaje z operacji boolowskich (powtarzalnie), plik `reverse-engineering/v05/`.
+  Wykończenie: szczotkowane aluminium (anizotropia z promieniowym kierunkiem szlifu, mikroszum chropowatości). W EEVEE przy białym niebie wygląda jaśniej niż na zdjęciu, dlatego finalne wykończenie bierzemy ze zdjęć referencyjnych w Seedance.
+- **Opony zimowe:** kierunkowy bieżnik „V”, gęste lamele, rowek obwodowy, ubity śnieg w rowkach.
+- **Ślady w śniegu:** 4 koleiny (FL, FR, RL, RR) wzdłuż prawdziwej trajektorii z modelu rowerowego; każdy fragment pojawia się dopiero, gdy koło po nim przejedzie. Ślady z cofania sprzed klatki 1 są już widoczne.
+- **Skręt w prawo:** 14° zamiast 8°; ruch tła dalej zgodny z oryginałem (koszt 1415 przy 1050). 25° dawało tło jadące wyraźnie bokiem (koszt 2959).
+- **Reflektor:** kamera z narożnikiem reflektora w kadrze (0,85 m przed osią) wymaga patrzenia wzdłuż długiej maski RS5. Czarna karoseria zajmuje wtedy pół kadru, a koło maleje. Zostaje kadr v3, a narożnik reflektora z białym DRL opisany jest w prompcie Seedance (z referencji RS5).
