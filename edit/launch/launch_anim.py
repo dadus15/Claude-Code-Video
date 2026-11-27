@@ -172,6 +172,7 @@ class Assets:
     def rig_path(self): return os.environ.get("RIG", os.path.join(REPO, "renders/w222_c26_guide_v2_720x1280.mp4"))
     def R(self, i): return cv2.resize(self.rig[int(min(len(self.rig), max(1, i))) - 1], (W, H), interpolation=cv2.INTER_LANCZOS4).astype(np.float32)
 
+S2_OFF = 0.6
 WHEEL_OFF = (0.0, 60.0)          # all wheel renders are camera-centred (hub 540,960): shift down in the frame
 HUB = (540.0 + WHEEL_OFF[0], 960.0 + WHEEL_OFF[1])
 FACE_RIM = 421.0
@@ -330,7 +331,7 @@ class Film:
         for k in order:
             cx, cy, s, ry, rz, a = self.card_pose(k, t)
             if a <= 0.003: continue
-            if k == 7 and t > 4.4 and phone_handoff: continue        # drawn by the phone hand-off
+            if k == 7 and t > 5.0 and phone_handoff: continue        # drawn by the phone hand-off
             n = 3 if (k == 12 and 2.6 < t < 3.0) else 1
             acc = None
             for j in range(n):                                        # 180-degree shutter for the fast fly-off
@@ -338,8 +339,8 @@ class Film:
                 p = self.card_pose(k, tt); fr = K.tile(img, A.cards[k], p[0], p[1], scale=p[2], rot_y=p[3], rot_z=p[4], alpha=p[5], radius=34, border=(225, 225, 232), bw=5, shadow=0.75)
                 acc = fr if acc is None else acc + fr
             img = acc / n
-        img = self.titles(img, self.t2, t, 0.3, t_exit=4.3)
-        pa = 1 - clamp01((t - 4.3) / 0.3)
+        img = self.titles(img, self.t2, t, 0.3, t_exit=4.9)
+        pa = 1 - clamp01((t - 4.9) / 0.3)
         if t > 1.0 and pa > 0:
             s = 0.45 + 0.55 * pop(t - 1.0); txt = "S 560 4MATIC L  ·  C26 22″  ·  " + ("2/12" if t > 2.9 else "1/12")
             img = glass(img, 540, 1435, 580, 80, 40, scale=s, alpha=clamp01((t - 1.0) / 0.2) * pa, tint=0.12)
@@ -434,7 +435,7 @@ class Film:
             if t < 4.6: return self.S1(t)
             # iris through the spokes: hero flies at the camera, its gaps reveal S2
             p = (t - 4.6) / 0.6; s = 1 + 8 * expo_in(p) ** 0.9
-            base = self.S1(t); s2 = self.S2(0.0 + 0.0)
+            base = self.S1(t); s2 = self.S2(S2_OFF * p)          # cards fan in while the wheel flies through
             M = sim(s, 0, HUB[0], HUB[1], HUB[0], HUB[1])
             wl = cv2.warpAffine(A.hero, M, (W, H), flags=cv2.INTER_LINEAR, borderValue=(0, 0, 0, 0))
             hull = cv2.warpAffine(A.hero_hull, M, (W, H), flags=cv2.INTER_LINEAR)[..., None]
@@ -446,9 +447,10 @@ class Film:
             return img * (1 - fade) + s2 * fade
         t -= 5.2
         if t < 5.2:
-            if t < 4.4: return self.S2(t)
+            t = t + S2_OFF                                           # S2 internal clock starts where the iris left it
+            if t < 5.0: return self.S2(t)
             # hand-off: _7 card flies into the phone screen as the phone rises
-            p = expo_io((t - 4.4) / 0.8); tp = t - 4.4 - 0.8           # phone time (negative while rising)
+            p = expo_io((t - 5.0) / 0.8); tp = t - 5.0 - 0.8           # phone time (negative while rising)
             s3 = self.S3_bg_phone(tp); s2 = self.S2(t)
             img = s2 * (1 - p) + s3 * p
             cx, cy, s, ry, rz, a = self.card_pose(7, t); Mp = self.phone_tf(tp); q = self.screen_quad(Mp)
