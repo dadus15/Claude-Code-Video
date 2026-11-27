@@ -162,6 +162,12 @@ class Assets:
             ok, fr = cap.read()
             if not ok: break
             self.rig.append(fr)
+        global N_RIG
+        N_RIG = len(self.rig)                                 # guide 311 frames, Seedance render may differ
+        if os.environ.get("RIG_HUB"):                         # hub x, y and rim radius (px, 1080x1920) on the last rig frame
+            x_, y_, r_ = (float(v) for v in os.environ["RIG_HUB"].split(","))
+            self.rh = self.rh[:]; self.rh[-1] = [x_, y_, r_, r_]
+        self.rh = self.rh[:N_RIG] + [self.rh[-1]] * max(0, N_RIG - len(self.rh)) if len(self.rh) < N_RIG else self.rh[:N_RIG - 1] + [self.rh[-1]]
         hull = cv2.convexHull(np.argwhere(self.hero[..., 3] > 40)[:, ::-1].astype(np.int32))
         self.hero_hull = np.zeros((H, W), np.float32); cv2.fillConvexPoly(self.hero_hull, hull, 1.0)
         self.grain = np.random.default_rng(11).normal(0, 3.0, (H + 64, W + 64)).astype(np.float32)
@@ -427,6 +433,7 @@ class Film:
                 rig = acc / 6; s1 = self.S1(t)
                 r = rim * z * 1.06 + (2300 - rim * z * 1.06) * expo_in(clamp01((t - 0.12) / 0.48))
                 L, (cx, cy) = self.s1_wheel_layer(t)
+                rig = cv2.warpAffine(rig, np.float32([[1, 0, cx - hx], [0, 1, cy - hy]]), (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)   # rig wheel stays concentric with the iris
                 mk = np.zeros((H, W), np.float32); cv2.circle(mk, (int(cx), int(cy)), int(r), 1, -1, cv2.LINE_AA); mk = cv2.GaussianBlur(mk, (0, 0), 14)[..., None]
                 img = rig * (1 - mk) + s1 * mk
                 ring = np.zeros((H, W), np.float32); cv2.circle(ring, (int(cx), int(cy)), int(r), 1, 8, cv2.LINE_AA)

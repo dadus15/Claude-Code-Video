@@ -205,6 +205,9 @@ def main():
         if not ok: break
         rig.append(fr)
     def R(i): return cv2.resize(rig[int(min(len(rig), max(1, i))) - 1], (W, H), interpolation=cv2.INTER_LANCZOS4).astype(np.float32)
+    NR = len(rig)                                        # rig length (guide 311, Seedance may differ)
+    if os.environ.get("RIG_HUB"):                        # constant hub (x, y, rim) for the ramp when the rig is not the Blender guide
+        x_, y_, r_ = (float(v) for v in os.environ["RIG_HUB"].split(",")); rh = [[x_, y_, r_, r_]] * NR
     def RH(i): return rh[int(min(len(rh), max(1, i))) - 1]
     PH = {}
     def P(k):
@@ -224,7 +227,7 @@ def main():
     def skip(): return only is not None and n[0] not in only        # debug speed-up: skip compositing of unrequested frames
 
     # ---------------- R: the whole rig shot
-    for i in range(1, 300):
+    for i in range(1, NR - 11):
         tg = "rig_start" if i == 1 else ("drop_car_pulls_away" if i == 135 else None)
         if skip():
             if tg: cues.setdefault(tg, round(n[0] / FPS, 3))
@@ -233,10 +236,10 @@ def main():
     # ---------------- R': 2x ramp with motion blur, push into the hub, chromatic split
     for j in range(6):
         if skip(): n[0] += 1; continue
-        i0 = 300 + 2 * j; img = (R(i0) + R(i0 + 1)) / 2; hx, hy = RH(i0)[:2]; t = (j + 1) / 6
+        i0 = NR - 11 + 2 * j; img = (R(i0) + R(i0 + 1)) / 2; hx, hy = RH(i0)[:2]; t = (j + 1) / 6
         img = zoom_at(img, hx, hy, 1 + 0.25 * t * t); img = chroma(img, 18 * t)
         emit(img, "ramp" if j == 0 else None)
-    last = R(311); hx, hy = RH(311)[:2]; last_z = zoom_at(last, hx, hy, 1.25)
+    last = R(NR); hx, hy = RH(NR)[:2]; last_z = zoom_at(last, hx, hy, 1.25)
     for j in range(3):                                   # glitch hit
         if skip(): n[0] += 1; continue
         emit(glitch(chroma(last_z, 22), 1.0 - 0.25 * j, 10 + j), "glitch_1" if j == 0 else None)
