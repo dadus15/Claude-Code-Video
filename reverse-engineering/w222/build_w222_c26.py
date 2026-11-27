@@ -21,7 +21,10 @@ FRONT_OH, REAR_OH, HALF_W = 0.95, 1.14, 0.947
 Ro = TURN_D / 2
 RR_LOCK = math.sqrt(Ro**2 - WB**2) - TF / 2
 D_LOCK = math.atan(WB / RR_LOCK)
-P = {"vr": 0.581, "vf": 1.084, "dL": D_LOCK, "dR": math.radians(14.0)}
+import os
+ENV = lambda k, d: float(os.environ.get(k, d))
+P = {"vr": 0.581, "vf": 1.084, "dL": D_LOCK, "dR": math.radians(ENV("DR_DEG", 14.0))}   # right steer (bicycle model)
+CAM_ORBIT, CAM_PITCH, CAM_YAW, CAM_ROLL, CAM_SHIFT_Y = (ENV(k, 0) for k in ("CAM_ORBIT", "CAM_PITCH", "CAM_YAW", "CAM_ROLL", "CAM_SHIFT_Y"))
 FPS = 24
 # ---------------------------------------------------------------- remove RS5 / V05 parts
 old_tyre = OB["WHL_tyre"]
@@ -61,7 +64,19 @@ M_CHROME = mat("M_chrome", (0.95, 0.95, 0.95), 1.0, 0.05)
 M_TRIM = mat("M_trim_black_plastic", (0.02, 0.02, 0.02), 0.0, 0.6)
 M_LINER = mat("M_arch_liner_felt", (0.012, 0.012, 0.012), 0.0, 0.95)
 M_GAP = mat("M_panel_gap", (0.0, 0.0, 0.0), 0.0, 0.9)
-M_HL = mat("M_W222_headlight", (0.06, 0.065, 0.07), 0.9, 0.08)
+M_HL = mat("M_W222_headlight", (0.72, 0.74, 0.77), 1.0, 0.10, coat=1.0)
+def headlight_internals(m):
+    """clear lens (coat) over chrome reflector bowls / LED cells: Voronoi cells in object space vary tone and gloss,
+    a dark bezel band follows the lens edge (W222 facelift Multibeam, photos _07/_08: bright silver behind clear glass)"""
+    nt = m.node_tree; b = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord"); vo = nt.nodes.new("ShaderNodeTexVoronoi"); vo.inputs["Scale"].default_value = 38.0
+    nt.links.new(tc.outputs["Object"], vo.inputs["Vector"])
+    ramp = nt.nodes.new("ShaderNodeValToRGB"); ramp.color_ramp.elements[0].color = (0.30, 0.31, 0.33, 1); ramp.color_ramp.elements[1].color = (0.92, 0.93, 0.95, 1)
+    nt.links.new(vo.outputs["Distance"], ramp.inputs[0]); nt.links.new(ramp.outputs[0], b.inputs["Base Color"])
+    rr = nt.nodes.new("ShaderNodeMapRange"); rr.inputs[3].default_value = 0.04; rr.inputs[4].default_value = 0.30
+    nt.links.new(vo.outputs["Distance"], rr.inputs[0]); nt.links.new(rr.outputs[0], b.inputs["Roughness"])
+    b.inputs["Coat Roughness"].default_value = 0.0; b.inputs["Coat IOR"].default_value = 1.58
+headlight_internals(M_HL)
 M_DRL = mat("M_W222_drl", (1, 1, 1), 0.0, 0.2, emit=(0.92, 0.95, 1.0))
 M_WHEEL = mat("M_C26_brushed_silver", (0.50, 0.505, 0.51), 1.0, 0.30, aniso=0.55)
 M_BARREL = mat("M_C26_barrel", (0.30, 0.30, 0.31), 1.0, 0.55)
@@ -277,6 +292,9 @@ for yg in (-0.72, -1.95, -3.02):
 # W222 facelift DRL: three stacked light strips in the headlight
 for kk, zz in enumerate((0.818, 0.800, 0.782)):
     ribbon(f"CAR_drl_{kk}", [(y, zz + 0.10 * (y - 0.60) ** 2) for y in np.arange(0.47 + 0.03 * kk, 0.74, 0.01)], 0.006, M_DRL, out=0.003)
+# facelift "eyebrow" light guide along the upper lens edge, visible on the rear tip that wraps over the arch
+ribbon("CAR_drl_eyebrow", [(y, interp([(0.32, 0.795), (0.45, 0.832), (0.62, 0.842), (0.74, 0.805)], y) - 0.014) for y in np.arange(0.335, 0.735, 0.01)],
+       0.007, M_DRL, out=0.0045)
 # headlight lens: separate smooth patch projected onto the body surface (Delaunay of densified outline + interior grid)
 from mathutils.geometry import delaunay_2d_cdt
 bnd = []
@@ -315,6 +333,18 @@ CAM0 = [[-0.62659,-0.15607,-0.76361,-1.25],[-0.77841,0.17474,0.60297,0.50842],[0
 for k_, wc_old, wc_new in ((0, old_pivot.x, -TF / 2), (1, 0.0, 0.0), (2, old_pivot.z, R_STAT)):
     CAM0[k_][3] = wc_new + CAM_SCALE * (CAM0[k_][3] - wc_old)
 M0 = Matrix((CAM0[0], CAM0[1], CAM0[2], (0, 0, 0, 1)))
+# orbit about the vertical through the wheel centre (+ = camera moves rearward/outboard, keeps looking at the wheel), then local pitch/yaw/roll
+WC = Matrix.Translation((-TF / 2, 0.0, 0.0))
+M0 = WC @ Matrix.Rotation(math.radians(CAM_ORBIT), 4, 'Z') @ WC.inverted() @ M0 \
+     @ Matrix.Rotation(math.radians(CAM_YAW), 4, 'Y') @ Matrix.Rotation(math.radians(CAM_PITCH), 4, 'X') @ Matrix.Rotation(math.radians(CAM_ROLL), 4, 'Z')
+# optional new mount point CAM_POS="dx,dy,z" (dx,dy from the wheel centre in plan, z above ground): the camera is turned by the minimal
+# rotation that keeps the wheel centre at the same point of the frame (same composition, roll preserved as far as possible)
+if os.environ.get("CAM_POS"):
+    dx_, dy_, z_ = (float(v) for v in os.environ["CAM_POS"].split(","))
+    wc = Vector((-TF / 2, 0.0, R_STAT)); pn = Vector((-TF / 2 + dx_, dy_, z_))
+    d_old = (wc - M0.translation).normalized(); d_new = (wc - pn).normalized()
+    Rn = d_old.rotation_difference(d_new).to_matrix() @ M0.to_3x3()
+    M0 = Matrix.Translation(pn) @ Rn.to_4x4()
 def ss(k): k = min(1, max(0, k)); return k * k * (3 - 2 * k)
 def v_rear(t):
     rev = 1.0 if t < 0.9 else ((1 - min(1, (t - 0.9) / 1.35)) ** 1.5 if t < 2.25 else 0.0)
@@ -344,7 +374,7 @@ add_wheel("WHL_C26_RL", RLO, zc_old)
 t2 = bpy.data.objects.new("WHL_tyre_RL", old_tyre.data); S.collection.objects.link(t2); t2.parent = RLO
 bolts(RLO, zc_old, "RL")
 for o in (RIG, ST, SP, CAMO, RLS): o.animation_data_clear()
-CAMO.parent = RIG; CAMO.matrix_parent_inverse = Matrix.Identity(4); CAMO.rotation_mode = 'QUATERNION'; CAMO.data.lens = F / 360 * 36
+CAMO.parent = RIG; CAMO.matrix_parent_inverse = Matrix.Identity(4); CAMO.rotation_mode = 'QUATERNION'; CAMO.data.lens = F / 360 * 36; CAMO.data.shift_y = CAM_SHIFT_Y
 pre = []; bx, by, bp = 0.0, -WB, 0.0
 for i in range(120):
     ds = P["vr"] / FPS; d = P["dL"]; bx -= math.sin(bp) * ds; by += math.cos(bp) * ds; bp += ds * math.tan(d) / WB
@@ -408,7 +438,7 @@ S.render.engine = 'CYCLES'; S.cycles.device = 'CPU'; S.cycles.samples = 32; S.cy
 S.cycles.max_bounces = 6; S.cycles.transparent_max_bounces = 64; S.render.use_persistent_data = True
 S.frame_set(1)
 bpy.ops.wm.save_as_mainfile(filepath=OUT)
-print("RESULT", {"zc_old": round(zc_old, 4), "TF": round(TF, 4), "lock_bicycle_deg": round(math.degrees(D_LOCK), 2),
+print("RESULT", {"cam_local": [round(v, 3) for v in M0.translation], "dR_bicycle_deg": round(math.degrees(P["dR"]), 2),"zc_old": round(zc_old, 4), "TF": round(TF, 4), "lock_bicycle_deg": round(math.degrees(D_LOCK), 2),
       "FL_inner_lock_deg": round(math.degrees(wheel_angle(D_LOCK, -1)), 2), "FR_outer_lock_deg": round(math.degrees(wheel_angle(D_LOCK, 1)), 2),
       "FL_right_deg": round(math.degrees(wheel_angle(-P["dR"], -1)), 2), "end_yaw_deg": round(math.degrees(psi), 1),
       "spin_turns": round(spin / 6.2832, 2), "track_rows": rows, "body_faces": len(body_me.polygons)})

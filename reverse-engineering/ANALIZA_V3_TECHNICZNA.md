@@ -149,3 +149,15 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 **Kadrowanie:** kamera zachowuje skalibrowaną orientację (rev8fit), a odległość od środka koła jest skrócona do 0,82 poprzedniej. Felga zajmuje teraz ~53% szerokości kadru jak w oryginale (wcześniej 35%). Przy S-Klasie nie ma już kolizji z nadwoziem: obiektyw jest 0,2 m przed błotnikiem, a przy pełnym skręcie zostaje 0,15 m do opony.
 
 **Render:** lokalny Blender 5.3 (bpy), Cycles 20 próbek z odszumianiem, 540 × 960. W EEVEE bez śledzenia promieni felga wychodziła biała, bo odbijała samo niebo. Scena powstaje w całości ze skryptu `w222/build_w222_c26.py` (rev24 + CAD), więc można ją odtworzyć w każdej chwili.
+
+## P. Prowadnica W222 v2: uwagi klienta (reflektor, skręt w prawo)
+- **Skręt w prawo, opona schowana:** bieżnik znika, gdy kamera leży blisko osi obrotu koła, czyli gdy odległość obiektywu od osi < promień opony.
+  Przy kamerze v1 (0,37 m na zewnątrz, 0,42 m przed osią) i 13,2° było to 0,33 m przy promieniu 0,356 m, więc widać było bark opony.
+  Teraz kamera jest przesunięta po okręgu wokół koła o 10° do tyłu: 0,436 m na zewnątrz, 0,346 m przed osią, ta sama odległość, więc koło ma tę samą wielkość.
+  Skręt w prawo to 17° w modelu jednośladowym (lewe koło 15,8°). Odległość wynosi 0,23 m, więc bieżnik jest niewidoczny (sprawdzone renderem).
+  Obrót auta przy jeździe rośnie z −45° do −53°, czyli nadal mieści się w ruchu tła oryginału (25° dawało jazdę bokiem).
+- **Reflektor:** raycast z kamery pokazał, że reflektor był w kadrze, ale miał ciemny materiał i zlewał się z czarnym lakierem.
+  Nowy materiał to klosz (warstwa coat, IOR 1,58) nad chromowanymi odbłyśnikami/LED (komórki Voronoi) i biały pasek świetlny „brwi” wzdłuż górnej krawędzi (facelift W222).
+  Kamera jest pochylona o 4° w górę, więc końcówka reflektora jest stale w lewym górnym rogu (y 0,70–0,95 kadru).
+- Generator: `w222/build_w222_c26.py` przyjmuje zmienne `CAM_POS="dx,dy,z"` (obrót kamery minimalnym kątem, piasta zostaje w tym samym punkcie kadru), `CAM_ORBIT`, `CAM_PITCH`, `CAM_YAW`, `CAM_ROLL`, `CAM_SHIFT_Y` i `DR_DEG`.
+  Wersja v2: `CAM_POS=-0.436,0.346,0.289 CAM_PITCH=4 DR_DEG=17`.
