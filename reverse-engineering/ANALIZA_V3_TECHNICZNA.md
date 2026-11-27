@@ -125,3 +125,27 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 - Kalibracja aparatu bez EXIF (PnP): 5 nakrętek na PCD 112 mm + 48 punktów krawędzi rantu (R = 280,5 mm). Wynik: ogniskowa 1858 px (~26 mm ekw.), odległość 0,36 m, oś felgi pochylona 33°; błąd: rant 1,4 px (mediana), nakrętki 6,3 px.
 - **Wierzch nakrętek leży 113 mm za płaszczyzną rantu.** Zgodne z fizyką felgi: odległość rant → płaszczyzna montażu ≈ ½ szerokości − ET + kołnierz ≈ 100–115 mm (9,5–10J, ET 25–30). Wcześniejszy model miał ok. 50 mm, więc lico pogłębiono do ~90 mm na piaście (rev. 24).
 - Dopasowanie obrysu ramion do krawędzi _11 (głębokość, profil, obrót) nie zbiega jednoznacznie (~15 px średnio): krawędzie ścianek bocznych i faz ramion przy 33° oraz tło zaburzają miarę. Do pełnej zgodności 1:1 potrzebny jest CAD lica 1PC + pierścienia aero albo sesja fotogrametryczna (felga zdjęta, ≥ 24 ujęcia dookoła + 8 z góry, z miarką).
+
+## O. Zmiana auta: Mercedes-Benz S560 4MATIC L (W222/V222) + Turismo Forged C26 22x10.5J brushed silver
+
+**Felga z CAD** (`Turismo_C26_22x10.5j.obj`, Autodesk, 431 tys. wierzchołków, 863 tys. trójkątów, mm), pomiary skryptami `w222/measure.py`, `w222/prep_c26.py`:
+- średnica rantu 598,6 mm, szerokość 293 mm (10.5J + rant), **40 szprych** (FFT kątowe: 40/80/120),
+- powierzchnia montażowa 29,7 mm na zewnątrz osi → **ET 29,7**, **5 otworów co 72° (PCD 112)**, gniazda śrub na głęb. 41,5 mm,
+- concave: lico piasty 67 mm przed osią, szprychy schodzą do −111 mm przy r = 240 mm (≈ 80 mm głębokości),
+- dekiel z logo GT, kieszenie w rancie między szprychami i otwór zaworu są w CAD; kontrola: `renders/kontrola_C26_CAD_vs_zdjecie.jpg`.
+
+**Auto ze zdjęć realizacji** (12 zdjęć ze strony projektu): czarny W222 po liftingu, 4MATIC, opony letnie Michelin PS4S (w scenie zimowej zastąpione zimowymi).
+- Skala ze zdjęcia _09 (bok, widoczna średnica felgi 251 px = 0,59 m → 424,5 px/m): rozstaw osi ≈ 3,2 m → **wersja długa V222, 3165 mm** (krótka miałaby 3035 mm).
+- Długość auta na zdjęciu wyszła krótsza, bo zderzaki leżą dalej od aparatu; poprawka perspektywy (aparat ≈ 9,6 m) daje zwisy 0,95 / 1,14 m = 5255 mm długości (zgodne z danymi).
+- Nadkole: promień ≈ 0,385 m; promień opony pod obciążeniem 0,346 m; linia błotnika nad osią 0,95–0,97 m; reflektor 0,31–0,74 m przed osią, wys. 0,62–0,84 m (`w222/pomiar_nadkola_zdjecie09.jpg`).
+
+**Dane V222 S560 4MATIC L:** rozstaw osi 3165 mm, rozstaw kół 1630 / 1643 mm (z C26: +2 × 8,3 mm przez ET30 zamiast ~ET38), średnica zawracania 12,3 m, tarcza przód 370 × 36 mm perforowana. Opona zimowa 255/30 R22 (średnica 712 mm).
+
+**Kinematyka (ten sam profil prędkości i skrętu co oryginał, nowe wymiary):**
+- z zawracania: promień tylnej osi 4,46 m → kąt modelu jednośladowego **35,4°**, lewe koło (wewnętrzne) **41,1°**, prawe **31,0°** (Ackermann); RS5 miało 32,4° / 37,9°,
+- skręt w prawo 14° (model jednośladowy) → lewe koło 13,2°,
+- dłuższy rozstaw osi = mniejsza prędkość obrotu auta przy tej samej prędkości koła; obrót felgi z drogi punktu styku (promień toczenia 0,350 m), ślady liczone osobno dla każdego koła.
+
+**Kadrowanie:** kamera zachowuje skalibrowaną orientację (rev8fit), a odległość od środka koła jest skrócona do 0,82 poprzedniej. Felga zajmuje teraz ~53% szerokości kadru jak w oryginale (wcześniej 35%). Przy S-Klasie nie ma już kolizji z nadwoziem: obiektyw jest 0,2 m przed błotnikiem, a przy pełnym skręcie zostaje 0,15 m do opony.
+
+**Render:** lokalny Blender 5.3 (bpy), Cycles 20 próbek z odszumianiem, 540 × 960. W EEVEE bez śledzenia promieni felga wychodziła biała, bo odbijała samo niebo. Scena powstaje w całości ze skryptu `w222/build_w222_c26.py` (rev24 + CAD), więc można ją odtworzyć w każdej chwili.
