@@ -31,7 +31,8 @@ bpy.ops.mesh.primitive_plane_add(size=1.0); scr = bpy.context.active_object; scr
 scr.scale = (PW - 0.0052, (PW - 0.0052) * 2556 / 1179, 1); scr.location = (0, 0, D / 2 + 0.00035)
 m = bpy.data.materials.new("screen"); m.use_nodes = True; nt = m.node_tree; nt.nodes.clear()
 out = nt.nodes.new("ShaderNodeOutputMaterial"); tex = nt.nodes.new("ShaderNodeTexImage"); tex.image = bpy.data.images.load(UI)
-em = nt.nodes.new("ShaderNodeEmission"); em.inputs[1].default_value = 1.15
+import os
+em = nt.nodes.new("ShaderNodeEmission"); em.inputs[1].default_value = 0.0 if os.environ.get("PHONE_BLACK") else 1.15
 gl = nt.nodes.new("ShaderNodeBsdfGlossy"); gl.inputs["Roughness"].default_value = 0.02
 fr = nt.nodes.new("ShaderNodeFresnel"); fr.inputs[0].default_value = 1.5
 mx = nt.nodes.new("ShaderNodeMixShader")
@@ -58,4 +59,9 @@ S.render.engine = 'CYCLES'; S.cycles.device = 'CPU'; S.cycles.samples = SPP; S.c
 S.render.film_transparent = True; S.render.resolution_x = RX; S.render.resolution_y = RY
 S.view_settings.view_transform = 'Standard'; S.view_settings.look = 'None'
 S.render.image_settings.color_mode = 'RGBA'; S.render.filepath = OUT; bpy.ops.render.render(write_still=True)
+from bpy_extras.object_utils import world_to_camera_view as w2c
+S.frame_set(1); hw, hh = scr.scale.x / 2, scr.scale.y / 2; cs = []
+for x, y in ((-hw, hh), (hw, hh), (hw, -hh), (-hw, -hh)):
+    p = w2c(S, cam, root.matrix_world @ Vector((x, y, D / 2 + 0.00035))); cs.append((round(p.x * RX, 2), round((1 - p.y) * RY, 2)))
+print("SCREEN_CORNERS", cs)
 print("PHONE_DONE")

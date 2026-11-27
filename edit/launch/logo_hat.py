@@ -46,6 +46,12 @@ hs = 0.92
 hat_root.scale = (hs, hs, hs)
 hat_root.location = (bx, 0.035 * GS, bz - 0.03 + 0.9 * GS * (1 - DROP))
 hat_root.rotation_euler = (0, math.radians(9 - 32 * (1 - DROP)), 0)
+import os
+SHOW = os.environ.get("LH_SHOW", "both")            # logo | hat | both : separate layers for 2D animation
+if SHOW == "logo":
+    for o in list(hat_root.children): o.hide_render = True
+if SHOW == "hat":
+    T.hide_render = True; R.hide_render = True
 cam = bpy.data.objects.new("cam", bpy.data.cameras.new("cam")); S.collection.objects.link(cam); S.camera = cam
 cam.data.lens = 70; D = 2.6 * GS
 cam.location = (D * math.sin(math.radians(YAW)) * math.cos(math.radians(PITCH)), -D * math.cos(math.radians(YAW)) * math.cos(math.radians(PITCH)), 0.1 + D * math.sin(math.radians(PITCH)))
@@ -61,4 +67,6 @@ S.render.engine = 'CYCLES'; S.cycles.device = 'CPU'; S.cycles.samples = SPP; S.c
 S.render.film_transparent = True; S.render.resolution_x = RX; S.render.resolution_y = RY
 S.view_settings.view_transform = 'AgX'; S.view_settings.look = 'AgX - Medium High Contrast'
 S.render.image_settings.color_mode = 'RGBA'; S.render.filepath = OUT; bpy.ops.render.render(write_still=True)
+from bpy_extras.object_utils import world_to_camera_view as w2c
+bp = w2c(S, cam, hat_root.matrix_world.translation); print("BRIM_PX", round(bp.x * RX, 1), round((1 - bp.y) * RY, 1))
 print("LOGO_DONE")
