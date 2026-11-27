@@ -120,3 +120,8 @@ Odrzucone warianty: kamera w miejscu „idealnym” dla oryginału wypada wewną
 5. **Weryfikacja promieniami:** okno = przelotowe (trafienie w tarczę), kieszeń = dno 12 mm, ramię = pełne.
 
 **Granica dokładności z jednego zdjęcia:** obrys pasuje do wewnętrznej krawędzi fazy okien (otwór), nie do zewnętrznej krawędzi lica; nie da się zmierzyć wysokości fazy, grzbietów na ramionach ani rzeczywistej głębokości/kąta wklęsłości. Dla zgodności 1:1 potrzebny jest model CAD (STEP/IGES/STL) lica V05 i pierścienia aero albo seria zdjęć do fotogrametrii (≥ 24 ujęcia dookoła felgi zdjętej z auta).
+
+## N. Analiza wielokątowa (zdjęcie _11, rev. 24)
+- Kalibracja aparatu bez EXIF (PnP): 5 nakrętek na PCD 112 mm + 48 punktów krawędzi rantu (R = 280,5 mm). Wynik: ogniskowa 1858 px (~26 mm ekw.), odległość 0,36 m, oś felgi pochylona 33°; błąd: rant 1,4 px (mediana), nakrętki 6,3 px.
+- **Wierzch nakrętek leży 113 mm za płaszczyzną rantu.** Zgodne z fizyką felgi: odległość rant → płaszczyzna montażu ≈ ½ szerokości − ET + kołnierz ≈ 100–115 mm (9,5–10J, ET 25–30). Wcześniejszy model miał ok. 50 mm, więc lico pogłębiono do ~90 mm na piaście (rev. 24).
+- Dopasowanie obrysu ramion do krawędzi _11 (głębokość, profil, obrót) nie zbiega jednoznacznie (~15 px średnio): krawędzie ścianek bocznych i faz ramion przy 33° oraz tło zaburzają miarę. Do pełnej zgodności 1:1 potrzebny jest CAD lica 1PC + pierścienia aero albo sesja fotogrametryczna (felga zdjęta, ≥ 24 ujęcia dookoła + 8 z góry, z miarką).
