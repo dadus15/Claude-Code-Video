@@ -1,0 +1,15 @@
+{
+ "fps": 24,
+ "frames": 441,
+ "duration_s": 18.375,
+ "cues_s": {
+  "hook": 0.0,
+  "drop_car_pulls_away": 2.083,
+  "flash_match_cut": 9.458,
+  "match_cut_photo": 9.583,
+  "strobe": 10.083,
+  "hero": 11.583,
+  "iris": 14.083,
+  "end_card": 14.875
+ }
+}

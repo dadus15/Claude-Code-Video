@@ -7,7 +7,7 @@ Bez lektora. Muzyka z trendów dodawana w TikToku (drop basu ~6,0 s = ruszenie a
 turismo-wheels.com/en/projects/mercedes-benz-s-w222-s560-2/, dane producenta V222. Szczegóły: `ANALIZA_V3_TECHNICZNA.md`, sekcja O.
 
 ## Ujęcie 1: rig shot (`video_edit`, wejście = prowadnica z Blendera, 12,95 s)
-Referencje: @1 prowadnica `renders/w222_c26_guide_720x1280.mp4` (ruch, kadr, timing), @2 zdjęcie projektu _04 (felga C26 z bliska, wykończenie),
+Referencje: @1 prowadnica `renders/w222_c26_guide_v2_720x1280.mp4` (ruch, kadr, timing), @2 zdjęcie projektu _04 (felga C26 z bliska, wykończenie),
 @3 zdjęcie _12 (felga en face na aucie), @4 zdjęcie _08 (przód S-Klasy z kołem, tożsamość auta).
 
 ```
