@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFont
 W, H, FPS = 1080, 1920, 24
 HERE = os.path.dirname(os.path.abspath(__file__))
 FD = os.path.join(HERE, "fonts")
-DMS = "/root/.claude/skills/synced/5628d1e2-09fa-4684-99d7-f6f5adccad20_383ed38f-cdf3-40a8-92c9-21fa68bbbc10/youtube-edit/assets/fonts/DMSans-{}.ttf"
+DMS = "/usr/share/fonts/opentype/inter/Inter-{}.otf"   # Inter: full Polish glyph set (DM Sans from the skill has no ę/ł/ń)
 INTER_BLACK = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
 INTER_BOLD = "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf"
 RED = (214, 44, 52); WHITE = (255, 255, 255); CREAM = (233, 214, 160); GREY = (150, 150, 158)
@@ -69,7 +69,7 @@ def comp(img, lay, alpha=1.0, dy=0):
 class Title:
     """kicker (red bar + tracked caps), serif headline with red accent words, small EN subtitle; rises in, fades out"""
     def __init__(self, kicker, head_lines, sub, y=290, size=66):
-        fk = F(DMS.format(700), 25); fh = F(os.path.join(FD, "Lora.ttf"), size, "Medium"); fs = F(DMS.format(500), 29)
+        fk = F(DMS.format("Bold"), 25); fh = F(os.path.join(FD, "Lora.ttf"), size, "Medium"); fs = F(DMS.format("Medium"), 29)
         self.k = text_block([[("|  " + kicker, RED)]], 72, y, fk, 30, track=0.22)
         self.h = text_block(head_lines, 72, y + 44, fh, int(size * 1.18))
         self.s = text_block([[(sub, CREAM)]], 74, y + 52 + int(size * 1.18) * len(head_lines), fs, 34)
@@ -243,7 +243,7 @@ def main():
 
     # ---------------- B: rig frame shrinks into a 3D card, counter 0 -> 40
     tB = Title("TURISMO FORGED  ·  C26", [[("Jedna felga.", WHITE)], [("Zero ", WHITE), ("kompromisów.", RED)]], "One wheel. Zero compromise.")
-    f_num = F(INTER_BLACK, 190); f_lab = F(DMS.format(700), 30); f_lab2 = F(DMS.format(500), 24)
+    f_num = F(INTER_BLACK, 190); f_lab = F(DMS.format("Bold"), 30); f_lab2 = F(DMS.format("Medium"), 24)
     card_rig = cv2.resize(last, (558, 992), interpolation=cv2.INTER_AREA)
     nB = 38
     for k in range(nB):
@@ -311,7 +311,7 @@ def main():
     # ---------------- E: wheel card in 3D + red badge counting 18" -> 22"
     tE = Title("SPECYFIKACJA", [[("Rozmiar ", WHITE), ("22 cale", RED)]], "22 inch  ·  10.5J  ·  forged")
     wheel_card = cover(P(4), 700, 700, FOCUS[4], zoom=1.25)
-    f_badge = F(INTER_BLACK, 120); f_pill = F(DMS.format(700), 34)
+    f_badge = F(INTER_BLACK, 120); f_pill = F(DMS.format("Bold"), 34)
     p1 = pill("10.5J", f_pill, WHITE, (40, 40, 46)); p2 = pill("40 SPOKES", f_pill, WHITE, (40, 40, 46)); p3 = pill("BRUSHED SILVER", f_pill, (20, 20, 24), (236, 236, 240))
     nE = 40
     for k in range(nE):
@@ -334,7 +334,7 @@ def main():
     tF = Title("ZOBACZ REALIZACJĘ", [[("Więcej na ", WHITE)], [("turismo-wheels.com", RED)]], "More projects at turismo-wheels.com")
     car = [5, 9, 6, 10]; CW, CHh = 760, 560
     C_ = {k: cover(P(k), CW, CHh, FOCUS[k], zoom=1.0) for k in car}
-    f_c = F(DMS.format(700), 30); f_c2 = F(DMS.format(500), 24)
+    f_c = F(DMS.format("Bold"), 30); f_c2 = F(DMS.format("Medium"), 24)
     contact = text_block([[("+48 501 404 861", WHITE)]], 112, 1272, f_c, 36)
     contact2 = text_block([[("daniel.chmielewski@turismo-wheels.com", CREAM)]], 112, 1316, f_c2, 30)
     nF = 52
@@ -351,7 +351,7 @@ def main():
         # arrows, dots, progress line
         for ax_, sym in ((150, "‹"), (930, "›")):
             cv2.circle(img, (ax_, 1205), 26, (200, 200, 205), 2, cv2.LINE_AA)
-            img = comp(img, text_block([[(sym, WHITE)]], ax_ - 9, 1180, F(DMS.format(500), 40), 40))
+            img = comp(img, text_block([[(sym, WHITE)]], ax_ - 9, 1180, F(DMS.format("Medium"), 40), 40))
         for di in range(4):
             cv2.circle(img, (495 + di * 30, 1205), 6, RED[::-1] if di == round(p) else (120, 120, 126), -1, cv2.LINE_AA)
         cv2.line(img, (110, 1240), (970, 1240), (70, 70, 76), 3); cv2.line(img, (110, 1240), (110 + int(860 * (p + 1) / 4), 1240), RED[::-1], 3)
@@ -370,14 +370,14 @@ def main():
     logo_l = Image.new("RGBA", (W, H), (0, 0, 0, 0)); logo_l.paste(logo, (LX, LY), logo); logo_a = rgba_from_pil(logo_l)
     hat = cv2.imread(a.hat, cv2.IMREAD_UNCHANGED).astype(np.float32); hm = json.load(open(os.path.splitext(a.hat)[0] + ".json"))
     BRIM = (LX + 0.221 * lw, LY + 0.0158 * lw); HAT_W = 236.0 * lw / 760
-    tag = text_block([[("|  TURISMO WHEELS  ·  UNLOCK YOUR STYLE", RED)]], 0, 690, F(DMS.format(700), 25), 30, track=0.2, align="center")
+    tag = text_block([[("|  TURISMO WHEELS  ·  UNLOCK YOUR STYLE", RED)]], 0, 690, F(DMS.format("Bold"), 25), 30, track=0.2, align="center")
     big = text_block([[("Odezwij się!", WHITE)]], 0, 790, F(INTER_BLACK, 118), 120, align="center")
-    sub_big = text_block([[("Get in touch", CREAM)]], 0, 935, F(DMS.format(500), 30), 34, align="center")
-    f_n = F(os.path.join(FD, "Lora.ttf"), 40, "Medium"); f_s = F(DMS.format(500), 22); f_t = F(DMS.format(700), 30); f_l = F(DMS.format(700), 20)
+    sub_big = text_block([[("Get in touch", CREAM)]], 0, 935, F(DMS.format("Medium"), 30), 34, align="center")
+    f_n = F(os.path.join(FD, "Lora.ttf"), 40, "Medium"); f_s = F(DMS.format("Medium"), 22); f_t = F(DMS.format("Bold"), 30); f_l = F(DMS.format("Bold"), 20)
     box = [text_block([[("Daniel Chmielewski", WHITE)]], 150, 1066, f_n, 44),
            text_block([[("Turismo Wheels  ·  Forged C26", GREY)]], 152, 1118, f_s, 26),
            text_block([[("TEL", RED)]], 152, 1180, f_l, 24, track=0.1), text_block([[("+48 501 404 861", WHITE)]], 260, 1174, f_t, 34),
-           text_block([[("E-MAIL", RED)]], 152, 1234, f_l, 24, track=0.1), text_block([[("daniel.chmielewski@turismo-wheels.com", WHITE)]], 260, 1229, F(DMS.format(500), 27), 32)]
+           text_block([[("E-MAIL", RED)]], 152, 1234, f_l, 24, track=0.1), text_block([[("daniel.chmielewski@turismo-wheels.com", WHITE)]], 260, 1229, F(DMS.format("Medium"), 27), 32)]
     nH = 90
     for k in range(-3, nH):
         if skip(): n[0] += 1; continue
