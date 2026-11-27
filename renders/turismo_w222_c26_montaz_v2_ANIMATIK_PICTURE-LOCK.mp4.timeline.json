@@ -1,0 +1,18 @@
+{
+ "fps": 24,
+ "frames": 615,
+ "duration_s": 25.625,
+ "cues_s": {
+  "rig_start": 0.0,
+  "drop_car_pulls_away": 5.583,
+  "ramp": 12.458,
+  "glitch_1": 12.708,
+  "cards": 12.833,
+  "grid_real_photos": 14.417,
+  "full_photo": 16.417,
+  "spec_badge": 17.917,
+  "carousel": 19.583,
+  "glitch_end": 21.75,
+  "end_card": 21.875
+ }
+}

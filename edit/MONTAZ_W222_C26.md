@@ -18,3 +18,18 @@ Muzykę dodajemy w TikToku (trend). Wybierz utwór z dropem i ustaw drop na **2,
 Czapka: model 3D w Blenderze (`edit/w222/santa_hat.py`): aksamitny stożek z fałdami, futro z cząsteczek (włosy), pompon, render Cycles na przezroczystym tle (`edit/w222/santa_hat.png`).
 Pozycje piast na zdjęciach: `edit/w222/hubs_photos.json` (Hough + korekta ręczna). Pozycja piasty w prowadnicy dla każdej klatki: `edit/w222/rig_hub.json` (rzut z kamery Blendera).
 Fonty: DM Sans (skill), Playfair Display Italic i Oswald (Google Fonts, OFL) w `edit/fonts/`.
+
+## Wersja 2 (uwagi klienta): najpierw cały rig shot, potem „magia montażu” w stylu rolki referencyjnej INVENTA
+Skrypt `edit/compose_w222_v2.py`. Wynik: 25,6 s, 615 klatek. Referencja (WeTransfer, 44 s): ciemne tło z czerwoną poświatą i pyłem, kicker „| …”, nagłówek Lora z czerwonym akcentem i podpisem EN, wyskakujące kafelki, licznik, badge, karuzela, glitch RGB, smugi światła, kontakt w czerwonej ramce.
+
+| Czas (s) | Segment |
+|---|---|
+| 0,00–12,46 | Cały rig shot (prowadnica v2 / Seedance), ruszenie auta 5,58 s = drop |
+| 12,46–12,83 | Rampa 2× z rozmyciem ruchu, push w piastę, aberracja RGB, glitch |
+| 12,83–14,42 | Klatka z rigu kurczy się do kafelka 3D; licznik 0→40 SZPRYCH; „Jedna felga. Zero kompromisów.” |
+| 14,42–16,42 | Siatka 2×2 prawdziwych zdjęć (_12, _07, _01, _08) wyskakuje kafelek po kafelku; _07 rozwija się na pełny ekran |
+| 16,42–17,92 | _07 na pełnym ekranie, smuga światła, „Brushed Silver”, glitch |
+| 17,92–19,58 | Karta felgi w 3D, badge 18″→22″, pigułki 10.5J / 40 SPOKES; „Rozmiar 22 cale” |
+| 19,58–21,75 | Karuzela realizacji (_05, _09, _06, _10) ze strzałkami, kropkami, paskiem postępu i kontaktem |
+| 21,75–25,63 | Glitch → finał: ciemne zdjęcie piasty, śnieg, białe logo, czapka Mikołaja spada na T, „Odezwij się!”, kontakt w czerwonej ramce |
+Fonty: Lora (OFL) w `edit/fonts/`, Inter Display (systemowy), DM Sans (skill).
